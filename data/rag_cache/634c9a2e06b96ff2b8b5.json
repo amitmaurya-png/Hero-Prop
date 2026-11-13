@@ -1,0 +1,131 @@
+{
+  "props": [
+    {
+      "id": "flatbread",
+      "name": "Flatbread",
+      "adjectives": [],
+      "inferred_adjectives": [
+        "thin",
+        "round",
+        "tan",
+        "fresh-baked"
+      ],
+      "description": "flatbread pulled from a clay oven",
+      "first_contact": {
+        "subject": "a baker",
+        "action": "pulls flatbread from a clay oven",
+        "line": 5
+      }
+    },
+    {
+      "id": "water_jars",
+      "name": "Water jars",
+      "adjectives": [],
+      "inferred_adjectives": [
+        "clay",
+        "medium-sized",
+        "earth-toned",
+        "heavy"
+      ],
+      "description": "water jars carried by adults",
+      "first_contact": {
+        "subject": "adults",
+        "action": "carry water jars",
+        "line": 6
+      }
+    },
+    {
+      "id": "bundles_of_reeds",
+      "name": "Bundles of reeds",
+      "adjectives": [],
+      "inferred_adjectives": [
+        "dry",
+        "pale",
+        "long",
+        "tied"
+      ],
+      "description": "bundles of reeds carried by adults",
+      "first_contact": {
+        "subject": "adults",
+        "action": "carry bundles of reeds",
+        "line": 6
+      }
+    },
+    {
+      "id": "cloth_bundle",
+      "name": "Cloth bundle",
+      "adjectives": [
+        "small"
+      ],
+      "inferred_adjectives": [
+        "soft cloth",
+        "hand-sized",
+        "plain",
+        "tied or folded"
+      ],
+      "description": "small cloth bundle held close to Miri’s chest",
+      "first_contact": {
+        "subject": "Miri",
+        "action": "clutches a small cloth bundle close to her chest",
+        "line": 9
+      }
+    },
+    {
+      "id": "honey_date_cakes",
+      "name": "Honey-date cakes",
+      "adjectives": [
+        "small"
+      ],
+      "inferred_adjectives": [
+        "golden-brown",
+        "sticky",
+        "round",
+        "palm-sized"
+      ],
+      "description": "three small honey-date cakes gleaming in the cloth",
+      "first_contact": {
+        "subject": "Miri",
+        "action": "tucks the honey cakes deeper inside the cloth",
+        "line": 50
+      }
+    },
+    {
+      "id": "linen_basket",
+      "name": "Linen basket",
+      "adjectives": [
+        "folded",
+        "old"
+      ],
+      "inferred_adjectives": [
+        "woven",
+        "shallow",
+        "lightweight",
+        "filled with pale linen"
+      ],
+      "description": "basket of folded linen for Saba Elior",
+      "first_contact": {
+        "subject": "Ima",
+        "action": "appears from the doorway with a basket of folded linen",
+        "line": 25
+      }
+    }
+  ],
+  "transfers": [
+    {
+      "prop": "linen_basket",
+      "from": "Ima",
+      "to": "Miri",
+      "type": "handed",
+      "action": "Ima hands Miri the linen basket",
+      "line": 49
+    },
+    {
+      "prop": "honey_date_cakes",
+      "from": "Miri",
+      "to": "cloth_bundle",
+      "type": "placed",
+      "action": "Miri tucks the honey cakes deeper inside the cloth",
+      "line": 50
+    }
+  ]
+}

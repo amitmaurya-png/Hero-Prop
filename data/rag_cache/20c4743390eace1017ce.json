@@ -1,0 +1,25 @@
+{
+  "props": [
+    {
+      "id": "faded_hanging_cloth",
+      "name": "Hanging cloth",
+      "adjectives": [
+        "faded",
+        "hanging"
+      ],
+      "inferred_adjectives": [
+        "fabric",
+        "earth-toned",
+        "worn",
+        "doorway-sized"
+      ],
+      "description": "a faded hanging cloth",
+      "first_contact": {
+        "subject": "Saba",
+        "action": "pulls aside a faded hanging cloth",
+        "line": 4
+      }
+    }
+  ],
+  "transfers": []
+}

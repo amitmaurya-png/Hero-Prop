@@ -1,0 +1,69 @@
+{
+  "props": [
+    {
+      "id": "linen_basket",
+      "name": "Linen basket",
+      "adjectives": [
+        "linen"
+      ],
+      "inferred_adjectives": [
+        "woven",
+        "shallow",
+        "lightweight",
+        "filled"
+      ],
+      "description": "the linen basket",
+      "first_contact": {
+        "subject": "Miri",
+        "action": "walks with the linen basket",
+        "line": 1
+      }
+    },
+    {
+      "id": "cloth_bundle",
+      "name": "Cloth",
+      "adjectives": [],
+      "inferred_adjectives": [
+        "soft",
+        "plain",
+        "small",
+        "folded"
+      ],
+      "description": "the cloth around the cakes",
+      "first_contact": {
+        "subject": "Miri",
+        "action": "puts her hand to the cloth",
+        "line": 13
+      }
+    },
+    {
+      "id": "honey_date_cakes",
+      "name": "Cakes",
+      "adjectives": [
+        "hidden"
+      ],
+      "inferred_adjectives": [
+        "small",
+        "golden-brown",
+        "sticky",
+        "palm-sized"
+      ],
+      "description": "the hidden cakes",
+      "first_contact": {
+        "subject": "Miri",
+        "action": "continues carrying the cakes",
+        "line": 26
+      }
+    }
+  ],
+  "transfers": [
+    {
+      "prop": "honey_date_cakes",
+      "from": "Miri",
+      "to": "Tav",
+      "type": "withheld",
+      "action": "Miri keeps the cakes back after Tav asks for one",
+      "line": 17
+    }
+  ]
+}

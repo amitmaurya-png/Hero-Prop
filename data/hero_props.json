@@ -1,0 +1,1562 @@
+{
+  "source": "data/props.json",
+  "about": "Hero props and materials, decided by the RAG method: for each prop, the model weighs its scenes, transfers and retrieved screenplay passages ('why_hero' / 'why_not' are its reasons). Counts and totals are computed by code. Written by scripts/extract_hero_props.py.",
+  "totals": {
+    "scenes": 17,
+    "scenes_with_props": 15,
+    "scenes_with_transfers": 10,
+    "scenes_with_hero_props": 13,
+    "transfers": 30,
+    "transfers_by_type": {
+      "placed": 8,
+      "withheld": 1,
+      "handed": 16,
+      "implied": 4,
+      "offered-declined": 1
+    },
+    "handed_between_subjects": 16,
+    "hero_prop_transfers": 26,
+    "props": 35,
+    "hero_props": 13,
+    "background_props": 22
+  },
+  "per_scene": [
+    {
+      "scene_number": 1,
+      "scene": "EXT. MIRI’S VILLAGE — MORNING",
+      "props": 6,
+      "hero_props": 3,
+      "transfers": 2
+    },
+    {
+      "scene_number": 2,
+      "scene": "EXT. VILLAGE LANE — MOMENTS LATER",
+      "props": 3,
+      "hero_props": 3,
+      "transfers": 1
+    },
+    {
+      "scene_number": 3,
+      "scene": "MAIN TITLES",
+      "props": 0,
+      "hero_props": 0,
+      "transfers": 0
+    },
+    {
+      "scene_number": 4,
+      "scene": "EXT. SABA ELIOR’S COURTYARD — LATE MORNING",
+      "props": 7,
+      "hero_props": 1,
+      "transfers": 2
+    },
+    {
+      "scene_number": 5,
+      "scene": "INT. SABA’S HOUSE — CONTINUOUS",
+      "props": 1,
+      "hero_props": 0,
+      "transfers": 0
+    },
+    {
+      "scene_number": 6,
+      "scene": "INT. SCROLL ROOM — CONTINUOUS",
+      "props": 2,
+      "hero_props": 1,
+      "transfers": 0
+    },
+    {
+      "scene_number": 7,
+      "scene": "EXT. GALILEAN HILLSIDE — DAY",
+      "props": 0,
+      "hero_props": 0,
+      "transfers": 0
+    },
+    {
+      "scene_number": 8,
+      "scene": "EXT. HILLSIDE PATH — CONTINUOUS",
+      "props": 1,
+      "hero_props": 1,
+      "transfers": 0
+    },
+    {
+      "scene_number": 9,
+      "scene": "EXT. EDGE OF CROWD — LATER",
+      "props": 5,
+      "hero_props": 3,
+      "transfers": 6
+    },
+    {
+      "scene_number": 10,
+      "scene": "EXT. NEAR JESUS — CONTINUOUS",
+      "props": 2,
+      "hero_props": 2,
+      "transfers": 1
+    },
+    {
+      "scene_number": 11,
+      "scene": "EXT. HILLSIDE — MOMENTS LATER",
+      "props": 5,
+      "hero_props": 4,
+      "transfers": 9
+    },
+    {
+      "scene_number": 12,
+      "scene": "EXT. HILLSIDE — LATE AFTERNOON",
+      "props": 3,
+      "hero_props": 2,
+      "transfers": 0
+    },
+    {
+      "scene_number": 13,
+      "scene": "EXT. HILLSIDE — CONTINUOUS",
+      "props": 2,
+      "hero_props": 2,
+      "transfers": 3
+    },
+    {
+      "scene_number": 14,
+      "scene": "EXT. HILLSIDE RIDGE — SUNSET",
+      "props": 1,
+      "hero_props": 0,
+      "transfers": 0
+    },
+    {
+      "scene_number": 15,
+      "scene": "INT. SCROLL ROOM — LATE AFTERNOON",
+      "props": 4,
+      "hero_props": 2,
+      "transfers": 1
+    },
+    {
+      "scene_number": 16,
+      "scene": "EXT. VILLAGE LANE — SUNSET",
+      "props": 5,
+      "hero_props": 5,
+      "transfers": 4
+    },
+    {
+      "scene_number": 17,
+      "scene": "EXT. SABA’S COURTYARD — EVENING",
+      "props": 6,
+      "hero_props": 1,
+      "transfers": 1
+    }
+  ],
+  "hero_count": 13,
+  "hero_props": [
+    {
+      "id": "cloth_bundle",
+      "name": "Cloth bundle",
+      "adjectives": [
+        "small",
+        "cloth",
+        "soft",
+        "folded",
+        "plain",
+        "tied"
+      ],
+      "inferred_adjectives": [
+        "soft cloth",
+        "hand-sized",
+        "plain",
+        "tied or folded",
+        "soft",
+        "folded",
+        "plain fabric",
+        "earth-toned"
+      ],
+      "description": "small cloth bundle held close to Miri’s chest",
+      "why_hero": [
+        "Miri carries the cloth bundle from the opening, clutched to her chest, and it is revealed to hold the three honey-date cakes.",
+        "It recurs across the story: Miri touches or opens it in scenes 1, 2, 15, and 16.",
+        "The cloth becomes the container for the cakes when Miri closes it around them in scene 15, supporting the cake-giving plot."
+      ],
+      "story_role": "the carrier for Miri’s honey-date cakes",
+      "scene_count": 4,
+      "transfer_count": 1,
+      "handed_between_subjects_count": 0,
+      "scenes": [
+        {
+          "scene_number": 1,
+          "scene": "EXT. MIRI’S VILLAGE — MORNING",
+          "first_contact": {
+            "subject": "Miri",
+            "action": "clutches a small cloth bundle close to her chest",
+            "screenplay": "Miri clutches a small cloth bundle close to her chest."
+          }
+        },
+        {
+          "scene_number": 2,
+          "scene": "EXT. VILLAGE LANE — MOMENTS LATER",
+          "first_contact": {
+            "subject": "Miri",
+            "action": "puts her hand to the cloth",
+            "screenplay": "Her hand goes to the cloth."
+          }
+        },
+        {
+          "scene_number": 15,
+          "scene": "INT. SCROLL ROOM — LATE AFTERNOON",
+          "first_contact": {
+            "subject": "Miri",
+            "action": "opens the cloth bundle",
+            "screenplay": "She opens it."
+          }
+        },
+        {
+          "scene_number": 16,
+          "scene": "EXT. VILLAGE LANE — SUNSET",
+          "first_contact": {
+            "subject": "Miri",
+            "action": "opens the cloth",
+            "screenplay": "Miri sits beside him and opens the cloth."
+          }
+        }
+      ],
+      "transfers": [
+        {
+          "scene_number": 15,
+          "scene": "INT. SCROLL ROOM — LATE AFTERNOON",
+          "between_subjects": false,
+          "from": "Miri",
+          "to": "honey-date cakes",
+          "type": "placed",
+          "action": "Miri closes the cloth around the cakes",
+          "screenplay": "Miri closes the cloth around the cakes and stands."
+        }
+      ]
+    },
+    {
+      "id": "honey_date_cakes",
+      "name": "Honey-date cakes",
+      "adjectives": [
+        "small",
+        "hidden",
+        "three",
+        "honey-date",
+        "all present",
+        "one",
+        "second",
+        "whole",
+        "half",
+        "remaining",
+        "tiny",
+        "last"
+      ],
+      "inferred_adjectives": [
+        "golden-brown",
+        "sticky",
+        "round",
+        "palm-sized"
+      ],
+      "description": "three small honey-date cakes gleaming in the cloth",
+      "why_hero": [
+        "The cakes recur from the morning bundle through the scroll room inventory to the sunset sharing scene.",
+        "Miri withholds them from Tav early because they are for Saba, then later gives Tav one whole cake and half of another.",
+        "The final division with Tav, Nim, and Miri is called “emotionally significant” and resolves as a generous gesture."
+      ],
+      "story_role": "the treasured treat Miri ultimately shares",
+      "scene_count": 4,
+      "transfer_count": 4,
+      "handed_between_subjects_count": 2,
+      "scenes": [
+        {
+          "scene_number": 1,
+          "scene": "EXT. MIRI’S VILLAGE — MORNING",
+          "first_contact": {
+            "subject": "Miri",
+            "action": "tucks the honey cakes deeper inside the cloth",
+            "screenplay": "Miri tucks the honey cakes deeper inside the cloth."
+          }
+        },
+        {
+          "scene_number": 2,
+          "scene": "EXT. VILLAGE LANE — MOMENTS LATER",
+          "first_contact": {
+            "subject": "Miri",
+            "action": "continues carrying the cakes",
+            "screenplay": "NIM: A difficult moment. Very brave of us to continue carrying the cakes."
+          }
+        },
+        {
+          "scene_number": 15,
+          "scene": "INT. SCROLL ROOM — LATE AFTERNOON",
+          "first_contact": {
+            "subject": "Miri",
+            "action": "lifts one cake",
+            "screenplay": "Miri lifts one cake."
+          }
+        },
+        {
+          "scene_number": 16,
+          "scene": "EXT. VILLAGE LANE — SUNSET",
+          "first_contact": {
+            "subject": "Miri",
+            "action": "takes out one honey-date cake",
+            "screenplay": "She takes out one honey-date cake."
+          }
+        }
+      ],
+      "transfers": [
+        {
+          "scene_number": 1,
+          "scene": "EXT. MIRI’S VILLAGE — MORNING",
+          "between_subjects": false,
+          "from": "Miri",
+          "to": "cloth bundle",
+          "type": "placed",
+          "action": "Miri tucks the honey cakes deeper inside the cloth",
+          "screenplay": "Miri tucks the honey cakes deeper inside the cloth."
+        },
+        {
+          "scene_number": 2,
+          "scene": "EXT. VILLAGE LANE — MOMENTS LATER",
+          "between_subjects": true,
+          "from": "Miri",
+          "to": "Tav",
+          "type": "withheld",
+          "action": "Miri keeps the cakes back after Tav asks for one",
+          "screenplay": "MIRI: I… have to take these to Saba."
+        },
+        {
+          "scene_number": 16,
+          "scene": "EXT. VILLAGE LANE — SUNSET",
+          "between_subjects": true,
+          "from": "Miri",
+          "to": "Tav",
+          "type": "handed",
+          "action": "Miri gives Tav one whole cake and half of another",
+          "screenplay": "Miri gives Tav one whole cake and half of another."
+        },
+        {
+          "scene_number": 16,
+          "scene": "EXT. VILLAGE LANE — SUNSET",
+          "between_subjects": true,
+          "from": "Miri",
+          "to": "Nim",
+          "type": "handed",
+          "action": "Miri gives one small piece to Nim",
+          "screenplay": "She breaks the half into two small pieces, gives one to Nim, and keeps one."
+        }
+      ]
+    },
+    {
+      "id": "linen_basket",
+      "name": "Linen basket",
+      "adjectives": [
+        "folded",
+        "old",
+        "linen",
+        "filled"
+      ],
+      "inferred_adjectives": [
+        "woven",
+        "shallow",
+        "lightweight",
+        "filled with pale linen",
+        "filled",
+        "earth-toned",
+        "hand-carried"
+      ],
+      "description": "basket of folded linen for Saba Elior",
+      "why_hero": [
+        "Ima hands the basket to Miri in scene 1 with the errand that sends her to Saba Elior.",
+        "Miri carries it through the village and delivers it to Saba in scene 4, where he takes the linen and the visit continues.",
+        "The basket recurs as a featured comic/resting spot for Nim in scenes 4 and 17."
+      ],
+      "story_role": "the errand basket that brings Miri to Saba",
+      "scene_count": 4,
+      "transfer_count": 2,
+      "handed_between_subjects_count": 2,
+      "scenes": [
+        {
+          "scene_number": 1,
+          "scene": "EXT. MIRI’S VILLAGE — MORNING",
+          "first_contact": {
+            "subject": "Ima",
+            "action": "appears from the doorway with a basket of folded linen",
+            "screenplay": "Miri smiles and folds the cloth shut just as IMA appears from the doorway with a basket of folded linen."
+          }
+        },
+        {
+          "scene_number": 2,
+          "scene": "EXT. VILLAGE LANE — MOMENTS LATER",
+          "first_contact": {
+            "subject": "Miri",
+            "action": "walks with the linen basket",
+            "screenplay": "Miri walks with the linen basket."
+          }
+        },
+        {
+          "scene_number": 4,
+          "scene": "EXT. SABA ELIOR’S COURTYARD — LATE MORNING",
+          "first_contact": {
+            "subject": "Miri",
+            "action": "enters with the linen basket",
+            "screenplay": "Miri enters with the linen basket."
+          }
+        },
+        {
+          "scene_number": 17,
+          "scene": "EXT. SABA’S COURTYARD — EVENING",
+          "first_contact": {
+            "subject": "Nim",
+            "action": "climbs into the linen basket and circles twice before curling up",
+            "screenplay": "Nim climbs into the linen basket and circles twice before curling up."
+          }
+        }
+      ],
+      "transfers": [
+        {
+          "scene_number": 1,
+          "scene": "EXT. MIRI’S VILLAGE — MORNING",
+          "between_subjects": true,
+          "from": "Ima",
+          "to": "Miri",
+          "type": "handed",
+          "action": "Ima hands Miri the linen basket",
+          "screenplay": "Ima hands Miri the linen basket."
+        },
+        {
+          "scene_number": 4,
+          "scene": "EXT. SABA ELIOR’S COURTYARD — LATE MORNING",
+          "between_subjects": true,
+          "from": "Miri",
+          "to": "Saba",
+          "type": "handed",
+          "action": "Miri pushes the linen basket toward Saba",
+          "screenplay": "Then remembers why she came and pushes the linen basket toward him."
+        }
+      ]
+    },
+    {
+      "id": "small_scroll",
+      "name": "Small scroll",
+      "adjectives": [
+        "small",
+        "tied with a cord the color of barley"
+      ],
+      "inferred_adjectives": [
+        "aged parchment",
+        "tan",
+        "hand-sized",
+        "rolled"
+      ],
+      "description": "a small scroll tied with a cord the color of barley",
+      "why_hero": [
+        "Saba deliberately selects and unties it in the Scroll Room, and its loaf-and-two-fish seal makes Nim react as if it matters.",
+        "Its ink glimmers when opened, then later settles into a drawing of five loaves and two fish, tying it to the later lunch imagery.",
+        "It recurs open between Miri and Nim in scene 15, making it more than background scroll-room dressing."
+      ],
+      "story_role": "the prophetic scroll of the five loaves and two fish",
+      "scene_count": 1,
+      "transfer_count": 0,
+      "handed_between_subjects_count": 0,
+      "scenes": [
+        {
+          "scene_number": 6,
+          "scene": "INT. SCROLL ROOM — CONTINUOUS",
+          "first_contact": {
+            "subject": "Saba",
+            "action": "reaches high and draws down the small scroll",
+            "screenplay": "He reaches high and draws down a small scroll tied with a cord the color of barley."
+          }
+        }
+      ],
+      "transfers": []
+    },
+    {
+      "id": "yonah_bundle",
+      "name": "Yonah's bundle",
+      "adjectives": [
+        "small",
+        "cloth-wrapped",
+        "earth-toned",
+        "lunch-sized",
+        "tied",
+        "only a little",
+        "real"
+      ],
+      "inferred_adjectives": [
+        "cloth-wrapped",
+        "earth-toned",
+        "lunch-sized",
+        "tied",
+        "soft cloth",
+        "hand-held",
+        "plain",
+        "worn"
+      ],
+      "description": "small bundle tucked under his arm, packed with five barley loaves and two fish",
+      "why_hero": [
+        "The bundle is introduced with Yonah carrying it carefully, then identified as the five loaves and two fish that can answer the hungry crowd.",
+        "It is unwrapped and featured in scene 9, with the screenplay listing the contents plainly: five small barley loaves and two small fish.",
+        "It is passed from Yonah to Andrew, then from Andrew to Jesus, with Jesus’s hands specifically shown receiving the small lunch."
+      ],
+      "story_role": "the small lunch offered for the feeding miracle",
+      "scene_count": 3,
+      "transfer_count": 2,
+      "handed_between_subjects_count": 2,
+      "scenes": [
+        {
+          "scene_number": 8,
+          "scene": "EXT. HILLSIDE PATH — CONTINUOUS",
+          "first_contact": {
+            "subject": "Yonah",
+            "action": "weaves through the crowd with the small bundle tucked under his arm",
+            "screenplay": "Miri spots a boy, YONAH, about her age, weaving through the crowd with a small bundle tucked under his arm."
+          }
+        },
+        {
+          "scene_number": 9,
+          "scene": "EXT. EDGE OF CROWD — LATER",
+          "first_contact": {
+            "subject": "Yonah",
+            "action": "unwraps the lunch",
+            "screenplay": "Yonah unwraps the lunch."
+          }
+        },
+        {
+          "scene_number": 10,
+          "scene": "EXT. NEAR JESUS — CONTINUOUS",
+          "first_contact": {
+            "subject": "Andrew",
+            "action": "holds the small lunch as Jesus receives it from him",
+            "screenplay": "We see Jesus’s hands receive the small lunch from Andrew."
+          }
+        }
+      ],
+      "transfers": [
+        {
+          "scene_number": 9,
+          "scene": "EXT. EDGE OF CROWD — LATER",
+          "between_subjects": true,
+          "from": "Yonah",
+          "to": "Andrew",
+          "type": "handed",
+          "action": "Andrew receives the lunch from Yonah with great care",
+          "screenplay": "Andrew receives the lunch with great care."
+        },
+        {
+          "scene_number": 10,
+          "scene": "EXT. NEAR JESUS — CONTINUOUS",
+          "between_subjects": true,
+          "from": "Andrew",
+          "to": "Jesus",
+          "type": "handed",
+          "action": "Jesus receives the small lunch from Andrew",
+          "screenplay": "We see Jesus’s hands receive the small lunch from Andrew."
+        }
+      ]
+    },
+    {
+      "id": "barley_loaves",
+      "name": "Barley loaves",
+      "adjectives": [
+        "five",
+        "small",
+        "barley",
+        "simple",
+        "ordinary",
+        "not enough",
+        "warm",
+        "enough for many"
+      ],
+      "inferred_adjectives": [
+        "tan",
+        "round",
+        "coarse",
+        "palm-sized"
+      ],
+      "description": "five small barley loaves",
+      "why_hero": [
+        "The loaves are explicitly identified as Yonah’s scarce lunch in scene 9: “Five barley loaves and two fish… definitely not enough,” then Andrew receives it with care.",
+        "Jesus lifts the loaves in scene 11, after which they appear as “warm barley loaves, enough for many,” making them central to the miracle.",
+        "They recur across scenes 8, 9, and 11 and are passed from Yonah toward Andrew/Jesus, then become food Miri distributes to the children."
+      ],
+      "story_role": "the humble lunch multiplied to feed many",
+      "scene_count": 2,
+      "transfer_count": 2,
+      "handed_between_subjects_count": 0,
+      "scenes": [
+        {
+          "scene_number": 9,
+          "scene": "EXT. EDGE OF CROWD — LATER",
+          "first_contact": {
+            "subject": "Yonah",
+            "action": "breaks off a tiny crumb from the loaves",
+            "screenplay": "Yonah breaks off a tiny crumb and offers it to Miri."
+          }
+        },
+        {
+          "scene_number": 11,
+          "scene": "EXT. HILLSIDE — MOMENTS LATER",
+          "first_contact": {
+            "subject": "Jesus",
+            "action": "lifts the loaves",
+            "screenplay": "Jesus lifts the loaves."
+          }
+        }
+      ],
+      "transfers": [
+        {
+          "scene_number": 9,
+          "scene": "EXT. EDGE OF CROWD — LATER",
+          "between_subjects": true,
+          "from": "Yonah",
+          "to": "yonah's lunch bundle",
+          "type": "placed",
+          "action": "Yonah quickly wraps the lunch, enclosing the barley loaves in the bundle",
+          "screenplay": "Yonah quickly wraps the lunch."
+        },
+        {
+          "scene_number": 9,
+          "scene": "EXT. EDGE OF CROWD — LATER",
+          "between_subjects": true,
+          "from": "Yonah",
+          "to": "Andrew",
+          "type": "implied",
+          "action": "Andrew receives the lunch bundle containing the five barley loaves",
+          "screenplay": "Andrew receives the lunch with great care."
+        }
+      ]
+    },
+    {
+      "id": "small_fish",
+      "name": "Small fish",
+      "adjectives": [
+        "two",
+        "small",
+        "simple",
+        "ordinary",
+        "not enough"
+      ],
+      "inferred_adjectives": [
+        "silver-gray",
+        "dried",
+        "hand-sized",
+        "plain"
+      ],
+      "description": "two small fish",
+      "why_hero": [
+        "Yonah unwraps the lunch and identifies the two small fish with the five loaves; Andrew then receives the lunch with great care.",
+        "In scene 11, the fish are shared from the disciples to the crowd as part of the “there is enough” miracle.",
+        "The image of five loaves and two fish recurs on the scroll and seal, making the fish part of the story’s central symbol."
+      ],
+      "story_role": "the humble lunch that becomes enough for the crowd",
+      "scene_count": 2,
+      "transfer_count": 3,
+      "handed_between_subjects_count": 0,
+      "scenes": [
+        {
+          "scene_number": 9,
+          "scene": "EXT. EDGE OF CROWD — LATER",
+          "first_contact": {
+            "subject": "Yonah",
+            "action": "unwraps the lunch containing the fish",
+            "screenplay": "Yonah unwraps the lunch."
+          }
+        },
+        {
+          "scene_number": 11,
+          "scene": "EXT. HILLSIDE — MOMENTS LATER",
+          "first_contact": {
+            "subject": "unnamed people",
+            "action": "share the fish",
+            "screenplay": "Fish are shared."
+          }
+        }
+      ],
+      "transfers": [
+        {
+          "scene_number": 9,
+          "scene": "EXT. EDGE OF CROWD — LATER",
+          "between_subjects": true,
+          "from": "Yonah",
+          "to": "yonah's lunch bundle",
+          "type": "placed",
+          "action": "Yonah quickly wraps the lunch, enclosing the fish in the bundle",
+          "screenplay": "Yonah quickly wraps the lunch."
+        },
+        {
+          "scene_number": 9,
+          "scene": "EXT. EDGE OF CROWD — LATER",
+          "between_subjects": true,
+          "from": "Yonah",
+          "to": "Andrew",
+          "type": "implied",
+          "action": "Andrew receives the lunch bundle containing the two small fish",
+          "screenplay": "Andrew receives the lunch with great care."
+        },
+        {
+          "scene_number": 11,
+          "scene": "EXT. HILLSIDE — MOMENTS LATER",
+          "between_subjects": true,
+          "from": "disciples",
+          "to": "crowd",
+          "type": "implied",
+          "action": "Fish are shared",
+          "screenplay": "Fish are shared."
+        }
+      ]
+    },
+    {
+      "id": "bread_basket",
+      "name": "Bread basket",
+      "adjectives": [
+        "holding the bread",
+        "full",
+        "bread-filled",
+        "woven",
+        "shallow"
+      ],
+      "inferred_adjectives": [
+        "woven",
+        "earth-toned",
+        "shallow",
+        "bread-filled",
+        "wicker",
+        "wide-mouthed",
+        "hand-carried"
+      ],
+      "description": "the basket holding the bread",
+      "why_hero": [
+        "Jesus briefly rests His hand on the bread basket in scene 10 as He commits to feeding everyone: “All of them.”",
+        "In scene 11, the basket is central to the multiplication set piece: bread appears beyond what should be there and “the basket remains full.”",
+        "It is passed hand to hand, including Andrew placing a basket in Miri’s hands, and becomes part of the visible abundance later gathered as twelve full baskets."
+      ],
+      "story_role": "the basket of miraculous bread that feeds the crowd",
+      "scene_count": 2,
+      "transfer_count": 2,
+      "handed_between_subjects_count": 2,
+      "scenes": [
+        {
+          "scene_number": 10,
+          "scene": "EXT. NEAR JESUS — CONTINUOUS",
+          "first_contact": {
+            "subject": "Jesus",
+            "action": "rests His hand briefly on the basket holding the bread",
+            "screenplay": "Jesus’s hand rests briefly on the basket holding the bread."
+          }
+        },
+        {
+          "scene_number": 11,
+          "scene": "EXT. HILLSIDE — MOMENTS LATER",
+          "first_contact": {
+            "subject": "unnamed people",
+            "action": "pass baskets from hand to hand",
+            "screenplay": "VISUAL SET PIECE — THE MULTIPLICATION Baskets pass from hand to hand."
+          }
+        }
+      ],
+      "transfers": [
+        {
+          "scene_number": 11,
+          "scene": "EXT. HILLSIDE — MOMENTS LATER",
+          "between_subjects": true,
+          "from": "one unnamed person",
+          "to": "another unnamed person",
+          "type": "handed",
+          "action": "Baskets pass from hand to hand",
+          "screenplay": "VISUAL SET PIECE — THE MULTIPLICATION Baskets pass from hand to hand."
+        },
+        {
+          "scene_number": 11,
+          "scene": "EXT. HILLSIDE — MOMENTS LATER",
+          "between_subjects": true,
+          "from": "Andrew",
+          "to": "Miri",
+          "type": "handed",
+          "action": "A basket is placed in Miri's hands",
+          "screenplay": "A basket is placed in her hands."
+        }
+      ]
+    },
+    {
+      "id": "broken_bread",
+      "name": "Broken bread",
+      "adjectives": [
+        "warm",
+        "barley",
+        "left over",
+        "leftover",
+        "saved",
+        "noble"
+      ],
+      "inferred_adjectives": [
+        "tan",
+        "torn",
+        "soft",
+        "hand-sized pieces",
+        "hand-sized"
+      ],
+      "description": "pieces of the multiplied barley bread",
+      "why_hero": [
+        "The bread is central to the miracle: in scene 11 there is “more bread than should be there,” it is handed onward, and the basket remains full.",
+        "It is repeatedly passed and gathered: Miri distributes it to children, elders, fathers, and mothers, then Miri, Yonah, and Nim gather leftovers into baskets in scene 13.",
+        "It carries the theme of abundance and not keeping for oneself, shown when Miri places her leftover piece in the basket instead of saving it."
+      ],
+      "story_role": "the multiplied bread that feeds the crowd and embodies abundance",
+      "scene_count": 3,
+      "transfer_count": 7,
+      "handed_between_subjects_count": 4,
+      "scenes": [
+        {
+          "scene_number": 11,
+          "scene": "EXT. HILLSIDE — MOMENTS LATER",
+          "first_contact": {
+            "subject": "unnamed people",
+            "action": "pass bread into a basket",
+            "screenplay": "Hands pass bread into a basket."
+          }
+        },
+        {
+          "scene_number": 12,
+          "scene": "EXT. HILLSIDE — LATE AFTERNOON",
+          "first_contact": {
+            "subject": "Yonah",
+            "action": "carries a basket of leftover pieces",
+            "screenplay": "Yonah approaches, carrying a half-filled basket of leftover pieces."
+          }
+        },
+        {
+          "scene_number": 13,
+          "scene": "EXT. HILLSIDE — CONTINUOUS",
+          "first_contact": {
+            "subject": "miri, yonah, and nim",
+            "action": "gather leftover pieces of bread",
+            "screenplay": "Miri, Yonah, and Nim gather leftover pieces of bread."
+          }
+        }
+      ],
+      "transfers": [
+        {
+          "scene_number": 11,
+          "scene": "EXT. HILLSIDE — MOMENTS LATER",
+          "between_subjects": false,
+          "from": "unnamed people",
+          "to": "bread basket",
+          "type": "placed",
+          "action": "Hands pass bread into a basket",
+          "screenplay": "Hands pass bread into a basket."
+        },
+        {
+          "scene_number": 11,
+          "scene": "EXT. HILLSIDE — MOMENTS LATER",
+          "between_subjects": true,
+          "from": "a disciple",
+          "to": "another",
+          "type": "handed",
+          "action": "A disciple hands a piece to another",
+          "screenplay": "He hands a piece to another."
+        },
+        {
+          "scene_number": 11,
+          "scene": "EXT. HILLSIDE — MOMENTS LATER",
+          "between_subjects": true,
+          "from": "Miri",
+          "to": "Small Girl",
+          "type": "handed",
+          "action": "Miri offers the basket and the small girl takes a piece",
+          "screenplay": "The small girl takes a piece in both hands."
+        },
+        {
+          "scene_number": 11,
+          "scene": "EXT. HILLSIDE — MOMENTS LATER",
+          "between_subjects": true,
+          "from": "Miri",
+          "to": "Mother In Crowd",
+          "type": "handed",
+          "action": "The girl's mother receives food",
+          "screenplay": "The girl’s mother receives food with tears in her eyes."
+        },
+        {
+          "scene_number": 11,
+          "scene": "EXT. HILLSIDE — MOMENTS LATER",
+          "between_subjects": true,
+          "from": "Miri",
+          "to": "children, elders, fathers, mothers",
+          "type": "handed",
+          "action": "Miri passes bread to children, elders, fathers, mothers",
+          "screenplay": "Miri moves on, passing bread to children, elders, fathers, mothers."
+        },
+        {
+          "scene_number": 13,
+          "scene": "EXT. HILLSIDE — CONTINUOUS",
+          "between_subjects": true,
+          "from": "Nim",
+          "to": "basket",
+          "type": "placed",
+          "action": "Nim drops the piece into the basket",
+          "screenplay": "Nim drops the piece into the basket with exaggerated dignity."
+        },
+        {
+          "scene_number": 13,
+          "scene": "EXT. HILLSIDE — CONTINUOUS",
+          "between_subjects": true,
+          "from": "Miri",
+          "to": "basket",
+          "type": "placed",
+          "action": "Miri places the leftover piece in the basket instead of keeping it",
+          "screenplay": "She places it in the basket instead of keeping it."
+        }
+      ]
+    },
+    {
+      "id": "leftover_basket",
+      "name": "Half-filled basket",
+      "adjectives": [
+        "half-filled",
+        "twelve",
+        "full"
+      ],
+      "inferred_adjectives": [
+        "woven",
+        "earth-toned",
+        "hand-carried",
+        "shallow"
+      ],
+      "description": "a half-filled basket of leftover pieces",
+      "why_hero": [
+        "The basket recurs through the miracle sequence: bread remains full in the basket, is offered to feed others, and later holds leftover pieces.",
+        "Miri, Yonah, and Nim actively gather pieces into it, then hand their basket to Andrew in scene 13.",
+        "It visualizes the story point stated on the hillside: twelve full baskets, “More than enough.”"
+      ],
+      "story_role": "the gathered leftovers proving abundance after the miracle",
+      "scene_count": 2,
+      "transfer_count": 1,
+      "handed_between_subjects_count": 1,
+      "scenes": [
+        {
+          "scene_number": 12,
+          "scene": "EXT. HILLSIDE — LATE AFTERNOON",
+          "first_contact": {
+            "subject": "Yonah",
+            "action": "approaches, carrying a half-filled basket of leftover pieces",
+            "screenplay": "Yonah approaches, carrying a half-filled basket of leftover pieces."
+          }
+        },
+        {
+          "scene_number": 13,
+          "scene": "EXT. HILLSIDE — CONTINUOUS",
+          "first_contact": {
+            "subject": "Nim",
+            "action": "drops the piece into the basket",
+            "screenplay": "Nim drops the piece into the basket with exaggerated dignity."
+          }
+        }
+      ],
+      "transfers": [
+        {
+          "scene_number": 13,
+          "scene": "EXT. HILLSIDE — CONTINUOUS",
+          "between_subjects": true,
+          "from": "miri, yonah, and nim",
+          "to": "Andrew",
+          "type": "handed",
+          "action": "Andrew receives their basket",
+          "screenplay": "Andrew receives their basket."
+        }
+      ]
+    },
+    {
+      "id": "toy_cart",
+      "name": "Toy cart",
+      "adjectives": [
+        "toy",
+        "partly repaired",
+        "broken",
+        "little"
+      ],
+      "inferred_adjectives": [
+        "wooden",
+        "small",
+        "worn",
+        "dusty"
+      ],
+      "description": "Tav's broken toy cart with a badly wobbling wheel",
+      "why_hero": [
+        "The cart recurs from scene 2, where Tav is disappointed Miri leaves it broken, to scene 16, where he asks her to help with the wheel.",
+        "Its repair creates a small emotional payoff: Nim sacrifices a peg and Miri fixes the wheel so the cart rolls straight.",
+        "The screenplay explicitly frames the moment as “small, but emotionally significant.”"
+      ],
+      "story_role": "Tav’s broken toy that lets Miri and Nim show care",
+      "scene_count": 1,
+      "transfer_count": 0,
+      "handed_between_subjects_count": 0,
+      "scenes": [
+        {
+          "scene_number": 16,
+          "scene": "EXT. VILLAGE LANE — SUNSET",
+          "first_contact": {
+            "subject": "Tav",
+            "action": "holds up his broken toy cart",
+            "screenplay": "Tav holds up his broken toy cart."
+          }
+        }
+      ],
+      "transfers": []
+    },
+    {
+      "id": "toy_cart_wheel",
+      "name": "Toy cart wheel",
+      "adjectives": [
+        "badly",
+        "wooden"
+      ],
+      "inferred_adjectives": [
+        "small",
+        "round",
+        "loose"
+      ],
+      "description": "the wobbling wheel on Tav's toy cart",
+      "why_hero": [
+        "The wheel recurs from scene 2, where Tav's cart is broken and Miri leaves it, to scene 16, where Tav asks Miri for help.",
+        "Miri fixes the wobbling wheel with Nim's small peg, and the cart rolling straight provides a visible payoff.",
+        "The repair reflects the giving/helping theme, with Nim sacrificing the peg and Miri choosing to help Tav."
+      ],
+      "story_role": "the broken toy part Miri repairs to show generosity",
+      "scene_count": 1,
+      "transfer_count": 0,
+      "handed_between_subjects_count": 0,
+      "scenes": [
+        {
+          "scene_number": 16,
+          "scene": "EXT. VILLAGE LANE — SUNSET",
+          "first_contact": {
+            "subject": "Miri",
+            "action": "uses the peg to fix the wheel more securely",
+            "screenplay": "Miri uses the peg to fix the wheel more securely."
+          }
+        }
+      ],
+      "transfers": []
+    },
+    {
+      "id": "small_peg",
+      "name": "Small peg",
+      "adjectives": [
+        "small"
+      ],
+      "inferred_adjectives": [
+        "wooden",
+        "short",
+        "tan",
+        "smooth"
+      ],
+      "description": "a small peg for securing the toy cart wheel",
+      "why_hero": [
+        "Nim passes the small peg to Miri in scene 16, making it a deliberate exchanged object rather than set dressing.",
+        "Miri uses it to secure Tav’s toy cart wheel, resolving the earlier broken/wobbly cart setup from scenes 2 and 16.",
+        "Nim frames giving the peg as a sacrifice, so it supports the scene’s emotional beat of generosity."
+      ],
+      "story_role": "the tiny gift that fixes Tav’s cart wheel",
+      "scene_count": 1,
+      "transfer_count": 2,
+      "handed_between_subjects_count": 1,
+      "scenes": [
+        {
+          "scene_number": 16,
+          "scene": "EXT. VILLAGE LANE — SUNSET",
+          "first_contact": {
+            "subject": "Nim",
+            "action": "noses a small peg toward Miri",
+            "screenplay": "Nim chews slowly, then noses a small peg toward Miri."
+          }
+        }
+      ],
+      "transfers": [
+        {
+          "scene_number": 16,
+          "scene": "EXT. VILLAGE LANE — SUNSET",
+          "between_subjects": true,
+          "from": "Nim",
+          "to": "Miri",
+          "type": "handed",
+          "action": "Nim noses a small peg toward Miri for her to use",
+          "screenplay": "Nim chews slowly, then noses a small peg toward Miri."
+        },
+        {
+          "scene_number": 16,
+          "scene": "EXT. VILLAGE LANE — SUNSET",
+          "between_subjects": false,
+          "from": "Miri",
+          "to": "toy cart wheel",
+          "type": "placed",
+          "action": "Miri uses the peg to fix the wheel more securely",
+          "screenplay": "Miri uses the peg to fix the wheel more securely."
+        }
+      ]
+    }
+  ],
+  "background_count": 22,
+  "background": [
+    {
+      "id": "flatbread",
+      "name": "Flatbread",
+      "adjectives": [],
+      "inferred_adjectives": [
+        "thin",
+        "round",
+        "tan",
+        "fresh-baked"
+      ],
+      "description": "flatbread pulled from a clay oven",
+      "why_not": "It is only touched in scene 1 when a baker pulls it from a clay oven as part of village morning activity. There are no transfers or recurring plot actions involving this flatbread. The mentions function as everyday set dressing/food, not something that drives or resolves the story.",
+      "story_role": "background village food",
+      "scene": "EXT. MIRI’S VILLAGE — MORNING",
+      "first_contact": {
+        "subject": "a baker",
+        "action": "pulls flatbread from a clay oven",
+        "screenplay": "A baker pulls flatbread from a clay oven."
+      }
+    },
+    {
+      "id": "water_jars",
+      "name": "Water jars",
+      "adjectives": [],
+      "inferred_adjectives": [
+        "clay",
+        "medium-sized",
+        "earth-toned",
+        "heavy"
+      ],
+      "description": "water jars carried by adults",
+      "why_not": "The water jars appear only once in scene 1 as adults carry them while children run through the village lane. No named character handles or receives a jar, and there are no transfers. They serve as background detail establishing daily village life, not as a plot-driving object.",
+      "story_role": "set dressing for everyday village activity",
+      "scene": "EXT. MIRI’S VILLAGE — MORNING",
+      "first_contact": {
+        "subject": "adults",
+        "action": "carry water jars",
+        "screenplay": "Children dart between adults carrying water jars and bundles of reeds."
+      }
+    },
+    {
+      "id": "bundles_of_reeds",
+      "name": "Bundles of reeds",
+      "adjectives": [],
+      "inferred_adjectives": [
+        "dry",
+        "pale",
+        "long",
+        "tied"
+      ],
+      "description": "bundles of reeds carried by adults",
+      "why_not": "Only appears in scene 1 as set dressing: adults carry bundles of reeds while children run through the village. There are no transfers or plot actions involving the bundles. Later mentions of a single reed are incidental child play, not this prop driving the story.",
+      "story_role": "village background labor detail",
+      "scene": "EXT. MIRI’S VILLAGE — MORNING",
+      "first_contact": {
+        "subject": "adults",
+        "action": "carry bundles of reeds",
+        "screenplay": "Children dart between adults carrying water jars and bundles of reeds."
+      }
+    },
+    {
+      "id": "sandal",
+      "name": "Sandal",
+      "adjectives": [],
+      "inferred_adjectives": [
+        "leather",
+        "worn",
+        "brown",
+        "single"
+      ],
+      "description": "a sandal being repaired",
+      "why_not": "Saba repairs the sandal only once in scene 4 while telling a story to the children. It is not transferred between characters and does not recur as a plot object. Other sandal mentions are just background foot traffic on the hillside.",
+      "story_role": "incidental repair work in Saba’s courtyard",
+      "scene": "EXT. SABA ELIOR’S COURTYARD — LATE MORNING",
+      "first_contact": {
+        "subject": "Saba",
+        "action": "repairs a sandal with one hand",
+        "screenplay": "He is repairing a sandal with one hand and gesturing grandly with the other."
+      }
+    },
+    {
+      "id": "reed",
+      "name": "Reed",
+      "adjectives": [
+        "dry",
+        "pale",
+        "long"
+      ],
+      "inferred_adjectives": [
+        "thin",
+        "straight",
+        "lightweight",
+        "cut"
+      ],
+      "description": "a reed used to poke a beetle",
+      "why_not": "It is touched only once, when an unnamed child pokes a beetle with it in scene 4. There are no transfers or recurring uses; the mention functions as courtyard child activity/set dressing.",
+      "story_role": "incidental toy for a child poking a beetle",
+      "scene": "EXT. SABA ELIOR’S COURTYARD — LATE MORNING",
+      "first_contact": {
+        "subject": "one child",
+        "action": "pokes a beetle with a reed",
+        "screenplay": "One pokes a beetle with a reed."
+      }
+    },
+    {
+      "id": "beetle",
+      "name": "Beetle",
+      "adjectives": [],
+      "inferred_adjectives": [
+        "small",
+        "dark",
+        "glossy",
+        "hard-shelled"
+      ],
+      "description": "a beetle",
+      "why_not": "The beetle is touched only once in scene 4, when a child pokes it with a reed among other incidental child activities. It is never transferred or mentioned again, and it does not drive or resolve any plot action.",
+      "story_role": "incidental courtyard detail showing children’s distraction",
+      "scene": "EXT. SABA ELIOR’S COURTYARD — LATE MORNING",
+      "first_contact": {
+        "subject": "one child",
+        "action": "pokes a beetle with a reed",
+        "screenplay": "One pokes a beetle with a reed."
+      }
+    },
+    {
+      "id": "fig",
+      "name": "Fig",
+      "adjectives": [],
+      "inferred_adjectives": [
+        "small",
+        "ripe",
+        "green-purple",
+        "soft"
+      ],
+      "description": "a fig balanced on a child’s nose",
+      "why_not": "The fig is touched only once in scene 4, where a child casually tries to balance it on his nose among other distracted children. There are no transfers and it does not recur as an object; later mentions are of the fig tree, not the fig itself. It does not drive or resolve any plot action and functions as incidental courtyard business.",
+      "story_role": "background play object in Saba’s courtyard",
+      "scene": "EXT. SABA ELIOR’S COURTYARD — LATE MORNING",
+      "first_contact": {
+        "subject": "another child",
+        "action": "tries to balance a fig on his nose",
+        "screenplay": "Another tries to balance a fig on his nose."
+      }
+    },
+    {
+      "id": "hoop",
+      "name": "Hoop",
+      "adjectives": [],
+      "inferred_adjectives": [
+        "wooden",
+        "round",
+        "child-sized",
+        "worn"
+      ],
+      "description": "a hoop in the lane",
+      "why_not": "The hoop is only mentioned once in scene 4 as something older children are playing with in the lane. No named character handles it and there are no transfers involving it. It serves as incidental village activity rather than driving or resolving the plot.",
+      "story_role": "background children’s play in the lane",
+      "scene": "EXT. SABA ELIOR’S COURTYARD — LATE MORNING",
+      "first_contact": {
+        "subject": "older children",
+        "action": "play with a hoop",
+        "screenplay": "A GIRL spots a group of older children playing with a hoop in the lane."
+      }
+    },
+    {
+      "id": "folded_linen",
+      "name": "Folded linen",
+      "adjectives": [
+        "folded",
+        "clean",
+        "old",
+        "pale"
+      ],
+      "inferred_adjectives": [
+        "soft",
+        "off-white",
+        "lightweight",
+        "neatly folded"
+      ],
+      "description": "the linen / sleeves Ima sent",
+      "why_not": "Ima gives Miri the linen basket as an errand, and Miri delivers it to Saba in scene 4, but it is only a simple handoff. Saba inspects it and jokes about his patched sleeves; afterward the linen is mainly used for a brief Nim-in-the-basket gag. It does not drive or resolve the main plot, and later Saba’s sleeves are still unpatched, suggesting the linen is incidental.",
+      "story_role": "an errand delivery to Saba",
+      "scene": "EXT. SABA ELIOR’S COURTYARD — LATE MORNING",
+      "first_contact": {
+        "subject": "Saba",
+        "action": "takes the linen",
+        "screenplay": "SABA takes the linen and inspects his sleeve, which is patched in three places."
+      }
+    },
+    {
+      "id": "faded_hanging_cloth",
+      "name": "Hanging cloth",
+      "adjectives": [
+        "faded",
+        "hanging"
+      ],
+      "inferred_adjectives": [
+        "fabric",
+        "earth-toned",
+        "worn",
+        "doorway-sized"
+      ],
+      "description": "a faded hanging cloth",
+      "why_not": "Saba only pulls it aside once in scene 5 as Miri enters the house. There are no transfers or later recurring actions involving the hanging doorway cloth. Its use is environmental, unlike the separate cloth bundle holding the honey-date cakes.",
+      "story_role": "a doorway covering establishing Saba’s house",
+      "scene": "INT. SABA’S HOUSE — CONTINUOUS",
+      "first_contact": {
+        "subject": "Saba",
+        "action": "pulls aside a faded hanging cloth",
+        "screenplay": "Saba pulls aside a faded hanging cloth."
+      }
+    },
+    {
+      "id": "barley_colored_cord",
+      "name": "Barley-colored cord",
+      "adjectives": [
+        "the color of barley"
+      ],
+      "inferred_adjectives": [
+        "pale-gold",
+        "thin",
+        "woven fiber",
+        "soft"
+      ],
+      "description": "a cord the color of barley tying the small scroll",
+      "why_not": "Saba only touches it once, untying it in scene 6 to open the small scroll. There are no transfers or recurring uses of the cord; the story attention shifts to the scroll, seal, ink, and loaves/fish imagery.",
+      "story_role": "decorative tie sealing the small scroll",
+      "scene": "INT. SCROLL ROOM — CONTINUOUS",
+      "first_contact": {
+        "subject": "Saba",
+        "action": "unties the cord",
+        "screenplay": "Saba unties the cord."
+      }
+    },
+    {
+      "id": "tiny_crumb",
+      "name": "Tiny crumb",
+      "adjectives": [
+        "tiny"
+      ],
+      "inferred_adjectives": [
+        "tan",
+        "dry",
+        "grainy",
+        "pinched-small"
+      ],
+      "description": "a tiny crumb",
+      "why_not": "Yonah only breaks it off and offers it to Miri in scene 9; Miri declines it rather than taking or using it. It serves as a small beat showing hunger and Miri’s restraint after remembering Tav, not as an object that drives or resolves the plot. Later crumb mentions appear to be general food bits, not this specific tiny crumb being tracked or featured.",
+      "story_role": "a small hunger beat that Miri refuses",
+      "scene": "EXT. EDGE OF CROWD — LATER",
+      "first_contact": {
+        "subject": "Yonah",
+        "action": "breaks off a tiny crumb and offers it to Miri",
+        "screenplay": "Yonah breaks off a tiny crumb and offers it to Miri."
+      }
+    },
+    {
+      "id": "staff",
+      "name": "Staff",
+      "adjectives": [],
+      "inferred_adjectives": [
+        "wooden",
+        "long",
+        "plain",
+        "worn"
+      ],
+      "description": "a staff",
+      "why_not": "The staff is touched only once, when Jesus rests His hand on it at the edge of the crowd. There are no transfers or plot actions involving the staff; the scene focus immediately shifts to Andrew noticing Yonah’s bundle.",
+      "story_role": "incidental visual support for Jesus in the crowd",
+      "scene": "EXT. EDGE OF CROWD — LATER",
+      "first_contact": {
+        "subject": "Jesus",
+        "action": "rests His hand gently on a staff",
+        "screenplay": "We see only the lower edge of Jesus’s robe, His hand resting gently on a staff, the faces of the disciples looking toward Him."
+      }
+    },
+    {
+      "id": "tiny_bread_piece",
+      "name": "Tiny piece",
+      "adjectives": [
+        "tiny",
+        "one",
+        "approved"
+      ],
+      "inferred_adjectives": [
+        "tan",
+        "soft",
+        "crumb-sized"
+      ],
+      "description": "a tiny piece offered to Nim",
+      "why_not": "In scene 11, a child hands the tiny piece to Nim and he takes it as a brief comic reward. By scene 14 it is only referenced as an “approved crumb” Nim has eaten, with no continuing plot function. It echoes the small-gift theme but is not passed around or used to drive or resolve the story.",
+      "story_role": "a small comic crumb reward for Nim",
+      "scene": "EXT. HILLSIDE — MOMENTS LATER",
+      "first_contact": {
+        "subject": "Child",
+        "action": "offers Nim a tiny piece",
+        "screenplay": "A child giggles and offers Nim a tiny piece."
+      }
+    },
+    {
+      "id": "empty_baskets",
+      "name": "Empty baskets",
+      "adjectives": [
+        "empty"
+      ],
+      "inferred_adjectives": [
+        "woven",
+        "earth-toned",
+        "hand-carried",
+        "shallow"
+      ],
+      "description": "empty baskets",
+      "why_not": "They appear only once as generic baskets carried by the disciples in scene 12. There are no transfers or named-character handling tied specifically to these empty baskets. They serve the cleanup instruction, “Gather the pieces left over,” rather than driving the miracle or plot.",
+      "story_role": "vessels for gathering leftovers after the feeding",
+      "scene": "EXT. HILLSIDE — LATE AFTERNOON",
+      "first_contact": {
+        "subject": "disciples",
+        "action": "move through the crowd with empty baskets",
+        "screenplay": "Disciples move through the crowd with empty baskets."
+      }
+    },
+    {
+      "id": "honey_residue",
+      "name": "Honey residue",
+      "adjectives": [
+        "honey"
+      ],
+      "inferred_adjectives": [
+        "sticky",
+        "amber",
+        "smeared"
+      ],
+      "description": "honey on Nim's whisker",
+      "why_not": "It appears only once in scene 15 when Nim quickly licks honey from his whisker as a joke about his “suspiciously sticky whiskers.” No character transfers or relies on the residue; it is just incidental evidence of Nim eating honey.",
+      "story_role": "comic trace of Nim sneaking honey",
+      "scene": "INT. SCROLL ROOM — LATE AFTERNOON",
+      "first_contact": {
+        "subject": "Nim",
+        "action": "licks honey from his whisker",
+        "screenplay": "Nim quickly licks honey from his whisker."
+      }
+    },
+    {
+      "id": "miri_basket",
+      "name": "Miri's basket",
+      "adjectives": [
+        "guarded"
+      ],
+      "inferred_adjectives": [
+        "woven",
+        "earth-toned",
+        "small",
+        "hand-carried"
+      ],
+      "description": "Miri's basket, guarded like a city gate",
+      "why_not": "It is never transferred between characters and does not drive or resolve a plot point. Its main use is incidental/comic: Nim is half inside it in the scroll room and is described as guarding it with sticky whiskers. The important story baskets are the miracle leftovers on the hillside, but Miri’s specific basket only serves as her guarded container.",
+      "story_role": "Miri’s guarded small container for saved pieces",
+      "scene": "INT. SCROLL ROOM — LATE AFTERNOON",
+      "first_contact": {
+        "subject": "Nim",
+        "action": "is already half inside the basket",
+        "screenplay": "Nim is already half inside the basket."
+      }
+    },
+    {
+      "id": "sewing_patch",
+      "name": "Patch",
+      "adjectives": [],
+      "inferred_adjectives": [
+        "cloth",
+        "small",
+        "earth-toned",
+        "worn"
+      ],
+      "description": "a patch sewn onto Saba's sleeve",
+      "why_not": "The patch is only directly handled once, when Saba sews it onto his sleeve in scene 17. It is never transferred between characters and does not drive or resolve any plot action. The repeated mentions of Saba’s patched sleeves function as character detail/running joke rather than making this specific patch story-critical.",
+      "story_role": "visual detail of Saba’s worn sleeves",
+      "scene": "EXT. SABA’S COURTYARD — EVENING",
+      "first_contact": {
+        "subject": "Saba",
+        "action": "sews a patch onto his sleeve",
+        "screenplay": "Saba sits again beneath the fig tree, sewing a patch onto his sleeve."
+      }
+    },
+    {
+      "id": "sewing_needle",
+      "name": "Sewing needle",
+      "adjectives": [],
+      "inferred_adjectives": [
+        "small",
+        "metal",
+        "thin",
+        "handheld"
+      ],
+      "description": "needle used for sewing the patch",
+      "why_not": "It is touched only once, when Saba uses it to sew a patch onto his sleeve in scene 17. There are no transfers, and the needle itself does not recur or drive the plot.",
+      "story_role": "incidental sewing tool for Saba’s patched sleeve",
+      "scene": "EXT. SABA’S COURTYARD — EVENING",
+      "first_contact": {
+        "subject": "Saba",
+        "action": "uses it to sew a patch onto his sleeve",
+        "screenplay": "Saba sits again beneath the fig tree, sewing a patch onto his sleeve."
+      }
+    },
+    {
+      "id": "sewing_thread",
+      "name": "Sewing thread",
+      "adjectives": [],
+      "inferred_adjectives": [
+        "thin",
+        "linen",
+        "pale",
+        "soft"
+      ],
+      "description": "thread forming the stitch in the patch",
+      "why_not": "It is only handled once in scene 17, where Saba sews a patch onto his sleeve and ties off a stitch. There are no transfers, and the cited passages do not show the thread driving or resolving the plot.",
+      "story_role": "incidental sewing material for Saba’s sleeve patch",
+      "scene": "EXT. SABA’S COURTYARD — EVENING",
+      "first_contact": {
+        "subject": "Saba",
+        "action": "sews with it, then ties off a stitch",
+        "screenplay": "Saba sits again beneath the fig tree, sewing a patch onto his sleeve."
+      }
+    },
+    {
+      "id": "small_pouch",
+      "name": "Small pouch",
+      "adjectives": [
+        "small"
+      ],
+      "inferred_adjectives": [
+        "leather",
+        "brown",
+        "drawstring",
+        "palm-sized"
+      ],
+      "description": "a small pouch",
+      "why_not": "The pouch is touched only once, when Saba reaches into it to pull out a crumb of flatbread for Nim in scene 17. It is not transferred or revisited; the meaningful action centers on the crumb being tossed to Nim, not the pouch itself.",
+      "story_role": "container for Saba’s small treat",
+      "scene": "EXT. SABA’S COURTYARD — EVENING",
+      "first_contact": {
+        "subject": "Saba",
+        "action": "reaches into a small pouch",
+        "screenplay": "Saba, watching only Nim’s hopeful posture, reaches into a small pouch and pulls out a plain crumb of flatbread."
+      }
+    },
+    {
+      "id": "plain_flatbread_crumb",
+      "name": "Plain crumb of flatbread",
+      "adjectives": [
+        "plain"
+      ],
+      "inferred_adjectives": [
+        "tan",
+        "small",
+        "dry",
+        "rough-edged"
+      ],
+      "description": "a plain crumb of flatbread",
+      "why_not": "It appears only in scene 17, when Saba pulls it from a pouch and tosses it to Nim as a small reward. The single transfer, Saba to Nim, does not drive or resolve the plot; it functions as a brief character beat. Other crumb references suggest a recurring food motif, but this specific plain flatbread crumb is not tracked beyond the moment Nim receives it.",
+      "story_role": "a small snack reward for Nim",
+      "scene": "EXT. SABA’S COURTYARD — EVENING",
+      "first_contact": {
+        "subject": "Saba",
+        "action": "pulls out a plain crumb of flatbread",
+        "screenplay": "Saba, watching only Nim’s hopeful posture, reaches into a small pouch and pulls out a plain crumb of flatbread."
+      }
+    }
+  ]
+}

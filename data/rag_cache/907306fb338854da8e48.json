@@ -1,0 +1,155 @@
+{
+  "props": [
+    {
+      "id": "sandal",
+      "name": "Sandal",
+      "adjectives": [],
+      "inferred_adjectives": [
+        "leather",
+        "worn",
+        "brown",
+        "single"
+      ],
+      "description": "a sandal being repaired",
+      "first_contact": {
+        "subject": "Saba",
+        "action": "repairs a sandal with one hand",
+        "line": 2
+      }
+    },
+    {
+      "id": "reed",
+      "name": "Reed",
+      "adjectives": [
+        "dry",
+        "pale",
+        "long"
+      ],
+      "inferred_adjectives": [
+        "thin",
+        "straight",
+        "lightweight",
+        "cut"
+      ],
+      "description": "a reed used to poke a beetle",
+      "first_contact": {
+        "subject": "one child",
+        "action": "pokes a beetle with a reed",
+        "line": 6
+      }
+    },
+    {
+      "id": "beetle",
+      "name": "Beetle",
+      "adjectives": [],
+      "inferred_adjectives": [
+        "small",
+        "dark",
+        "glossy",
+        "hard-shelled"
+      ],
+      "description": "a beetle",
+      "first_contact": {
+        "subject": "one child",
+        "action": "pokes a beetle with a reed",
+        "line": 6
+      }
+    },
+    {
+      "id": "fig",
+      "name": "Fig",
+      "adjectives": [],
+      "inferred_adjectives": [
+        "small",
+        "ripe",
+        "green-purple",
+        "soft"
+      ],
+      "description": "a fig balanced on a child’s nose",
+      "first_contact": {
+        "subject": "another child",
+        "action": "tries to balance a fig on his nose",
+        "line": 7
+      }
+    },
+    {
+      "id": "linen_basket",
+      "name": "Linen basket",
+      "adjectives": [
+        "linen",
+        "folded",
+        "old",
+        "filled"
+      ],
+      "inferred_adjectives": [
+        "woven",
+        "shallow",
+        "lightweight",
+        "earth-toned"
+      ],
+      "description": "the linen basket",
+      "first_contact": {
+        "subject": "Miri",
+        "action": "enters with the linen basket",
+        "line": 8
+      }
+    },
+    {
+      "id": "hoop",
+      "name": "Hoop",
+      "adjectives": [],
+      "inferred_adjectives": [
+        "wooden",
+        "round",
+        "child-sized",
+        "worn"
+      ],
+      "description": "a hoop in the lane",
+      "first_contact": {
+        "subject": "older children",
+        "action": "play with a hoop",
+        "line": 12
+      }
+    },
+    {
+      "id": "folded_linen",
+      "name": "Folded linen",
+      "adjectives": [
+        "folded",
+        "clean",
+        "old",
+        "pale"
+      ],
+      "inferred_adjectives": [
+        "soft",
+        "off-white",
+        "lightweight",
+        "neatly folded"
+      ],
+      "description": "the linen / sleeves Ima sent",
+      "first_contact": {
+        "subject": "Saba",
+        "action": "takes the linen",
+        "line": 30
+      }
+    }
+  ],
+  "transfers": [
+    {
+      "prop": "linen_basket",
+      "from": "Miri",
+      "to": "Saba",
+      "type": "handed",
+      "action": "Miri pushes the linen basket toward Saba",
+      "line": 28
+    },
+    {
+      "prop": "folded_linen",
+      "from": "Miri",
+      "to": "Saba",
+      "type": "implied",
+      "action": "Saba takes the linen Miri delivered",
+      "line": 30
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+# secrets
+.env
+
+# Python / macOS
+__pycache__/
+*.pyc
+.DS_Store
+
+# RAG --dry-run output (regenerate any time)
+data/rag_prompts/

@@ -1,0 +1,152 @@
+{
+  "props": [
+    {
+      "id": "cloth_bundle",
+      "name": "Cloth bundle",
+      "adjectives": [
+        "cloth",
+        "small",
+        "soft",
+        "folded",
+        "plain",
+        "tied"
+      ],
+      "inferred_adjectives": [
+        "plain fabric",
+        "earth-toned",
+        "soft",
+        "hand-sized"
+      ],
+      "description": "the cloth holding the honey-date cakes",
+      "first_contact": {
+        "subject": "Miri",
+        "action": "opens the cloth",
+        "line": 13
+      }
+    },
+    {
+      "id": "honey_date_cakes",
+      "name": "Honey-date cakes",
+      "adjectives": [
+        "honey-date",
+        "one",
+        "second",
+        "whole",
+        "half",
+        "remaining",
+        "small",
+        "tiny",
+        "last",
+        "three",
+        "hidden"
+      ],
+      "inferred_adjectives": [
+        "golden-brown",
+        "sticky",
+        "round",
+        "palm-sized"
+      ],
+      "description": "honey-date cakes broken into a whole cake, halves, small pieces, and crumbs",
+      "first_contact": {
+        "subject": "Miri",
+        "action": "takes out one honey-date cake",
+        "line": 14
+      }
+    },
+    {
+      "id": "toy_cart",
+      "name": "Toy cart",
+      "adjectives": [
+        "toy",
+        "partly repaired",
+        "broken",
+        "little"
+      ],
+      "inferred_adjectives": [
+        "wooden",
+        "small",
+        "worn",
+        "dusty"
+      ],
+      "description": "Tav's broken toy cart with a badly wobbling wheel",
+      "first_contact": {
+        "subject": "Tav",
+        "action": "holds up his broken toy cart",
+        "line": 29
+      }
+    },
+    {
+      "id": "toy_cart_wheel",
+      "name": "Toy cart wheel",
+      "adjectives": [
+        "badly",
+        "wooden"
+      ],
+      "inferred_adjectives": [
+        "small",
+        "round",
+        "wooden",
+        "loose"
+      ],
+      "description": "the wobbling wheel on Tav's toy cart",
+      "first_contact": {
+        "subject": "Miri",
+        "action": "uses the peg to fix the wheel more securely",
+        "line": 36
+      }
+    },
+    {
+      "id": "small_peg",
+      "name": "Small peg",
+      "adjectives": [
+        "small"
+      ],
+      "inferred_adjectives": [
+        "wooden",
+        "short",
+        "tan",
+        "smooth"
+      ],
+      "description": "a small peg for securing the toy cart wheel",
+      "first_contact": {
+        "subject": "Nim",
+        "action": "noses a small peg toward Miri",
+        "line": 34
+      }
+    }
+  ],
+  "transfers": [
+    {
+      "prop": "honey_date_cakes",
+      "from": "Miri",
+      "to": "Tav",
+      "type": "handed",
+      "action": "Miri gives Tav one whole cake and half of another",
+      "line": 18
+    },
+    {
+      "prop": "honey_date_cakes",
+      "from": "Miri",
+      "to": "Nim",
+      "type": "handed",
+      "action": "Miri gives one small piece to Nim",
+      "line": 26
+    },
+    {
+      "prop": "small_peg",
+      "from": "Nim",
+      "to": "Miri",
+      "type": "handed",
+      "action": "Nim noses a small peg toward Miri for her to use",
+      "line": 34
+    },
+    {
+      "prop": "small_peg",
+      "from": "Miri",
+      "to": "Toy cart wheel",
+      "type": "placed",
+      "action": "Miri uses the peg to fix the wheel more securely",
+      "line": 36
+    }
+  ]
+}
