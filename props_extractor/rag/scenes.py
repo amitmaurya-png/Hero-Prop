@@ -65,7 +65,7 @@ def extract_props_rag(acts, characters, source, llm, *, dry_run_dir=None, debug=
 def _props_document(source, llm, characters, memory, scenes, warnings):
     return {
         "source": source,
-        "method": f"scripts/extract_hero_props.py --method rag (BM25 retrieval + {llm.name}; answers grounded to "
+        "method": f"scripts/extract_hero_props.py (BM25 retrieval + {llm.name}; answers grounded to "
                   f"cited screenplay lines)",
         "about": "Props a character touches in each scene: adjectives from the script (plus inferred visual "
                  "adjectives for prop makers), who touches each first, and every transfer. Transfer types: "

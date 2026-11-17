@@ -3,10 +3,7 @@
 Finds the **hero props** in the screenplay *Little Witnesses, Episode 1: The Smallest Lunch* (`docs/TSL.pdf`).
 These are the objects the characters touch and hand to each other, such as the linen basket and the honey cakes.
 
-There are two methods:
-
-- **RAG** (the default): retrieval-augmented generation. A language model extracts every prop and transfer, and also decides which props are hero props. It works with OpenAI or Claude.
-- **Rules**: hand-written rules. It needs no AI and gives the same output on every run.
+It uses retrieval-augmented generation (RAG): a language model extracts every prop and transfer, and also decides which props are hero props. It works with OpenAI or Claude.
 
 ## Run
 
@@ -14,10 +11,9 @@ There are two methods:
 pip install -r requirements.txt
 # put OPENAI_API_KEY=... (or ANTHROPIC_API_KEY=...) in .env; the script reads it
 
-python3 scripts/extract_hero_props.py                   # RAG: PDF -> data/props.json -> data/hero_props.json
-python3 scripts/extract_hero_props.py --dry-run         # RAG: write each scene's prompt to data/rag_prompts/, no API calls
+python3 scripts/extract_hero_props.py                   # PDF -> data/props.json -> data/hero_props.json
+python3 scripts/extract_hero_props.py --dry-run         # write each scene's prompt to data/rag_prompts/, no API calls
 python3 scripts/extract_hero_props.py --provider openai --model gpt-5.5
-python3 scripts/extract_hero_props.py --method rules    # rule-based, no API
 python3 scripts/extract_hero_props.py --from-json       # skip the PDF, redo only the hero step from props.json
 python3 -m unittest discover tests                      # run the tests (no API calls)
 ```
@@ -42,16 +38,16 @@ The model is chosen from the API keys:
 | `.env` | API keys. Keep it private and out of version control. |
 | `scripts/extract_hero_props.py` | Command-line entry point |
 | `props_extractor/` | The extraction logic (layout below) |
-| `tests/` | Unit tests. The RAG tests use a fake model. |
+| `tests/` | Unit tests. They use a fake model, so they make no API calls. |
 
 ## Code layout
 
 ```
 props_extractor/
-  screenplay.py      STEP 1: PDF -> scenes (shared)
-  cast.py            character names; who is the subject of a sentence (shared)
-  vocabulary.py      word lists and lemma() (shared)
-  hero.py            STEP 3: builds hero_props.json, all counts computed by code (shared)
+  screenplay.py      STEP 1: PDF -> scenes
+  cast.py            character names
+  vocabulary.py      word lists and lemma() for the BM25 search
+  hero.py            STEP 3: builds hero_props.json, all counts computed by code
   rag/               the RAG method
     scenes.py          STEP 2: retrieve -> prompt -> generate -> check, scene by scene
     hero_decisions.py  STEP 3: the model decides hero or background, prop by prop
@@ -59,14 +55,9 @@ props_extractor/
     prompts.py         instructions, JSON formats, prompts (the A)
     llm.py             OpenAI / Claude call + answer cache (the G)
     catalog.py         checks answers against cited lines; the props catalog
-  rules/             the rules method
-    extractor.py       STEP 2: reads each scene with the rules below
-    verbs.py           handling-verb patterns
-    noun_phrase.py     reading the object after a verb
-    tracker.py         matching mentions to props; who holds what
 ```
 
-## The RAG method
+## How it works
 
 **Step 1: read the PDF** (`screenplay.py`). The PDF is read with its indentation kept. Each scene becomes numbered lines: action sentences, and dialogue such as `MIRI: Maybe later.`
 
@@ -95,18 +86,12 @@ All counts and totals are computed by code, not by the model.
 
 ## Tuning
 
-- **RAG:**
-  - Edit `SYSTEM_PROMPT` and `HERO_SYSTEM_PROMPT` in `rag/prompts.py` to change what the model looks for.
-  - Edit `TOP_K` (`rag/scenes.py`), `HERO_TOP_K` (`rag/hero_decisions.py`) or `PASSAGE_LINES` (`rag/retrieval.py`) to change how much context it gets.
-  - A changed prompt doesn't match the saved answers, so the next run asks the model again.
-- **Rules:** run with `--debug` to see how each sentence was read. If a verb was missed, add it to `rules/verbs.py`. If a noun is wrongly picked up as a prop, add it to `NOT_PROPS` in `vocabulary.py`.
+- Edit `SYSTEM_PROMPT` and `HERO_SYSTEM_PROMPT` in `rag/prompts.py` to change what the model looks for.
+- Edit `TOP_K` (`rag/scenes.py`), `HERO_TOP_K` (`rag/hero_decisions.py`) or `PASSAGE_LINES` (`rag/retrieval.py`) to change how much context it gets.
+- A changed prompt doesn't match the saved answers, so the next run asks the model again.
+- Run with `--debug` to see which passages were retrieved for each scene and prop.
 
 ## Limits
 
-- **RAG:**
-  - A run with an empty cache makes one API call per scene and one per prop.
-  - Inferred adjectives and implied hand-offs are the model's reading of the script. Check them against the cited line.
-- **Rules:**
-  - Adjectives are only the script's own words.
-  - Hand-offs the script only implies are not found.
-  - One object can come out as two props when the script names it in two ways.
+- A run with an empty cache makes one API call per scene and one per prop.
+- Inferred adjectives and implied hand-offs are the model's reading of the script. Check them against the cited line.

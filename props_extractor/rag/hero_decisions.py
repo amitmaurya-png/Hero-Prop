@@ -16,10 +16,6 @@ from .retrieval import BM25Index, build_passages
 HERO_TOP_K = 8    # passages retrieved per prop
 HERO_WORKERS = 6  # decisions are independent, so they run in parallel
 
-HERO_ABOUT = ("Hero props and materials, decided by the RAG method: for each prop, the model weighs its scenes, "
-              "transfers and retrieved screenplay passages ('why_hero' / 'why_not' are its reasons). Counts and "
-              "totals are computed by code. Written by scripts/extract_hero_props.py.")
-
 
 def decide_hero_props(acts, props, llm, *, debug=False):
     """Ask the model, prop by prop, whether it is a hero prop. Returns id -> {is_hero, reasons, story_role}."""

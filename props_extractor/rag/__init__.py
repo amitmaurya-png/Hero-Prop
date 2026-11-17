@@ -1,4 +1,4 @@
-"""The RAG method: retrieval-augmented generation for STEP 2 (props) and STEP 3 (hero decisions).
+"""Retrieval-augmented generation for STEP 2 (props) and STEP 3 (hero decisions).
 
     scenes.py          STEP 2: for each scene, retrieve -> prompt -> generate -> check
     hero_decisions.py  STEP 3: for each prop, retrieve -> prompt -> the model decides hero or background
@@ -8,8 +8,8 @@
     catalog.py         checking answers against the cited screenplay lines; the props catalog
 """
 
-from .hero_decisions import HERO_ABOUT, decide_hero_props
+from .hero_decisions import decide_hero_props
 from .llm import LLMError, load_dotenv, make_llm
 from .scenes import extract_props_rag
 
-__all__ = ["HERO_ABOUT", "LLMError", "decide_hero_props", "extract_props_rag", "load_dotenv", "make_llm"]
+__all__ = ["LLMError", "decide_hero_props", "extract_props_rag", "load_dotenv", "make_llm"]

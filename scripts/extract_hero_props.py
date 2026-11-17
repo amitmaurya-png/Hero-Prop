@@ -2,20 +2,16 @@
 """docs/TSL.pdf -> data/props.json -> data/hero_props.json.
 
 Finds the props each character touches in every scene of the screenplay, every hand-off between characters,
-and which props are hero props. Two methods:
-
-  rag    (default) Retrieval-augmented generation for both steps. For each scene, BM25 retrieves related passages
-         from the rest of the script and the model extracts props and transfers, each citing a screenplay line;
-         then, for each prop, the model decides hero or background from its scenes, transfers and passages.
-         Needs OPENAI_API_KEY or ANTHROPIC_API_KEY (read from .env). Answers are cached in data/rag_cache/.
-  rules  Hand-written rules (verbs, word lists). No AI, no API.
+and which props are hero props, by retrieval-augmented generation (RAG). For each scene, BM25 retrieves related
+passages from the rest of the script and the model extracts props and transfers, each citing a screenplay line;
+then, for each prop, the model decides hero or background from its scenes, transfers and passages.
+Needs OPENAI_API_KEY or ANTHROPIC_API_KEY (read from .env). Answers are cached in data/rag_cache/.
 
 The logic lives in the props_extractor package; see its __init__.py for a map of the modules.
 
 Usage:
-  python3 scripts/extract_hero_props.py                  # RAG: PDF -> props.json -> hero_props.json
-  python3 scripts/extract_hero_props.py --dry-run        # RAG: write the scene prompts to data/rag_prompts/
-  python3 scripts/extract_hero_props.py --method rules   # rule-based
+  python3 scripts/extract_hero_props.py                  # PDF -> props.json -> hero_props.json
+  python3 scripts/extract_hero_props.py --dry-run        # write the scene prompts to data/rag_prompts/
   python3 scripts/extract_hero_props.py --provider openai --model gpt-5.5
   python3 scripts/extract_hero_props.py --debug          # also print how each scene is read
   python3 scripts/extract_hero_props.py --from-json      # skip the PDF; use the existing data/props.json
@@ -31,9 +27,7 @@ ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT))
 
 from props_extractor.hero import extract_hero  # noqa: E402
-from props_extractor.rag import (HERO_ABOUT, LLMError, decide_hero_props, extract_props_rag,  # noqa: E402
-                                 load_dotenv, make_llm)
-from props_extractor.rules import extract_props  # noqa: E402
+from props_extractor.rag import LLMError, decide_hero_props, extract_props_rag, load_dotenv, make_llm  # noqa: E402
 from props_extractor.screenplay import read_screenplay  # noqa: E402
 
 DEFAULT_PDF = ROOT / "docs" / "TSL.pdf"
@@ -47,38 +41,21 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     parser.add_argument("--pdf", type=Path, default=DEFAULT_PDF, help="screenplay PDF (default docs/TSL.pdf)")
     parser.add_argument("--from-json", action="store_true", help="skip the PDF and use the existing data/props.json")
-    parser.add_argument("--method", choices=["rag", "rules"], default="rag", help="how to extract (default rag)")
     parser.add_argument("--provider", choices=["openai", "anthropic"],
-                        help="RAG model provider (default: whichever API key is set; Claude if both)")
-    parser.add_argument("--model", help="RAG model (default gpt-5.5 for openai, claude-opus-5-5 for anthropic)")
+                        help="model provider (default: whichever API key is set; Claude if both)")
+    parser.add_argument("--model", help="model (default gpt-5.5 for openai, claude-opus-5-5 for anthropic)")
     parser.add_argument("--dry-run", action="store_true",
-                        help="RAG: write each scene's prompt to data/rag_prompts/ instead of calling the model")
+                        help="write each scene's prompt to data/rag_prompts/ instead of calling the model")
     parser.add_argument("--debug", action="store_true", help="print how each scene is read")
     args = parser.parse_args()
 
     try:
-        if args.method == "rules":
-            run_rules(args)
-        else:
-            run_rag(args)
+        run(args)
     except LLMError as e:
         sys.exit(f"RAG failed: {e}")
 
 
-def run_rules(args):
-    if args.from_json:
-        props = _read_json(PROPS_JSON)
-    else:
-        pdf = args.pdf.resolve()
-        acts, characters = read_screenplay(pdf)
-        props = extract_props(acts, characters, source=_relative(pdf), debug=args.debug)
-        _save_props(props)
-    hero = extract_hero(props)
-    _write_json(HERO_JSON, hero)
-    _print_summary(hero)
-
-
-def run_rag(args):
+def run(args):
     load_dotenv(ROOT / ".env")
     pdf = args.pdf.resolve()
     acts, characters = read_screenplay(pdf, keep_dialogue=True)  # the hero step retrieves passages too
@@ -96,7 +73,7 @@ def run_rag(args):
         _save_props(props)
 
     decisions = decide_hero_props(acts, props, llm, debug=args.debug)
-    hero = extract_hero(props, decisions, about=HERO_ABOUT)
+    hero = extract_hero(props, decisions)
     _write_json(HERO_JSON, hero)
     _print_summary(hero)
 

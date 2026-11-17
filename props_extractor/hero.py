@@ -1,12 +1,8 @@
-"""STEP 3: props.json -> hero_props.json.
+"""STEP 3: props.json + the model's hero decisions -> hero_props.json.
 
-Which props are hero props is decided in one of two ways:
-  rules  (extract_hero with no decisions) a prop is a hero prop when it is handed from one subject (character)
-         to another, or handled in two or more scenes.
-  RAG    (extract_hero with decisions from rag.decide_hero_props) the model decides from the prop's scenes,
-         transfers and retrieved passages, and gives its reasons.
-Every other prop is "background". Totals of scenes and transfers, a per-scene count, and per-prop counts are
-computed here by code either way.
+Which props are hero props is decided by the model (rag.decide_hero_props), from each prop's scenes, transfers
+and retrieved passages; every other prop is "background". Totals of scenes and transfers, a per-scene count, and
+per-prop counts are computed here by code.
 """
 
 from collections import Counter
@@ -14,8 +10,9 @@ from collections import Counter
 # Transfer endpoints that are places, not subjects (used by the hand-made props.manual.json)
 PLACES = {"shelf", "the floor between saba and miri"}
 
-RULES_ABOUT = ("Hero props and materials: handled by a character and either passed between two subjects or "
-               "handled in two or more scenes. Written by scripts/extract_hero_props.py.")
+ABOUT = ("Hero props and materials, decided by the RAG method: for each prop, the model weighs its scenes, "
+         "transfers and retrieved screenplay passages ('why_hero' / 'why_not' are its reasons). Counts and "
+         "totals are computed by code. Written by scripts/extract_hero_props.py.")
 
 
 def collect_evidence(data):
@@ -42,10 +39,10 @@ def collect_evidence(data):
     return scenes, transfers
 
 
-def extract_hero(data, decisions=None, about=RULES_ABOUT):
+def extract_hero(data, decisions):
     """Build the hero_props.json document from a props.json document.
 
-    decisions: id -> {"is_hero", "reasons", "story_role"} from the RAG method; None uses the rules.
+    decisions: id -> {"is_hero", "reasons", "story_role"} from rag.decide_hero_props.
     """
     catalog = data["catalog"]
     scenes, transfers = collect_evidence(data)
@@ -53,13 +50,9 @@ def extract_hero(data, decisions=None, about=RULES_ABOUT):
     hero, background = [], []
     for pid, entry in catalog.items():
         handed = [t for t in transfers[pid] if t["type"] == "handed" and t["between_subjects"]]
-        if decisions is None:
-            reasons, extra = _rule_reasons(handed, scenes[pid]), {}
-            is_hero, why_not = bool(reasons), "touched in one scene and never passed between subjects"
-        else:
-            d = decisions[pid]
-            is_hero, reasons, extra = d["is_hero"], d["reasons"], {"story_role": d["story_role"]}
-            why_not = " ".join(d["reasons"])
+        d = decisions[pid]
+        is_hero, reasons, extra = d["is_hero"], d["reasons"], {"story_role": d["story_role"]}
+        why_not = " ".join(reasons)
 
         summary = {"id": pid, "name": entry["name"], "adjectives": entry["adjectives"],
                    **({"inferred_adjectives": entry["inferred_adjectives"]} if entry.get("inferred_adjectives")
@@ -76,21 +69,11 @@ def extract_hero(data, decisions=None, about=RULES_ABOUT):
 
     hero_ids = {h["id"] for h in hero}
     return {"source": "data/props.json",
-            "about": about,
+            "about": ABOUT,
             "totals": _totals(data, transfers, hero_ids, len(hero), len(background)),
             "per_scene": _per_scene(data, hero_ids),
             "hero_count": len(hero), "hero_props": hero,
             "background_count": len(background), "background": background}
-
-
-def _rule_reasons(handed, scenes):
-    reasons = []
-    if handed:
-        pairs = list(dict.fromkeys(f"{t['from']} -> {t['to']}" for t in handed))
-        reasons.append(f"passed between subjects: {'; '.join(pairs)}")
-    if len(scenes) >= 2:
-        reasons.append(f"handled in {len(scenes)} scenes")
-    return reasons
 
 
 def _totals(data, transfers, hero_ids, hero_count, background_count):

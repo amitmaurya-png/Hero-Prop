@@ -49,8 +49,7 @@ def make_llm(provider=None, model=None, cache_dir=None):
     if provider is None:
         provider = next((p for p in ("anthropic", "openai") if os.environ.get(KEY_NAMES[p])), None)
         if provider is None:
-            raise LLMError("No API key found. Put OPENAI_API_KEY or ANTHROPIC_API_KEY in .env, "
-                           "or use --method rules.")
+            raise LLMError("No API key found. Put OPENAI_API_KEY or ANTHROPIC_API_KEY in .env.")
     elif not os.environ.get(KEY_NAMES[provider]):
         raise LLMError(f"{KEY_NAMES[provider]} is not set (in the environment or .env).")
     cls = {"openai": OpenAILLM, "anthropic": ClaudeLLM}[provider]

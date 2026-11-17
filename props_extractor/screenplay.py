@@ -10,8 +10,7 @@ pypdf's layout mode keeps each line's indentation, which is how a screenplay mar
 Each scene becomes a list of events in script order:
     ("action", "Miri clutches a small bundle.")   one per sentence
     ("cue", "Miri")                               who speaks next
-    ("dialogue", "It's for later.")               only with keep_dialogue=True (used by the RAG method)
-The rule-based method finds props only in action lines, so it drops dialogue.
+    ("dialogue", "It's for later.")               only with keep_dialogue=True
 """
 
 import re
