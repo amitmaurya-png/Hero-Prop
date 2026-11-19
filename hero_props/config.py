@@ -19,10 +19,21 @@ ROOT = Path(__file__).resolve().parent.parent
 DEFAULT_PDF = ROOT / "docs" / "TSL.pdf"
 DEFAULT_OUT = ROOT / "data" / "hero_props.json"
 DEBUG_DIR = ROOT / "data" / "debug"     # prompt, raw answer and warnings of the last run
+CACHE_DIR = ROOT / "data" / "cache"     # saved answers; identical inputs skip the API call
 
 DEFAULT_MODEL = os.environ.get("OPENAI_MODEL", "gpt-5.5")
-DEFAULT_REASONING = os.environ.get("OPENAI_REASONING") or None   # None = the model's own default
-REASONING_LEVELS = ["low", "medium", "high"]
+
+# Reasoning effort. "low" keeps the model's hidden thinking to ~100 tokens
+# (vs ~4,000 at the model default), which is most of the speed-up.
+DEFAULT_REASONING = os.environ.get("OPENAI_REASONING", "low")
+REASONING_LEVELS = ["none", "low", "medium", "high", "default"]   # "default" = the model's own
+
+# Answer mode (run time is roughly output tokens / ~85 per second):
+#   fast - the model lists props, aliases, scene numbers and transfers (~1k tokens);
+#          the code finds the evidence line in each scene by searching the aliases.
+#   full - the model also writes a usage note and a quote for every scene (~3.5k+ tokens).
+MODES = ["fast", "full"]
+DEFAULT_MODE = os.environ.get("HERO_PROPS_MODE", "fast")
 
 QUOTE_WORDS = (3, 20)   # min / max words in an evidence quote
 
@@ -80,6 +91,7 @@ WHAT_IS_A_PROP = (
     "animal, body part, location, set dressing, food in general, or abstract idea)."
 )
 
+# Rules used in both modes.
 RULES = [
     'Treat one physical object (or one matched set, e.g. "five barley loaves and two '
     'fish") as one prop even if it is called different names; list the names used in '
@@ -89,11 +101,30 @@ RULES = [
     "objects only named in a description of the setting).",
     "Keep different objects of the same kind separate (e.g. one character's basket "
     "vs. the crowd's baskets; one character's sandal vs. a crowd's sandals).",
+    "Parts, wrappings or attachments of a prop (a wheel, a cord, a seal, a bundle) "
+    "belong to that prop; do not list them as separate props.",
+    "List transfers only where the screenplay shows the object moving from one "
+    "character to another; use character names as written.",
+    'Use the scene numbers exactly as given in the "=== SCENE n ===" headers.',
+]
+
+# Extra rules for --mode full: a usage note and a quote for every scene.
+FULL_RULES = [
     "For each hero prop, list EVERY scene where it is present or explicitly referred "
     "to. For each scene give a short evidence quote copied VERBATIM (exact characters, "
     f"{QUOTE_WORDS[0]}-{QUOTE_WORDS[1]} words, from a single line of that scene's text) "
     "and say how it appears there.",
-    "List transfers only where the screenplay shows the object moving from one "
-    "character to another; use character names as written.",
-    'Use the scene numbers exactly as given in the "=== SCENE n ===" headers.',
+]
+
+# Extra rules for --mode fast: short answer, the code finds the evidence.
+FAST_RULES = [
+    'In "scenes", list the number of EVERY scene where the prop is present or '
+    "referred to by any name.",
+    'In "aliases", list every word or phrase the screenplay uses for the prop, copied '
+    'exactly, including short nouns (e.g. "basket", "cart", "coin"). The scenes are '
+    "verified by searching for these names, so a scene whose text contains none of "
+    "them is dropped.",
+    "For each transfer give the scene number, who gives, who receives, and a short "
+    "quote copied VERBATIM (3-8 words) from that scene.",
+    'Keep "reason" to one short sentence (at most 15 words).',
 ]

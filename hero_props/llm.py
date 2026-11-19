@@ -24,19 +24,19 @@ class ModelReply:
     usage: dict               # token counts reported by the API
 
 
-def ask_model(model: str, screenplay: str, reasoning: str | None = None) -> ModelReply:
-    """One request containing the whole screenplay."""
+def ask_model(model: str, screenplay: str, reasoning: str | None = None, mode: str = "fast") -> ModelReply:
+    """One request containing the whole screenplay. reasoning=None: model default."""
     options = {"reasoning_effort": reasoning} if reasoning else {}
     started = time.monotonic()
     response = OpenAI().chat.completions.create(
         model=model,
         messages=[
-            {"role": "system", "content": build_prompt()},
+            {"role": "system", "content": build_prompt(mode)},
             {"role": "user", "content": "Screenplay:\n\n" + screenplay},
         ],
         response_format={
             "type": "json_schema",
-            "json_schema": {"name": "hero_props", "strict": True, "schema": build_schema()},
+            "json_schema": {"name": "hero_props", "strict": True, "schema": build_schema(mode)},
         },
         **options,
     )

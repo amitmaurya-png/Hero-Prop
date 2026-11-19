@@ -1,6 +1,6 @@
 {
-  "screenplay": "LITTLE WITNESSES: EPISODE 1: THE SMALLEST LUNCH",
-  "source": "docs/TSL.pdf",
+  "screenplay": "OCEAN EXPLORERS CLUB EPISODE 1: \"SILVER BENEATH THE SEA\"",
+  "source": "docs/Episode1.pdf",
   "model": "gpt-5.5",
   "hero_prop_criteria": {
     "center_of_focus": "The story, a shot or a character's attention centres on the object.",
@@ -12,839 +12,505 @@
     {
       "scene_number": 1,
       "act": "COLD OPEN",
-      "heading": "EXT. MIRI’S VILLAGE — MORNING"
+      "heading": "EXT. ARABIAN SEA - NIGHT - PRESENT DAY"
     },
     {
       "scene_number": 2,
       "act": "COLD OPEN",
-      "heading": "EXT. VILLAGE LANE — MOMENTS LATER"
+      "heading": "INT. DEEP HORIZON - BRIDGE - NIGHT"
     },
     {
       "scene_number": 3,
       "act": "ACT ONE",
-      "heading": "EXT. SABA ELIOR’S COURTYARD — LATE MORNING"
+      "heading": "EXT. DEEP HORIZON - MAIN DECK - DAWN"
     },
     {
       "scene_number": 4,
       "act": "ACT ONE",
-      "heading": "INT. SABA’S HOUSE — CONTINUOUS"
+      "heading": "INT. DEEP HORIZON - BRIDGE - DAWN"
     },
     {
       "scene_number": 5,
       "act": "ACT ONE",
-      "heading": "INT. SCROLL ROOM — CONTINUOUS"
+      "heading": "INT. DEEP HORIZON - ENGINE ROOM - DAWN"
     },
     {
       "scene_number": 6,
-      "act": "ACT TWO",
-      "heading": "EXT. GALILEAN HILLSIDE — DAY"
+      "act": "ACT ONE",
+      "heading": "INT. DEEP HORIZON - WET LAB - MORNING"
     },
     {
       "scene_number": 7,
-      "act": "ACT TWO",
-      "heading": "EXT. HILLSIDE PATH — CONTINUOUS"
+      "act": "ACT ONE",
+      "heading": "EXT. DEEP HORIZON - AFT DECK - MORNING"
     },
     {
       "scene_number": 8,
-      "act": "ACT TWO",
-      "heading": "EXT. EDGE OF CROWD — LATER"
+      "act": "ACT ONE",
+      "heading": "INT. DEEP HORIZON - ROV CONTROL ROOM - LATER"
     },
     {
       "scene_number": 9,
-      "act": "ACT TWO",
-      "heading": "EXT. NEAR JESUS — CONTINUOUS"
+      "act": "ACT ONE",
+      "heading": "EXT. SS JOHN BARRY - ARABIAN SEA - DAY - 1944"
     },
     {
       "scene_number": 10,
       "act": "ACT TWO",
-      "heading": "EXT. HILLSIDE — MOMENTS LATER"
+      "heading": "EXT. SS JOHN BARRY - MAIN DECK - DAY - 1944"
     },
     {
       "scene_number": 11,
-      "act": "ACT THREE",
-      "heading": "EXT. HILLSIDE — LATE AFTERNOON"
+      "act": "ACT TWO",
+      "heading": "INT. SS JOHN BARRY - CHART ROOM / BRIDGE ACCESS - DAY - 1944"
     },
     {
       "scene_number": 12,
-      "act": "ACT THREE",
-      "heading": "EXT. HILLSIDE — CONTINUOUS"
+      "act": "ACT TWO",
+      "heading": "INT. SS JOHN BARRY - ENGINE ROOM - DAY - 1944"
     },
     {
       "scene_number": 13,
-      "act": "ACT THREE",
-      "heading": "EXT. HILLSIDE RIDGE — SUNSET"
+      "act": "ACT TWO",
+      "heading": "INT. SS JOHN BARRY - CARGO OFFICE / HOLD ACCESS - DAY - 1944"
     },
     {
       "scene_number": 14,
-      "act": "ACT FOUR",
-      "heading": "INT. SCROLL ROOM — LATE AFTERNOON"
+      "act": "ACT TWO",
+      "heading": "EXT. SS JOHN BARRY - DECK / SIGNAL STATION - LATE AFTERNOON -"
     },
     {
       "scene_number": 15,
-      "act": "ACT FOUR",
-      "heading": "EXT. VILLAGE LANE — SUNSET"
+      "act": "ACT TWO",
+      "heading": "INT. SS JOHN BARRY - PASSAGEWAY - LATE AFTERNOON - 1944"
     },
     {
       "scene_number": 16,
+      "act": "ACT TWO",
+      "heading": "EXT. SS JOHN BARRY - DECK - SUNSET - 1944"
+    },
+    {
+      "scene_number": 17,
+      "act": "ACT TWO",
+      "heading": "INT. SS JOHN BARRY - MESS - EVENING - 1944"
+    },
+    {
+      "scene_number": 18,
+      "act": "ACT TWO",
+      "heading": "INT. SS JOHN BARRY - ENGINE ROOM - NIGHT - 1944"
+    },
+    {
+      "scene_number": 19,
+      "act": "ACT TWO",
+      "heading": "EXT. SS JOHN BARRY - NIGHT WATCH - 1944"
+    },
+    {
+      "scene_number": 20,
+      "act": "ACT THREE",
+      "heading": "INT. SS JOHN BARRY - ENGINE ROOM - CONTINUOUS - NIGHT - 1944"
+    },
+    {
+      "scene_number": 21,
+      "act": "ACT THREE",
+      "heading": "INT. SS JOHN BARRY - CHART ROOM / BRIDGE - CONTINUOUS - NIGHT"
+    },
+    {
+      "scene_number": 22,
+      "act": "ACT THREE",
+      "heading": "INT. SS JOHN BARRY - CARGO HOLD ACCESS - CONTINUOUS - NIGHT -"
+    },
+    {
+      "scene_number": 23,
+      "act": "ACT THREE",
+      "heading": "EXT. SS JOHN BARRY - BOAT DECK - CONTINUOUS - NIGHT - 1944"
+    },
+    {
+      "scene_number": 24,
+      "act": "ACT THREE",
+      "heading": "EXT. SS JOHN BARRY - LIFEBOAT STATION - MOMENTS LATER - NIGHT"
+    },
+    {
+      "scene_number": 25,
+      "act": "ACT THREE",
+      "heading": "EXT. OPEN WATER BESIDE SS JOHN BARRY - NIGHT - 1944"
+    },
+    {
+      "scene_number": 26,
+      "act": "ACT THREE",
+      "heading": "EXT. LIFEBOAT - DAWN - 1944"
+    },
+    {
+      "scene_number": 27,
+      "act": "ACT THREE",
+      "heading": "EXT. LIFEBOAT - DAY - 1944"
+    },
+    {
+      "scene_number": 28,
+      "act": "ACT THREE",
+      "heading": "INT. DEEP HORIZON - ROV CONTROL ROOM - PRESENT DAY"
+    },
+    {
+      "scene_number": 29,
       "act": "ACT FOUR",
-      "heading": "EXT. SABA’S COURTYARD — EVENING"
+      "heading": "INT. DEEP HORIZON - ROV CONTROL ROOM - CONTINUOUS - PRESENT"
+    },
+    {
+      "scene_number": 30,
+      "act": "ACT FOUR",
+      "heading": "EXT. DEEP HORIZON - STARBOARD DECK - LATER - PRESENT DAY"
+    },
+    {
+      "scene_number": 31,
+      "act": "ACT FOUR",
+      "heading": "INT. DEEP HORIZON - MESS / COMMON AREA - EVENING - PRESENT DAY"
+    },
+    {
+      "scene_number": 32,
+      "act": "ACT FIVE",
+      "heading": "EXT. DEEP HORIZON - MAIN DECK - NIGHT - PRESENT DAY"
+    },
+    {
+      "scene_number": 33,
+      "act": "ACT FIVE",
+      "heading": "EXT. DEEP SEAFLOOR - UNKNOWN DEPTH - NIGHT"
     }
   ],
-  "hero_prop_count": 15,
+  "hero_prop_count": 24,
   "hero_props": [
     {
-      "name": "Yonah’s five barley loaves and two fish",
+      "name": "Lifeboat",
       "aliases": [
-        "small bundle",
-        "bundle",
-        "food",
-        "a little",
-        "Five barley loaves. Two fish.",
-        "lunch",
-        "five loaves and two fish",
-        "small lunch",
-        "the bread",
-        "Fish",
-        "leftover pieces",
-        "piece of bread",
-        "crumb"
+        "lifeboats",
+        "lifeboat",
+        "boat"
       ],
       "alias_scenes": {
-        "small bundle": [
-          7
+        "lifeboats": [
+          23
         ],
-        "bundle": [
-          5,
-          7,
-          8,
-          14
+        "lifeboat": [
+          23,
+          24,
+          25,
+          26
         ],
-        "food": [
-          7,
-          8,
-          9,
-          10
-        ],
-        "a little": [
-          7,
-          8,
-          14
-        ],
-        "Five barley loaves. Two fish.": [
-          7
-        ],
-        "lunch": [
-          5,
-          8,
-          9,
-          12,
-          13
-        ],
-        "five loaves and two fish": [
-          12,
-          14
-        ],
-        "small lunch": [
-          9,
-          12
-        ],
-        "the bread": [
-          9,
-          10
-        ],
-        "Fish": [
-          5,
-          7,
-          8,
-          10,
-          12,
-          14
-        ],
-        "leftover pieces": [
-          11,
-          12
-        ],
-        "piece of bread": [
-          12
-        ],
-        "crumb": [
-          8,
-          10,
-          12,
-          13
+        "boat": [
+          26,
+          27
         ]
       },
-      "description": "Yonah’s small lunch: five barley loaves and two fish. In Jesus’s hands it multiplies into bread, fish, pieces, and leftovers; treated as one prop/set through its miraculous change in quantity.",
-      "reason": "This is the central biblical miracle prop, repeatedly handled, transferred from Yonah to Andrew to Jesus, multiplied, distributed, eaten, and gathered as leftovers.",
-      "criteria": {
-        "center_of_focus": true,
-        "high_frequency": true,
-        "transfer": true,
-        "actively_handled": true
-      },
-      "scene_count": 9,
-      "scenes": [
-        5,
-        7,
-        8,
-        9,
-        10,
-        11,
-        12,
-        13,
-        14
-      ],
-      "acts": [
-        "ACT ONE",
-        "ACT TWO",
-        "ACT THREE",
-        "ACT FOUR"
-      ],
-      "transfer_count": 7,
-      "appearances": [
-        {
-          "scene_number": 5,
-          "act": "ACT ONE",
-          "heading": "INT. SCROLL ROOM — CONTINUOUS",
-          "usage": "Saba introduces the coming story of a boy carrying an almost-nothing lunch.",
-          "evidence": "one boy who carried almost nothing.",
-          "transfers": []
-        },
-        {
-          "scene_number": 7,
-          "act": "ACT TWO",
-          "heading": "EXT. HILLSIDE PATH — CONTINUOUS",
-          "usage": "Yonah carries the bundled lunch and tells Miri it contains five loaves and two fish.",
-          "evidence": "Five barley loaves. Two fish.",
-          "transfers": []
-        },
-        {
-          "scene_number": 8,
-          "act": "ACT TWO",
-          "heading": "EXT. EDGE OF CROWD — LATER",
-          "usage": "Yonah unwraps the lunch, offers Miri a crumb, then gives the bundle to Andrew.",
-          "evidence": "Yonah unwraps the lunch. Five small barley loaves. Two small",
-          "transfers": [
-            {
-              "from": "Yonah",
-              "to": "ANDREW",
-              "evidence": "Andrew receives the lunch with great care."
-            }
-          ]
-        },
-        {
-          "scene_number": 9,
-          "act": "ACT TWO",
-          "heading": "EXT. NEAR JESUS — CONTINUOUS",
-          "usage": "Andrew brings the lunch to Jesus, who receives it and prepares the people to sit.",
-          "evidence": "We see Jesus’s hands receive the small lunch from Andrew.",
-          "transfers": [
-            {
-              "from": "ANDREW",
-              "to": "Jesus",
-              "evidence": "We see Jesus’s hands receive the small lunch from Andrew."
-            }
-          ]
-        },
-        {
-          "scene_number": 10,
-          "act": "ACT TWO",
-          "heading": "EXT. HILLSIDE — MOMENTS LATER",
-          "usage": "Jesus blesses and breaks the loaves; the multiplied bread and fish are passed, distributed, and eaten.",
-          "evidence": "Jesus lifts the loaves. We see His hands.",
-          "transfers": [
-            {
-              "from": "disciple",
-              "to": "another",
-              "evidence": "He hands a piece to another."
-            },
-            {
-              "from": "Miri",
-              "to": "SMALL GIRL",
-              "evidence": "The small girl takes a piece in both hands."
-            },
-            {
-              "from": "CHILD",
-              "to": "Nim",
-              "evidence": "A child giggles and offers Nim a tiny piece."
-            }
-          ]
-        },
-        {
-          "scene_number": 11,
-          "act": "ACT THREE",
-          "heading": "EXT. HILLSIDE — LATE AFTERNOON",
-          "usage": "Andrew orders the leftover pieces gathered; Yonah carries a basket partly filled with them.",
-          "evidence": "Gather the pieces left over, that",
-          "transfers": []
-        },
-        {
-          "scene_number": 12,
-          "act": "ACT THREE",
-          "heading": "EXT. HILLSIDE — CONTINUOUS",
-          "usage": "Miri, Yonah, and Nim gather leftover bread pieces instead of keeping them.",
-          "evidence": "Miri, Yonah, and Nim gather leftover pieces of bread.",
-          "transfers": [
-            {
-              "from": "Nim",
-              "to": "basket",
-              "evidence": "Nim drops the piece into the basket with exaggerated dignity."
-            },
-            {
-              "from": "Miri",
-              "to": "basket",
-              "evidence": "She places it in the basket instead of keeping it."
-            }
-          ]
-        },
-        {
-          "scene_number": 13,
-          "act": "ACT THREE",
-          "heading": "EXT. HILLSIDE RIDGE — SUNSET",
-          "usage": "Miri reflects on Yonah’s lunch and its meaning for generosity.",
-          "evidence": "Yonah’s lunch looked too small.",
-          "transfers": []
-        },
-        {
-          "scene_number": 14,
-          "act": "ACT FOUR",
-          "heading": "INT. SCROLL ROOM — LATE AFTERNOON",
-          "usage": "The scroll image shows the five loaves and two fish, and Miri asks how the boy gave them.",
-          "evidence": "the drawing of five loaves and two fish.",
-          "transfers": []
-        }
-      ]
-    },
-    {
-      "name": "Miri’s honey-date cakes in cloth bundle",
-      "aliases": [
-        "small cloth bundle",
-        "cloth bundle",
-        "hidden cakes",
-        "honey cakes",
-        "honey-date cakes",
-        "something sweet",
-        "the cake",
-        "one cake"
-      ],
-      "alias_scenes": {
-        "small cloth bundle": [
-          1
-        ],
-        "cloth bundle": [
-          1,
-          3,
-          14
-        ],
-        "hidden cakes": [
-          2
-        ],
-        "honey cakes": [
-          1,
-          10
-        ],
-        "honey-date cakes": [
-          1,
-          14
-        ],
-        "something sweet": [
-          3
-        ],
-        "the cake": [
-          13
-        ],
-        "one cake": [
-          14
-        ]
-      },
-      "description": "Miri’s three honey-date cakes wrapped in cloth; the set remains the same home-world prop until Miri shares the cakes at sunset.",
-      "reason": "The cakes are the central generosity test for Miri, recur across the episode, are repeatedly handled, and are finally given away/shared.",
-      "criteria": {
-        "center_of_focus": true,
-        "high_frequency": true,
-        "transfer": true,
-        "actively_handled": true
-      },
-      "scene_count": 8,
-      "scenes": [
-        1,
-        2,
-        3,
-        5,
-        10,
-        13,
-        14,
-        15
-      ],
-      "acts": [
-        "COLD OPEN",
-        "ACT ONE",
-        "ACT TWO",
-        "ACT THREE",
-        "ACT FOUR"
-      ],
-      "transfer_count": 2,
-      "appearances": [
-        {
-          "scene_number": 1,
-          "act": "COLD OPEN",
-          "heading": "EXT. MIRI’S VILLAGE — MORNING",
-          "usage": "Miri carries and opens the bundle; Ima instructs her to give one cake to Tav.",
-          "evidence": "Three small HONEY-DATE CAKES gleam in the cloth.",
-          "transfers": []
-        },
-        {
-          "scene_number": 2,
-          "act": "COLD OPEN",
-          "heading": "EXT. VILLAGE LANE — MOMENTS LATER",
-          "usage": "Miri carries the hidden cakes past Tav and refuses his request for one.",
-          "evidence": "eyes glued to the hidden cakes.",
-          "transfers": []
-        },
-        {
-          "scene_number": 3,
-          "act": "ACT ONE",
-          "heading": "EXT. SABA ELIOR’S COURTYARD — LATE MORNING",
-          "usage": "The bundle is tucked in Miri’s basket; Saba notices it and discusses giving one to Tav.",
-          "evidence": "SABA notices the cloth bundle tucked beneath the linen.",
-          "transfers": []
-        },
-        {
-          "scene_number": 5,
-          "act": "ACT ONE",
-          "heading": "INT. SCROLL ROOM — CONTINUOUS",
-          "usage": "Nim watches the honey cake bundle while Saba begins the scroll story.",
-          "evidence": "still eyeing the honey cake bundle.",
-          "transfers": []
-        },
-        {
-          "scene_number": 10,
-          "act": "ACT TWO",
-          "heading": "EXT. HILLSIDE — MOMENTS LATER",
-          "usage": "Miri remembers the absent home-world cakes while seeing the hungry small girl.",
-          "evidence": "where, in the home world, the honey cakes would be.",
-          "transfers": []
-        },
-        {
-          "scene_number": 13,
-          "act": "ACT THREE",
-          "heading": "EXT. HILLSIDE RIDGE — SUNSET",
-          "usage": "Miri connects Yonah’s gift to the cake she withheld from Tav.",
-          "evidence": "I think I should have given Tav the cake.",
-          "transfers": []
-        },
-        {
-          "scene_number": 14,
-          "act": "ACT FOUR",
-          "heading": "INT. SCROLL ROOM — LATE AFTERNOON",
-          "usage": "Back in the Scroll Room, Miri opens the bundle and confirms all three cakes remain.",
-          "evidence": "Three honey-date cakes.",
-          "transfers": []
-        },
-        {
-          "scene_number": 15,
-          "act": "ACT FOUR",
-          "heading": "EXT. VILLAGE LANE — SUNSET",
-          "usage": "Miri shares the cakes with Tav, Nim, and herself.",
-          "evidence": "She takes out one honey-date cake.",
-          "transfers": [
-            {
-              "from": "Miri",
-              "to": "Tav",
-              "evidence": "Miri gives Tav one whole cake and half of another."
-            },
-            {
-              "from": "Miri",
-              "to": "Nim",
-              "evidence": "gives one to Nim, and keeps one."
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "name": "miracle baskets",
-      "aliases": [
-        "basket holding the bread",
-        "baskets",
-        "a basket",
-        "empty baskets",
-        "half-filled basket",
-        "twelve baskets",
-        "full baskets"
-      ],
-      "alias_scenes": {
-        "basket holding the bread": [
-          9
-        ],
-        "baskets": [
-          7,
-          10,
-          11,
-          12,
-          16
-        ],
-        "a basket": [
-          10
-        ],
-        "empty baskets": [
-          11
-        ],
-        "half-filled basket": [
-          11
-        ],
-        "twelve baskets": [
-          12
-        ],
-        "full baskets": [
-          12
-        ]
-      },
-      "description": "The baskets used around Jesus’s multiplied food: one holds the bread near Jesus, others carry food through the crowd, and twelve are filled with leftovers.",
-      "reason": "The baskets visually carry the miracle, are passed and filled repeatedly, and one is handed to Miri for distribution.",
-      "criteria": {
-        "center_of_focus": true,
-        "high_frequency": true,
-        "transfer": true,
-        "actively_handled": true
-      },
-      "scene_count": 7,
-      "scenes": [
-        7,
-        9,
-        10,
-        11,
-        12,
-        13,
-        16
-      ],
-      "acts": [
-        "ACT TWO",
-        "ACT THREE",
-        "ACT FOUR"
-      ],
-      "transfer_count": 2,
-      "appearances": [
-        {
-          "scene_number": 7,
-          "act": "ACT TWO",
-          "heading": "EXT. HILLSIDE PATH — CONTINUOUS",
-          "usage": "Miri refers to baskets as the adults’ measure of whether there is enough.",
-          "evidence": "Adults worry when there are not enough baskets.",
-          "transfers": []
-        },
-        {
-          "scene_number": 9,
-          "act": "ACT TWO",
-          "heading": "EXT. NEAR JESUS — CONTINUOUS",
-          "usage": "A basket holding the bread sits near Jesus as He commands the people to sit.",
-          "evidence": "Jesus’s hand rests briefly on the basket holding the bread.",
-          "transfers": []
-        },
-        {
-          "scene_number": 10,
-          "act": "ACT TWO",
-          "heading": "EXT. HILLSIDE — MOMENTS LATER",
-          "usage": "Baskets pass through the crowd; Andrew places one in Miri’s hands for delivery to children.",
-          "evidence": "A basket is placed in her hands.",
-          "transfers": [
-            {
-              "from": "ANDREW",
-              "to": "Miri",
-              "evidence": "A basket is placed in her hands."
-            }
-          ]
-        },
-        {
-          "scene_number": 11,
-          "act": "ACT THREE",
-          "heading": "EXT. HILLSIDE — LATE AFTERNOON",
-          "usage": "Disciples move through the crowd with baskets to collect leftovers; Yonah carries one.",
-          "evidence": "Disciples move through the crowd with empty baskets.",
-          "transfers": []
-        },
-        {
-          "scene_number": 12,
-          "act": "ACT THREE",
-          "heading": "EXT. HILLSIDE — CONTINUOUS",
-          "usage": "Miri, Yonah, and Nim fill baskets with leftovers; Andrew receives their basket.",
-          "evidence": "there are twelve baskets now, each filling with leftovers.",
-          "transfers": [
-            {
-              "from": "Miri, Yonah, and Nim",
-              "to": "ANDREW",
-              "evidence": "Andrew receives their basket."
-            }
-          ]
-        },
-        {
-          "scene_number": 13,
-          "act": "ACT THREE",
-          "heading": "EXT. HILLSIDE RIDGE — SUNSET",
-          "usage": "Saba’s narration recalls the gathered leftovers.",
-          "evidence": "they gathered what remained",
-          "transfers": []
-        },
-        {
-          "scene_number": 16,
-          "act": "ACT FOUR",
-          "heading": "EXT. SABA’S COURTYARD — EVENING",
-          "usage": "Miri explicitly remembers the baskets from the story.",
-          "evidence": "The hillside. Yonah. The baskets.",
-          "transfers": []
-        }
-      ]
-    },
-    {
-      "name": "linen basket",
-      "aliases": [
-        "basket of folded linen",
-        "linen basket",
-        "basket",
-        "my clean linen"
-      ],
-      "alias_scenes": {
-        "basket of folded linen": [
-          1
-        ],
-        "linen basket": [
-          1,
-          2,
-          3,
-          16
-        ],
-        "basket": [
-          1,
-          2,
-          3,
-          14,
-          16
-        ],
-        "my clean linen": [
-          3
-        ]
-      },
-      "description": "The basket Ima gives Miri to carry Saba’s linen; Nim repeatedly climbs into it and later curls up in it.",
-      "reason": "It is handed to Miri, carried through multiple scenes, used to hide the cakes, and physically entered by Nim.",
-      "criteria": {
-        "center_of_focus": false,
-        "high_frequency": true,
-        "transfer": true,
-        "actively_handled": true
-      },
-      "scene_count": 5,
-      "scenes": [
-        1,
-        2,
-        3,
-        14,
-        16
-      ],
-      "acts": [
-        "COLD OPEN",
-        "ACT ONE",
-        "ACT FOUR"
-      ],
-      "transfer_count": 1,
-      "appearances": [
-        {
-          "scene_number": 1,
-          "act": "COLD OPEN",
-          "heading": "EXT. MIRI’S VILLAGE — MORNING",
-          "usage": "Ima hands the linen basket to Miri for delivery to Saba.",
-          "evidence": "Ima hands Miri the linen basket.",
-          "transfers": [
-            {
-              "from": "Ima",
-              "to": "Miri",
-              "evidence": "Ima hands Miri the linen basket."
-            }
-          ]
-        },
-        {
-          "scene_number": 2,
-          "act": "COLD OPEN",
-          "heading": "EXT. VILLAGE LANE — MOMENTS LATER",
-          "usage": "Miri carries and shields the basket while passing Tav.",
-          "evidence": "Miri walks with the linen basket.",
-          "transfers": []
-        },
-        {
-          "scene_number": 3,
-          "act": "ACT ONE",
-          "heading": "EXT. SABA ELIOR’S COURTYARD — LATE MORNING",
-          "usage": "Miri brings the basket to Saba; Nim tries to climb into it.",
-          "evidence": "Nim freezes, one paw in the basket.",
-          "transfers": []
-        },
-        {
-          "scene_number": 14,
-          "act": "ACT FOUR",
-          "heading": "INT. SCROLL ROOM — LATE AFTERNOON",
-          "usage": "Miri’s basket still holds the cloth bundle; Nim inspects it again.",
-          "evidence": "Miri looks down at the cloth bundle in her basket.",
-          "transfers": []
-        },
-        {
-          "scene_number": 16,
-          "act": "ACT FOUR",
-          "heading": "EXT. SABA’S COURTYARD — EVENING",
-          "usage": "Nim curls up in the linen basket while Saba speaks with Miri.",
-          "evidence": "Nim climbs into the linen basket and circles twice",
-          "transfers": []
-        }
-      ]
-    },
-    {
-      "name": "folded linen for Saba’s sleeves",
-      "aliases": [
-        "folded linen",
-        "these",
-        "sleeves",
-        "the linen",
-        "clean linen",
-        "patch"
-      ],
-      "alias_scenes": {
-        "folded linen": [
-          1
-        ],
-        "these": [
-          1,
-          2
-        ],
-        "sleeves": [
-          1,
-          3
-        ],
-        "the linen": [
-          1,
-          2,
-          3,
-          16
-        ],
-        "clean linen": [
-          3
-        ],
-        "patch": [
-          1,
-          16
-        ]
-      },
-      "description": "The linen Ima sends to Saba for repairing his badly patched sleeves; it is delivered and later used as sleeve-patching material.",
-      "reason": "The linen motivates Miri’s trip, is delivered from Ima to Saba via Miri, and becomes part of Saba’s sewing repair.",
-      "criteria": {
-        "center_of_focus": false,
-        "high_frequency": true,
-        "transfer": true,
-        "actively_handled": true
-      },
-      "scene_count": 4,
-      "scenes": [
-        1,
-        2,
-        3,
-        16
-      ],
-      "acts": [
-        "COLD OPEN",
-        "ACT ONE",
-        "ACT FOUR"
-      ],
-      "transfer_count": 2,
-      "appearances": [
-        {
-          "scene_number": 1,
-          "act": "COLD OPEN",
-          "heading": "EXT. MIRI’S VILLAGE — MORNING",
-          "usage": "Ima gives Miri the folded linen to take to Saba.",
-          "evidence": "IMA appears from the doorway with a basket of folded linen.",
-          "transfers": [
-            {
-              "from": "Ima",
-              "to": "Miri",
-              "evidence": "Ima hands Miri the linen basket."
-            }
-          ]
-        },
-        {
-          "scene_number": 2,
-          "act": "COLD OPEN",
-          "heading": "EXT. VILLAGE LANE — MOMENTS LATER",
-          "usage": "Miri clarifies she is taking the linen, not the cakes, to Saba.",
-          "evidence": "The linen.",
-          "transfers": []
-        },
-        {
-          "scene_number": 3,
-          "act": "ACT ONE",
-          "heading": "EXT. SABA ELIOR’S COURTYARD — LATE MORNING",
-          "usage": "Miri gives Saba the linen for his sleeves.",
-          "evidence": "SABA takes the linen and inspects his sleeve",
-          "transfers": [
-            {
-              "from": "Miri",
-              "to": "SABA",
-              "evidence": "SABA takes the linen and inspects his sleeve"
-            }
-          ]
-        },
-        {
-          "scene_number": 16,
-          "act": "ACT FOUR",
-          "heading": "EXT. SABA’S COURTYARD — EVENING",
-          "usage": "Saba sews a patch onto his sleeve, using the delivered repair material.",
-          "evidence": "Saba sits again beneath the fig tree, sewing a patch",
-          "transfers": []
-        }
-      ]
-    },
-    {
-      "name": "small scroll of the loaves and fish",
-      "aliases": [
-        "small scroll",
-        "scroll",
-        "the scroll",
-        "little scroll",
-        "barley cord",
-        "wax seal"
-      ],
-      "alias_scenes": {
-        "small scroll": [
-          5,
-          14
-        ],
-        "scroll": [
-          5,
-          14,
-          16
-        ],
-        "the scroll": [
-          5,
-          14,
-          16
-        ],
-        "little scroll": [
-          16
-        ],
-        "barley cord": [],
-        "wax seal": [
-          5
-        ]
-      },
-      "description": "A small story scroll tied with a barley-colored cord and sealed with a loaf-and-two-fish mark; it opens into the miracle story and later glows on its shelf.",
-      "reason": "This scroll is the portal-like focus of the story lesson, is handled by Saba, and recurs after the vision.",
+      "description": "It carries the survivors through the endurance sequence.",
+      "reason": "It carries the survivors through the endurance sequence.",
       "criteria": {
         "center_of_focus": true,
         "high_frequency": true,
         "transfer": false,
         "actively_handled": true
       },
-      "scene_count": 3,
+      "scene_count": 5,
       "scenes": [
-        5,
-        14,
-        16
+        23,
+        24,
+        25,
+        26,
+        27
+      ],
+      "acts": [
+        "ACT THREE"
+      ],
+      "transfer_count": 0,
+      "appearances": [
+        {
+          "scene_number": 23,
+          "act": "ACT THREE",
+          "heading": "EXT. SS JOHN BARRY - BOAT DECK - CONTINUOUS - NIGHT - 1944",
+          "usage": "Named \"lifeboats\"",
+          "evidence": "Kai regains his footing amid panic and discipline colliding. Crew swing lifeboats outward. Others hand over life jackets.",
+          "transfers": []
+        },
+        {
+          "scene_number": 24,
+          "act": "ACT THREE",
+          "heading": "EXT. SS JOHN BARRY - LIFEBOAT STATION - MOMENTS LATER - NIGHT",
+          "usage": "Named \"lifeboat\"",
+          "evidence": "- 1944 Ropes scream through pulleys. Men lower a lifeboat toward",
+          "transfers": []
+        },
+        {
+          "scene_number": 25,
+          "act": "ACT THREE",
+          "heading": "EXT. OPEN WATER BESIDE SS JOHN BARRY - NIGHT - 1944",
+          "usage": "Named \"lifeboat\"",
+          "evidence": "The lifeboat hits the sea hard and rocks violently. Survivors",
+          "transfers": []
+        },
+        {
+          "scene_number": 26,
+          "act": "ACT THREE",
+          "heading": "EXT. LIFEBOAT - DAWN - 1944",
+          "usage": "Named \"lifeboat\"",
+          "evidence": "Harsh sunlight. The survivors’ lifeboat drifts on an endless sea.",
+          "transfers": []
+        },
+        {
+          "scene_number": 27,
+          "act": "ACT THREE",
+          "heading": "EXT. LIFEBOAT - DAY - 1944",
+          "usage": "Named \"boat\"",
+          "evidence": "It’s real. Hope moves through the boat like current.",
+          "transfers": []
+        }
+      ]
+    },
+    {
+      "name": "David Mearns' recovered silver coin in display case",
+      "aliases": [
+        "small SILVER COIN",
+        "coin",
+        "Silver",
+        "SILVER COIN",
+        "clear case",
+        "case",
+        "silver coin",
+        "coin case"
+      ],
+      "alias_scenes": {
+        "small SILVER COIN": [
+          2
+        ],
+        "coin": [
+          2,
+          8,
+          29,
+          32
+        ],
+        "Silver": [
+          2,
+          8,
+          29,
+          32
+        ],
+        "SILVER COIN": [
+          2,
+          8,
+          29,
+          32
+        ],
+        "clear case": [
+          8
+        ],
+        "case": [
+          8,
+          29,
+          32
+        ],
+        "silver coin": [
+          2,
+          8,
+          29,
+          32
+        ],
+        "coin case": [
+          32
+        ]
+      },
+      "description": "It frames the story and is handled as the key historical object.",
+      "reason": "It frames the story and is handled as the key historical object.",
+      "criteria": {
+        "center_of_focus": true,
+        "high_frequency": true,
+        "transfer": true,
+        "actively_handled": true
+      },
+      "scene_count": 4,
+      "scenes": [
+        2,
+        8,
+        29,
+        32
+      ],
+      "acts": [
+        "COLD OPEN",
+        "ACT ONE",
+        "ACT FOUR",
+        "ACT FIVE"
+      ],
+      "transfer_count": 2,
+      "appearances": [
+        {
+          "scene_number": 2,
+          "act": "COLD OPEN",
+          "heading": "INT. DEEP HORIZON - BRIDGE - NIGHT",
+          "usage": "Named \"small SILVER COIN\"",
+          "evidence": "chair. He is not theatrical. He does not need to be. A small SILVER COIN turns between his fingers.",
+          "transfers": []
+        },
+        {
+          "scene_number": 8,
+          "act": "ACT ONE",
+          "heading": "INT. DEEP HORIZON - ROV CONTROL ROOM - LATER",
+          "usage": "Named \"silver coin\"",
+          "evidence": "He gestures to a side worktable. Resting on black cloth under a clear case is the SILVER COIN",
+          "transfers": [
+            {
+              "from": "DAVID MEARNS",
+              "to": "SOFIA",
+              "evidence": "places the coin into Sofia’s open hand"
+            },
+            {
+              "from": "SOFIA",
+              "to": "DAVID MEARNS",
+              "evidence": "takes the coin back gently"
+            }
+          ]
+        },
+        {
+          "scene_number": 29,
+          "act": "ACT FOUR",
+          "heading": "INT. DEEP HORIZON - ROV CONTROL ROOM - CONTINUOUS - PRESENT",
+          "usage": "Named \"Silver\"",
+          "evidence": "When people hear a story like this, they tend to focus on the silver.",
+          "transfers": []
+        },
+        {
+          "scene_number": 32,
+          "act": "ACT FIVE",
+          "heading": "EXT. DEEP HORIZON - MAIN DECK - NIGHT - PRESENT DAY",
+          "usage": "Named \"case\"",
+          "evidence": "hand, looking from digital position to stars. Leo sits on an equipment case with his little robot open in",
+          "transfers": []
+        }
+      ]
+    },
+    {
+      "name": "Cargo crates of Saudi silver riyals",
+      "aliases": [
+        "Saudi silver riyals",
+        "coins",
+        "crates",
+        "boxes",
+        "crate",
+        "Silver coins"
+      ],
+      "alias_scenes": {
+        "Saudi silver riyals": [
+          13
+        ],
+        "coins": [
+          15,
+          22,
+          23
+        ],
+        "crates": [
+          15,
+          22
+        ],
+        "boxes": [
+          13
+        ],
+        "crate": [
+          13,
+          22
+        ],
+        "Silver coins": [
+          22
+        ]
+      },
+      "description": "The shipment motivates the ship’s historical significance and sinks with it.",
+      "reason": "The shipment motivates the ship’s historical significance and sinks with it.",
+      "criteria": {
+        "center_of_focus": true,
+        "high_frequency": true,
+        "transfer": false,
+        "actively_handled": false
+      },
+      "scene_count": 4,
+      "scenes": [
+        13,
+        15,
+        22,
+        23
+      ],
+      "acts": [
+        "ACT TWO",
+        "ACT THREE"
+      ],
+      "transfer_count": 0,
+      "appearances": [
+        {
+          "scene_number": 13,
+          "act": "ACT TWO",
+          "heading": "INT. SS JOHN BARRY - CARGO OFFICE / HOLD ACCESS - DAY - 1944",
+          "usage": "Named \"Saudi silver riyals\"",
+          "evidence": "She leans closer. SOFIA Saudi silver riyals.",
+          "transfers": []
+        },
+        {
+          "scene_number": 15,
+          "act": "ACT TWO",
+          "heading": "INT. SS JOHN BARRY - PASSAGEWAY - LATE AFTERNOON - 1944",
+          "usage": "Named \"crates\"",
+          "evidence": "SOFIA They’re carrying the coins in crates",
+          "transfers": []
+        },
+        {
+          "scene_number": 22,
+          "act": "ACT THREE",
+          "heading": "INT. SS JOHN BARRY - CARGO HOLD ACCESS - CONTINUOUS - NIGHT -",
+          "usage": "Named \"crates\"",
+          "evidence": "Inside the hold: chaos. Crates have broken loose. Chains strain. A stack shifts with",
+          "transfers": []
+        },
+        {
+          "scene_number": 23,
+          "act": "ACT THREE",
+          "heading": "EXT. SS JOHN BARRY - BOAT DECK - CONTINUOUS - NIGHT - 1944",
+          "usage": "Named \"coins\"",
+          "evidence": "SOFIA The coins –",
+          "transfers": []
+        }
+      ]
+    },
+    {
+      "name": "ROV",
+      "aliases": [
+        "ROV",
+        "yellow ROV",
+        "machine",
+        "robot crab"
+      ],
+      "alias_scenes": {
+        "ROV": [
+          3,
+          7,
+          8,
+          29
+        ],
+        "yellow ROV": [
+          3,
+          7
+        ],
+        "machine": [
+          7
+        ],
+        "robot crab": [
+          7
+        ]
+      },
+      "description": "It drives the present-day wreck search and discovery.",
+      "reason": "It drives the present-day wreck search and discovery.",
+      "criteria": {
+        "center_of_focus": true,
+        "high_frequency": true,
+        "transfer": false,
+        "actively_handled": true
+      },
+      "scene_count": 4,
+      "scenes": [
+        3,
+        7,
+        8,
+        29
       ],
       "acts": [
         "ACT ONE",
@@ -853,176 +519,186 @@
       "transfer_count": 0,
       "appearances": [
         {
-          "scene_number": 5,
+          "scene_number": 3,
           "act": "ACT ONE",
-          "heading": "INT. SCROLL ROOM — CONTINUOUS",
-          "usage": "Saba selects, unties, and opens the scroll to begin the story world.",
-          "evidence": "He reaches high and draws down a small scroll tied with a cord",
+          "heading": "EXT. DEEP HORIZON - MAIN DECK - DAWN",
+          "usage": "Named \"yellow ROV\"",
+          "evidence": "On the lower aft deck, deckhands prep gear near a large yellow ROV cradle.",
           "transfers": []
         },
         {
-          "scene_number": 14,
-          "act": "ACT FOUR",
-          "heading": "INT. SCROLL ROOM — LATE AFTERNOON",
-          "usage": "Miri and Nim return to the open scroll as its ink settles into the loaves-and-fish drawing.",
-          "evidence": "The small scroll rests open between them.",
+          "scene_number": 7,
+          "act": "ACT ONE",
+          "heading": "EXT. DEEP HORIZON - AFT DECK - MORNING",
+          "usage": "Named \"yellow ROV\"",
+          "evidence": "The deck is alive with activity. Crew in helmets and vests move around the yellow ROV, which",
           "transfers": []
         },
         {
-          "scene_number": 16,
+          "scene_number": 8,
+          "act": "ACT ONE",
+          "heading": "INT. DEEP HORIZON - ROV CONTROL ROOM - LATER",
+          "usage": "Named \"ROV\"",
+          "evidence": "On the main screen: black water full of floating particulates drifting through the ROV lights like underwater snow.",
+          "transfers": []
+        },
+        {
+          "scene_number": 29,
           "act": "ACT FOUR",
-          "heading": "EXT. SABA’S COURTYARD — EVENING",
-          "usage": "The scroll is back on its shelf, glowing softly beyond the courtyard.",
-          "evidence": "the little scroll glows softly on its shelf.",
+          "heading": "INT. DEEP HORIZON - ROV CONTROL ROOM - CONTINUOUS - PRESENT",
+          "usage": "Named \"ROV\"",
+          "evidence": "one on Earth could reach it. Ben adjusts the ROV heading.",
           "transfers": []
         }
       ]
     },
     {
-      "name": "Tav’s broken toy cart",
+      "name": "Life jackets",
       "aliases": [
-        "broken toy cart",
-        "little cart",
-        "toy cart",
-        "wheel",
-        "small peg",
-        "cart"
+        "life jackets",
+        "Life jacket",
+        "jacket",
+        "jacket strap"
       ],
       "alias_scenes": {
-        "broken toy cart": [
-          2,
-          15
+        "life jackets": [
+          23
         ],
-        "little cart": [
-          2
+        "Life jacket": [
+          21
         ],
-        "toy cart": [
-          2,
-          15
+        "jacket": [
+          21,
+          24
         ],
-        "wheel": [
-          2,
-          15
-        ],
-        "small peg": [
-          15
-        ],
-        "cart": [
-          2,
-          15
+        "jacket strap": [
+          24
         ]
       },
-      "description": "Tav’s small toy cart with a loose wheel; it appears broken early and is repaired by Miri using a peg Nim noses toward her.",
-      "reason": "The cart is a focused child prop that establishes Tav’s need, recurs in the resolution, and is repaired through Miri and Nim’s actions.",
+      "description": "Crew and kids handle them during abandon-ship evacuation.",
+      "reason": "Crew and kids handle them during abandon-ship evacuation.",
       "criteria": {
-        "center_of_focus": true,
+        "center_of_focus": false,
         "high_frequency": true,
-        "transfer": true,
+        "transfer": false,
+        "actively_handled": true
+      },
+      "scene_count": 3,
+      "scenes": [
+        21,
+        23,
+        24
+      ],
+      "acts": [
+        "ACT THREE"
+      ],
+      "transfer_count": 0,
+      "appearances": [
+        {
+          "scene_number": 21,
+          "act": "ACT THREE",
+          "heading": "INT. SS JOHN BARRY - CHART ROOM / BRIDGE - CONTINUOUS - NIGHT",
+          "usage": "Named \"Life jacket\"",
+          "evidence": "NAVIGATION OFFICER Life jacket. Get moving.",
+          "transfers": []
+        },
+        {
+          "scene_number": 23,
+          "act": "ACT THREE",
+          "heading": "EXT. SS JOHN BARRY - BOAT DECK - CONTINUOUS - NIGHT - 1944",
+          "usage": "Named \"life jackets\"",
+          "evidence": "Kai regains his footing amid panic and discipline colliding. Crew swing lifeboats outward. Others hand over life jackets.",
+          "transfers": []
+        },
+        {
+          "scene_number": 24,
+          "act": "ACT THREE",
+          "heading": "EXT. SS JOHN BARRY - LIFEBOAT STATION - MOMENTS LATER - NIGHT",
+          "usage": "Named \"jacket strap\"",
+          "evidence": "instinctively. Sofia helps a stunned young seaman with his jacket strap.",
+          "transfers": []
+        }
+      ]
+    },
+    {
+      "name": "Brass compass",
+      "aliases": [
+        "brass COMPASS",
+        "compass"
+      ],
+      "alias_scenes": {
+        "brass COMPASS": [
+          4
+        ],
+        "compass": [
+          4,
+          21
+        ]
+      },
+      "description": "Nora uses it to teach Maya navigation judgment.",
+      "reason": "Nora uses it to teach Maya navigation judgment.",
+      "criteria": {
+        "center_of_focus": false,
+        "high_frequency": true,
+        "transfer": false,
         "actively_handled": true
       },
       "scene_count": 2,
       "scenes": [
-        2,
-        15
+        4,
+        21
       ],
       "acts": [
-        "COLD OPEN",
-        "ACT FOUR"
+        "ACT ONE",
+        "ACT THREE"
       ],
-      "transfer_count": 1,
+      "transfer_count": 0,
       "appearances": [
         {
-          "scene_number": 2,
-          "act": "COLD OPEN",
-          "heading": "EXT. VILLAGE LANE — MOMENTS LATER",
-          "usage": "Tav sits beside the broken cart; its wheel is off and still wobbles when Miri leaves.",
-          "evidence": "TAV, a small boy with dust on his cheeks, sits beside a broken",
+          "scene_number": 4,
+          "act": "ACT ONE",
+          "heading": "INT. DEEP HORIZON - BRIDGE - DAWN",
+          "usage": "Named \"brass COMPASS\"",
+          "evidence": "satellites? Nora reaches over to a brass COMPASS mounted near an older",
           "transfers": []
         },
         {
-          "scene_number": 15,
-          "act": "ACT FOUR",
-          "heading": "EXT. VILLAGE LANE — SUNSET",
-          "usage": "Tav asks Miri to help with the wheel; Nim provides a peg and Miri fixes the cart.",
-          "evidence": "Miri uses the peg to fix the wheel more securely.",
-          "transfers": [
-            {
-              "from": "Nim",
-              "to": "Miri",
-              "evidence": "Nim chews slowly, then noses a small peg toward Miri."
-            }
-          ]
+          "scene_number": 21,
+          "act": "ACT THREE",
+          "heading": "INT. SS JOHN BARRY - CHART ROOM / BRIDGE - CONTINUOUS - NIGHT",
+          "usage": "Named \"compass\"",
+          "evidence": "damage reports. Paper charts slide. A compass swings. One window is crazed",
+          "transfers": []
         }
       ]
     },
     {
-      "name": "plain flatbread crumb",
+      "name": "Cargo manifest",
       "aliases": [
-        "plain crumb of flatbread",
-        "crumb"
+        "manifest",
+        "page"
       ],
       "alias_scenes": {
-        "plain crumb of flatbread": [
-          16
+        "manifest": [
+          13,
+          19
         ],
-        "crumb": [
-          16
+        "page": [
+          13
         ]
       },
-      "description": "A small crumb of flatbread Saba tosses to Nim in recognition of Nim’s service.",
-      "reason": "It is pulled from Saba’s pouch and transferred directly from Saba to Nim.",
+      "description": "Sofia reads it to discover the secret silver cargo.",
+      "reason": "Sofia reads it to discover the secret silver cargo.",
       "criteria": {
-        "center_of_focus": false,
-        "high_frequency": false,
-        "transfer": true,
-        "actively_handled": true
-      },
-      "scene_count": 1,
-      "scenes": [
-        16
-      ],
-      "acts": [
-        "ACT FOUR"
-      ],
-      "transfer_count": 1,
-      "appearances": [
-        {
-          "scene_number": 16,
-          "act": "ACT FOUR",
-          "heading": "EXT. SABA’S COURTYARD — EVENING",
-          "usage": "Saba tosses the crumb to Nim, who catches it.",
-          "evidence": "He tosses it gently to Nim.",
-          "transfers": [
-            {
-              "from": "SABA",
-              "to": "Nim",
-              "evidence": "He tosses it gently to Nim."
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "name": "Jesus’s staff",
-      "aliases": [
-        "staff"
-      ],
-      "alias_scenes": {
-        "staff": [
-          8
-        ]
-      },
-      "description": "A staff beside Jesus, with His hand resting on it as the disciples approach.",
-      "reason": "Jesus physically rests His hand on the staff, making it an actively handled prop.",
-      "criteria": {
-        "center_of_focus": false,
-        "high_frequency": false,
+        "center_of_focus": true,
+        "high_frequency": true,
         "transfer": false,
         "actively_handled": true
       },
-      "scene_count": 1,
+      "scene_count": 2,
       "scenes": [
-        8
+        13,
+        19
       ],
       "acts": [
         "ACT TWO"
@@ -1030,220 +706,683 @@
       "transfer_count": 0,
       "appearances": [
         {
-          "scene_number": 8,
+          "scene_number": 13,
           "act": "ACT TWO",
-          "heading": "EXT. EDGE OF CROWD — LATER",
-          "usage": "Jesus’s hand rests on the staff while the disciples gather around Him.",
-          "evidence": "His hand resting gently on a staff",
+          "heading": "INT. SS JOHN BARRY - CARGO OFFICE / HOLD ACCESS - DAY - 1944",
+          "usage": "Named \"manifest\"",
+          "evidence": "SOFIA helps a CLERK verify a manifest. Papers, stamps, grease",
           "transfers": []
-        }
-      ]
-    },
-    {
-      "name": "Saba’s sandal",
-      "aliases": [
-        "a sandal"
-      ],
-      "alias_scenes": {
-        "a sandal": [
-          3
-        ]
-      },
-      "description": "A sandal Saba is repairing while telling stories to the village children.",
-      "reason": "Saba physically repairs it in the courtyard, making it an actively handled prop.",
-      "criteria": {
-        "center_of_focus": false,
-        "high_frequency": false,
-        "transfer": false,
-        "actively_handled": true
-      },
-      "scene_count": 1,
-      "scenes": [
-        3
-      ],
-      "acts": [
-        "ACT ONE"
-      ],
-      "transfer_count": 0,
-      "appearances": [
+        },
         {
-          "scene_number": 3,
-          "act": "ACT ONE",
-          "heading": "EXT. SABA ELIOR’S COURTYARD — LATE MORNING",
-          "usage": "Saba repairs the sandal as he tells a story.",
-          "evidence": "He is repairing a sandal with one hand",
+          "scene_number": 19,
+          "act": "ACT TWO",
+          "heading": "EXT. SS JOHN BARRY - NIGHT WATCH - 1944",
+          "usage": "Named \"manifest\"",
+          "evidence": "pressure alarms SHRIEK. – Sofia drops her manifest as cargo THUNDERS loose in the",
           "transfers": []
         }
       ]
     },
     {
-      "name": "Saba’s small pouch",
+      "name": "Kai's binoculars",
       "aliases": [
-        "small pouch",
-        "pouch"
+        "binoculars"
       ],
       "alias_scenes": {
-        "small pouch": [
-          16
-        ],
-        "pouch": [
-          16
+        "binoculars": [
+          16,
+          19
         ]
       },
-      "description": "A small pouch Saba reaches into to retrieve a crumb for Nim.",
-      "reason": "Saba physically uses it to produce the final crumb reward.",
+      "description": "Kai uses them during lookout duty before the torpedo strike.",
+      "reason": "Kai uses them during lookout duty before the torpedo strike.",
       "criteria": {
         "center_of_focus": false,
-        "high_frequency": false,
+        "high_frequency": true,
         "transfer": false,
         "actively_handled": true
       },
-      "scene_count": 1,
+      "scene_count": 2,
       "scenes": [
-        16
+        16,
+        19
       ],
       "acts": [
-        "ACT FOUR"
+        "ACT TWO"
       ],
       "transfer_count": 0,
       "appearances": [
         {
           "scene_number": 16,
-          "act": "ACT FOUR",
-          "heading": "EXT. SABA’S COURTYARD — EVENING",
-          "usage": "Saba reaches into the pouch to pull out a crumb for Nim.",
-          "evidence": "reaches into a small pouch and pulls out",
+          "act": "ACT TWO",
+          "heading": "EXT. SS JOHN BARRY - DECK - SUNSET - 1944",
+          "usage": "Named \"binoculars\"",
+          "evidence": "Below, cargo crews secure lines. Men eat in shifts. A lookout scans with binoculars.",
           "transfers": []
-        }
-      ]
-    },
-    {
-      "name": "children’s hoop",
-      "aliases": [
-        "a hoop"
-      ],
-      "alias_scenes": {
-        "a hoop": [
-          3
-        ]
-      },
-      "description": "A hoop being played with by older children in the lane.",
-      "reason": "It is an active play prop that draws the children away from Saba’s story.",
-      "criteria": {
-        "center_of_focus": false,
-        "high_frequency": false,
-        "transfer": false,
-        "actively_handled": true
-      },
-      "scene_count": 1,
-      "scenes": [
-        3
-      ],
-      "acts": [
-        "ACT ONE"
-      ],
-      "transfer_count": 0,
-      "appearances": [
+        },
         {
-          "scene_number": 3,
-          "act": "ACT ONE",
-          "heading": "EXT. SABA ELIOR’S COURTYARD — LATE MORNING",
-          "usage": "Older children play with the hoop, causing the younger children to scatter after them.",
-          "evidence": "older children playing with a hoop in",
+          "scene_number": 19,
+          "act": "ACT TWO",
+          "heading": "EXT. SS JOHN BARRY - NIGHT WATCH - 1944",
+          "usage": "Named \"binoculars\"",
+          "evidence": "Moonlight turns the sea to moving metal. Kai scans with binoculars from the rail. The ship cuts forward",
           "transfers": []
         }
       ]
     },
     {
-      "name": "child’s fig",
+      "name": "Leo's homemade wheeled robot",
       "aliases": [
-        "a fig"
+        "small homemade wheeled robot",
+        "robot",
+        "little robot"
       ],
       "alias_scenes": {
-        "a fig": [
-          3
-        ]
-      },
-      "description": "A fig one child tries to balance on his nose while Saba tells a story.",
-      "reason": "It is a specific physical item manipulated by a child.",
-      "criteria": {
-        "center_of_focus": false,
-        "high_frequency": false,
-        "transfer": false,
-        "actively_handled": true
-      },
-      "scene_count": 1,
-      "scenes": [
-        3
-      ],
-      "acts": [
-        "ACT ONE"
-      ],
-      "transfer_count": 0,
-      "appearances": [
-        {
-          "scene_number": 3,
-          "act": "ACT ONE",
-          "heading": "EXT. SABA ELIOR’S COURTYARD — LATE MORNING",
-          "usage": "A child attempts to balance the fig on his nose.",
-          "evidence": "Another tries to balance a fig on his",
-          "transfers": []
-        }
-      ]
-    },
-    {
-      "name": "child’s reed",
-      "aliases": [
-        "a reed"
-      ],
-      "alias_scenes": {
-        "a reed": [
-          3
-        ]
-      },
-      "description": "A small reed used by one of the listening children to poke a beetle.",
-      "reason": "A child actively uses it during Saba’s courtyard story scene.",
-      "criteria": {
-        "center_of_focus": false,
-        "high_frequency": false,
-        "transfer": false,
-        "actively_handled": true
-      },
-      "scene_count": 1,
-      "scenes": [
-        3
-      ],
-      "acts": [
-        "ACT ONE"
-      ],
-      "transfer_count": 0,
-      "appearances": [
-        {
-          "scene_number": 3,
-          "act": "ACT ONE",
-          "heading": "EXT. SABA ELIOR’S COURTYARD — LATE MORNING",
-          "usage": "A distracted child pokes a beetle with the reed.",
-          "evidence": "One pokes a beetle with a reed.",
-          "transfers": []
-        }
-      ]
-    },
-    {
-      "name": "faded hanging cloth",
-      "aliases": [
-        "hanging cloth",
-        "faded hanging cloth"
-      ],
-      "alias_scenes": {
-        "hanging cloth": [
-          4
+        "small homemade wheeled robot": [
+          5
         ],
-        "faded hanging cloth": [
-          4
+        "robot": [
+          5,
+          32
+        ],
+        "little robot": [
+          32
         ]
       },
-      "description": "The cloth Saba pulls aside to reveal the Scroll Room.",
-      "reason": "Saba physically moves it, and it reveals the important story space.",
+      "description": "Leo operates and repairs it as his personal mechanical project.",
+      "reason": "Leo operates and repairs it as his personal mechanical project.",
+      "criteria": {
+        "center_of_focus": false,
+        "high_frequency": true,
+        "transfer": false,
+        "actively_handled": true
+      },
+      "scene_count": 2,
+      "scenes": [
+        5,
+        32
+      ],
+      "acts": [
+        "ACT ONE",
+        "ACT FIVE"
+      ],
+      "transfer_count": 0,
+      "appearances": [
+        {
+          "scene_number": 5,
+          "act": "ACT ONE",
+          "heading": "INT. DEEP HORIZON - ENGINE ROOM - DAWN",
+          "usage": "Named \"small homemade wheeled robot\"",
+          "evidence": "says function. LEO crouches beside a small homemade wheeled robot with",
+          "transfers": []
+        },
+        {
+          "scene_number": 32,
+          "act": "ACT FIVE",
+          "heading": "EXT. DEEP HORIZON - MAIN DECK - NIGHT - PRESENT DAY",
+          "usage": "Named \"little robot\"",
+          "evidence": "hand, looking from digital position to stars. Leo sits on an equipment case with his little robot open in",
+          "transfers": []
+        }
+      ]
+    },
+    {
+      "name": "Sailor's folded photograph",
+      "aliases": [
+        "folded photograph",
+        "photo",
+        "photograph"
+      ],
+      "alias_scenes": {
+        "folded photograph": [
+          17
+        ],
+        "photo": [
+          17,
+          26
+        ],
+        "photograph": [
+          17,
+          26
+        ]
+      },
+      "description": "It personalizes the crew’s homes and survival stakes.",
+      "reason": "It personalizes the crew’s homes and survival stakes.",
+      "criteria": {
+        "center_of_focus": true,
+        "high_frequency": true,
+        "transfer": false,
+        "actively_handled": true
+      },
+      "scene_count": 2,
+      "scenes": [
+        17,
+        26
+      ],
+      "acts": [
+        "ACT TWO",
+        "ACT THREE"
+      ],
+      "transfer_count": 0,
+      "appearances": [
+        {
+          "scene_number": 17,
+          "act": "ACT TWO",
+          "heading": "INT. SS JOHN BARRY - MESS - EVENING - 1944",
+          "usage": "Named \"folded photograph\"",
+          "evidence": "too suddenly. She notices a folded photograph tucked into one man’s pocket.",
+          "transfers": []
+        },
+        {
+          "scene_number": 26,
+          "act": "ACT THREE",
+          "heading": "EXT. LIFEBOAT - DAWN - 1944",
+          "usage": "Named \"photo\"",
+          "evidence": "Leo counts canteens and rations with the engineer. Sofia sits beside the sailor with the photo as he stares at",
+          "transfers": []
+        }
+      ]
+    },
+    {
+      "name": "Second seafloor silver coin",
+      "aliases": [
+        "A SILVER COIN",
+        "silver coin",
+        "coin"
+      ],
+      "alias_scenes": {
+        "A SILVER COIN": [
+          29,
+          33
+        ],
+        "silver coin": [
+          29,
+          33
+        ],
+        "coin": [
+          29,
+          33
+        ]
+      },
+      "description": "It is the new discovery lying on the wreck site.",
+      "reason": "It is the new discovery lying on the wreck site.",
+      "criteria": {
+        "center_of_focus": true,
+        "high_frequency": true,
+        "transfer": false,
+        "actively_handled": false
+      },
+      "scene_count": 2,
+      "scenes": [
+        29,
+        33
+      ],
+      "acts": [
+        "ACT FOUR",
+        "ACT FIVE"
+      ],
+      "transfer_count": 0,
+      "appearances": [
+        {
+          "scene_number": 29,
+          "act": "ACT FOUR",
+          "heading": "INT. DEEP HORIZON - ROV CONTROL ROOM - CONTINUOUS - PRESENT",
+          "usage": "Named \"coin\"",
+          "evidence": "they tend to focus on the silver. He glances at the coin.",
+          "transfers": []
+        },
+        {
+          "scene_number": 33,
+          "act": "ACT FIVE",
+          "heading": "EXT. DEEP SEAFLOOR - UNKNOWN DEPTH - NIGHT",
+          "usage": "Named \"A SILVER COIN\"",
+          "evidence": "Then – ROV LIGHT spills into frame. A silver coin lies half-buried in silt beside twisted",
+          "transfers": []
+        }
+      ]
+    },
+    {
+      "name": "Sofia's notebook",
+      "aliases": [
+        "notebook"
+      ],
+      "alias_scenes": {
+        "notebook": [
+          30,
+          32
+        ]
+      },
+      "description": "Sofia carries and writes in it to record discoveries.",
+      "reason": "Sofia carries and writes in it to record discoveries.",
+      "criteria": {
+        "center_of_focus": false,
+        "high_frequency": true,
+        "transfer": false,
+        "actively_handled": true
+      },
+      "scene_count": 2,
+      "scenes": [
+        30,
+        32
+      ],
+      "acts": [
+        "ACT FOUR",
+        "ACT FIVE"
+      ],
+      "transfer_count": 0,
+      "appearances": [
+        {
+          "scene_number": 30,
+          "act": "ACT FOUR",
+          "heading": "EXT. DEEP HORIZON - STARBOARD DECK - LATER - PRESENT DAY",
+          "usage": "Named \"notebook\"",
+          "evidence": "yet have language for all of it. Sofia runs a thumb across the notebook she’s started carrying",
+          "transfers": []
+        },
+        {
+          "scene_number": 32,
+          "act": "ACT FIVE",
+          "heading": "EXT. DEEP HORIZON - MAIN DECK - NIGHT - PRESENT DAY",
+          "usage": "Named \"notebook\"",
+          "evidence": "his lap, reworking the steering linkage. Sofia writes by red-filtered deck light in her notebook.",
+          "transfers": []
+        }
+      ]
+    },
+    {
+      "name": "Wartime paper chart",
+      "aliases": [
+        "paper chart",
+        "chart",
+        "page"
+      ],
+      "alias_scenes": {
+        "paper chart": [
+          11
+        ],
+        "chart": [
+          11,
+          21
+        ],
+        "page": [
+          11
+        ]
+      },
+      "description": "The navigation officer marks it while teaching Maya bearings.",
+      "reason": "The navigation officer marks it while teaching Maya bearings.",
+      "criteria": {
+        "center_of_focus": true,
+        "high_frequency": true,
+        "transfer": false,
+        "actively_handled": true
+      },
+      "scene_count": 2,
+      "scenes": [
+        11,
+        21
+      ],
+      "acts": [
+        "ACT TWO",
+        "ACT THREE"
+      ],
+      "transfer_count": 0,
+      "appearances": [
+        {
+          "scene_number": 11,
+          "act": "ACT TWO",
+          "heading": "INT. SS JOHN BARRY - CHART ROOM / BRIDGE ACCESS - DAY - 1944",
+          "usage": "Named \"chart\"",
+          "evidence": "MAYA stands by a narrow chart table with a NAVIGATION OFFICER,",
+          "transfers": []
+        },
+        {
+          "scene_number": 21,
+          "act": "ACT THREE",
+          "heading": "INT. SS JOHN BARRY - CHART ROOM / BRIDGE - CONTINUOUS - NIGHT",
+          "usage": "Named \"chart\"",
+          "evidence": "- 1944 Maya clings to the chart table as officers call bearings and",
+          "transfers": []
+        }
+      ]
+    },
+    {
+      "name": "Magnifier",
+      "aliases": [
+        "magnifier"
+      ],
+      "alias_scenes": {
+        "magnifier": [
+          6
+        ]
+      },
+      "description": "Elena hands it to Sofia to inspect the spoon.",
+      "reason": "Elena hands it to Sofia to inspect the spoon.",
+      "criteria": {
+        "center_of_focus": false,
+        "high_frequency": false,
+        "transfer": true,
+        "actively_handled": true
+      },
+      "scene_count": 1,
+      "scenes": [
+        6
+      ],
+      "acts": [
+        "ACT ONE"
+      ],
+      "transfer_count": 1,
+      "appearances": [
+        {
+          "scene_number": 6,
+          "act": "ACT ONE",
+          "heading": "INT. DEEP HORIZON - WET LAB - MORNING",
+          "usage": "Named \"magnifier\"",
+          "evidence": "archaeologist, who carefully rotates an old spoon under a magnifier.",
+          "transfers": [
+            {
+              "from": "ELENA",
+              "to": "SOFIA",
+              "evidence": "hands Sofia the magnifier"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Shade cloth",
+      "aliases": [
+        "shade cloth"
+      ],
+      "alias_scenes": {
+        "shade cloth": [
+          26
+        ]
+      },
+      "description": "Leo gives it to someone needier during the lifeboat ordeal.",
+      "reason": "Leo gives it to someone needier during the lifeboat ordeal.",
+      "criteria": {
+        "center_of_focus": false,
+        "high_frequency": false,
+        "transfer": true,
+        "actively_handled": true
+      },
+      "scene_count": 1,
+      "scenes": [
+        26
+      ],
+      "acts": [
+        "ACT THREE"
+      ],
+      "transfer_count": 1,
+      "appearances": [
+        {
+          "scene_number": 26,
+          "act": "ACT THREE",
+          "heading": "EXT. LIFEBOAT - DAWN - 1944",
+          "usage": "Named \"Shade cloth\"",
+          "evidence": "them. – Leo quietly hands the last bit of shade cloth to someone",
+          "transfers": [
+            {
+              "from": "Leo",
+              "to": "someone worse off than he is",
+              "evidence": "hands the last bit of shade cloth"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Signal lantern",
+      "aliases": [
+        "signal lantern"
+      ],
+      "alias_scenes": {
+        "signal lantern": [
+          23
+        ]
+      },
+      "description": "Kai passes it to help during evacuation.",
+      "reason": "Kai passes it to help during evacuation.",
+      "criteria": {
+        "center_of_focus": false,
+        "high_frequency": false,
+        "transfer": true,
+        "actively_handled": true
+      },
+      "scene_count": 1,
+      "scenes": [
+        23
+      ],
+      "acts": [
+        "ACT THREE"
+      ],
+      "transfer_count": 1,
+      "appearances": [
+        {
+          "scene_number": 23,
+          "act": "ACT THREE",
+          "heading": "EXT. SS JOHN BARRY - BOAT DECK - CONTINUOUS - NIGHT - 1944",
+          "usage": "Named \"signal lantern\"",
+          "evidence": "The ship’s list worsens by the second. Kai grabs a dropped signal lantern and passes it to a sailor.",
+          "transfers": [
+            {
+              "from": "Kai",
+              "to": "a sailor",
+              "evidence": "passes it to a sailor"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Canteens and rations",
+      "aliases": [
+        "canteens",
+        "rations"
+      ],
+      "alias_scenes": {
+        "canteens": [
+          26
+        ],
+        "rations": [
+          26
+        ]
+      },
+      "description": "Leo counts survival supplies in the lifeboat.",
+      "reason": "Leo counts survival supplies in the lifeboat.",
+      "criteria": {
+        "center_of_focus": false,
+        "high_frequency": false,
+        "transfer": false,
+        "actively_handled": true
+      },
+      "scene_count": 1,
+      "scenes": [
+        26
+      ],
+      "acts": [
+        "ACT THREE"
+      ],
+      "transfer_count": 0,
+      "appearances": [
+        {
+          "scene_number": 26,
+          "act": "ACT THREE",
+          "heading": "EXT. LIFEBOAT - DAWN - 1944",
+          "usage": "Named \"Canteens and rations\"",
+          "evidence": "concentration. Leo counts canteens and rations with the engineer.",
+          "transfers": []
+        }
+      ]
+    },
+    {
+      "name": "Cloth waved by survivors",
+      "aliases": [
+        "cloth"
+      ],
+      "alias_scenes": {
+        "cloth": [
+          27
+        ]
+      },
+      "description": "Survivors wave it to signal the rescuing ship.",
+      "reason": "Survivors wave it to signal the rescuing ship.",
+      "criteria": {
+        "center_of_focus": false,
+        "high_frequency": false,
+        "transfer": false,
+        "actively_handled": true
+      },
+      "scene_count": 1,
+      "scenes": [
+        27
+      ],
+      "acts": [
+        "ACT THREE"
+      ],
+      "transfer_count": 0,
+      "appearances": [
+        {
+          "scene_number": 27,
+          "act": "ACT THREE",
+          "heading": "EXT. LIFEBOAT - DAY - 1944",
+          "usage": "Named \"cloth\"",
+          "evidence": "Hope moves through the boat like current. Men stand, wave cloth, shout.",
+          "transfers": []
+        }
+      ]
+    },
+    {
+      "name": "Cracked oarlock",
+      "aliases": [
+        "cracked oarlock",
+        "oarlock"
+      ],
+      "alias_scenes": {
+        "cracked oarlock": [
+          26
+        ],
+        "oarlock": [
+          26
+        ]
+      },
+      "description": "Leo repairs it while adrift, showing ingenuity under pressure.",
+      "reason": "Leo repairs it while adrift, showing ingenuity under pressure.",
+      "criteria": {
+        "center_of_focus": false,
+        "high_frequency": false,
+        "transfer": false,
+        "actively_handled": true
+      },
+      "scene_count": 1,
+      "scenes": [
+        26
+      ],
+      "acts": [
+        "ACT THREE"
+      ],
+      "transfer_count": 0,
+      "appearances": [
+        {
+          "scene_number": 26,
+          "act": "ACT THREE",
+          "heading": "EXT. LIFEBOAT - DAWN - 1944",
+          "usage": "Named \"Cracked oarlock\"",
+          "evidence": "– Maya scans the horizon, learning the discipline of waiting. – Leo repairs a cracked oarlock with torn fabric and wire,",
+          "transfers": []
+        }
+      ]
+    },
+    {
+      "name": "Kai's message canister",
+      "aliases": [
+        "message canister"
+      ],
+      "alias_scenes": {
+        "message canister": [
+          10
+        ]
+      },
+      "description": "Kai carries it through wartime ship activity.",
+      "reason": "Kai carries it through wartime ship activity.",
+      "criteria": {
+        "center_of_focus": false,
+        "high_frequency": false,
+        "transfer": false,
+        "actively_handled": true
+      },
+      "scene_count": 1,
+      "scenes": [
+        10
+      ],
+      "acts": [
+        "ACT TWO"
+      ],
+      "transfer_count": 0,
+      "appearances": [
+        {
+          "scene_number": 10,
+          "act": "ACT TWO",
+          "heading": "EXT. SS JOHN BARRY - MAIN DECK - DAY - 1944",
+          "usage": "Named \"message canister\"",
+          "evidence": "KAI, now in wartime deck clothes, skids around a stack of cargo crates with a message canister under one arm. Sailors",
+          "transfers": []
+        }
+      ]
+    },
+    {
+      "name": "Maya's chart tablet",
+      "aliases": [
+        "chart tablet"
+      ],
+      "alias_scenes": {
+        "chart tablet": [
+          32
+        ]
+      },
+      "description": "Maya uses it while comparing digital position to stars.",
+      "reason": "Maya uses it while comparing digital position to stars.",
+      "criteria": {
+        "center_of_focus": false,
+        "high_frequency": false,
+        "transfer": false,
+        "actively_handled": true
+      },
+      "scene_count": 1,
+      "scenes": [
+        32
+      ],
+      "acts": [
+        "ACT FIVE"
+      ],
+      "transfer_count": 0,
+      "appearances": [
+        {
+          "scene_number": 32,
+          "act": "ACT FIVE",
+          "heading": "EXT. DEEP HORIZON - MAIN DECK - NIGHT - PRESENT DAY",
+          "usage": "Named \"chart tablet\"",
+          "evidence": "present and past. Maya stands alone for a moment near the rail, chart tablet in",
+          "transfers": []
+        }
+      ]
+    },
+    {
+      "name": "Old spoon",
+      "aliases": [
+        "old spoon",
+        "spoon"
+      ],
+      "alias_scenes": {
+        "old spoon": [
+          6
+        ],
+        "spoon": [
+          6
+        ]
+      },
+      "description": "Elena uses it to teach Sofia archaeological listening.",
+      "reason": "Elena uses it to teach Sofia archaeological listening.",
       "criteria": {
         "center_of_focus": true,
         "high_frequency": false,
@@ -1252,7 +1391,7 @@
       },
       "scene_count": 1,
       "scenes": [
-        4
+        6
       ],
       "acts": [
         "ACT ONE"
@@ -1260,15 +1399,110 @@
       "transfer_count": 0,
       "appearances": [
         {
-          "scene_number": 4,
+          "scene_number": 6,
           "act": "ACT ONE",
-          "heading": "INT. SABA’S HOUSE — CONTINUOUS",
-          "usage": "Saba pulls the cloth aside, revealing the Scroll Room.",
-          "evidence": "Saba pulls aside a faded hanging cloth.",
+          "heading": "INT. DEEP HORIZON - WET LAB - MORNING",
+          "usage": "Named \"spoon\"",
+          "evidence": "from earlier dives: a brass button, ceramic fragments, a corroded spoon, a piece of carved timber under a preservation",
+          "transfers": []
+        }
+      ]
+    },
+    {
+      "name": "Storage tags and pencil",
+      "aliases": [
+        "storage tags",
+        "pencil"
+      ],
+      "alias_scenes": {
+        "storage tags": [
+          31
+        ],
+        "pencil": [
+          31
+        ]
+      },
+      "description": "Sofia requests them to preserve archaeological context accurately.",
+      "reason": "Sofia requests them to preserve archaeological context accurately.",
+      "criteria": {
+        "center_of_focus": false,
+        "high_frequency": false,
+        "transfer": false,
+        "actively_handled": true
+      },
+      "scene_count": 1,
+      "scenes": [
+        31
+      ],
+      "acts": [
+        "ACT FOUR"
+      ],
+      "transfer_count": 0,
+      "appearances": [
+        {
+          "scene_number": 31,
+          "act": "ACT FOUR",
+          "heading": "INT. DEEP HORIZON - MESS / COMMON AREA - EVENING - PRESENT DAY",
+          "usage": "Named \"storage tags\"",
+          "evidence": "Sofia asked me for three more storage tags and a sharper pencil.",
+          "transfers": []
+        }
+      ]
+    },
+    {
+      "name": "Torn fabric and wire",
+      "aliases": [
+        "torn fabric and wire",
+        "wire"
+      ],
+      "alias_scenes": {
+        "torn fabric and wire": [
+          26
+        ],
+        "wire": [
+          26
+        ]
+      },
+      "description": "Leo uses them to repair the damaged oarlock.",
+      "reason": "Leo uses them to repair the damaged oarlock.",
+      "criteria": {
+        "center_of_focus": false,
+        "high_frequency": false,
+        "transfer": false,
+        "actively_handled": true
+      },
+      "scene_count": 1,
+      "scenes": [
+        26
+      ],
+      "acts": [
+        "ACT THREE"
+      ],
+      "transfer_count": 0,
+      "appearances": [
+        {
+          "scene_number": 26,
+          "act": "ACT THREE",
+          "heading": "EXT. LIFEBOAT - DAWN - 1944",
+          "usage": "Named \"torn fabric and wire\"",
+          "evidence": "– Maya scans the horizon, learning the discipline of waiting. – Leo repairs a cracked oarlock with torn fabric and wire,",
           "transfers": []
         }
       ]
     }
   ],
-  "reasoning_effort": "model default"
+  "mode": "fast",
+  "reasoning_effort": "low",
+  "run": {
+    "seconds": 21.8,
+    "tokens": {
+      "input_tokens": 10117,
+      "cached_input_tokens": 0,
+      "output_tokens": 1927,
+      "reasoning_tokens": 409,
+      "answer_tokens": 1518,
+      "total_tokens": 12044,
+      "output_tokens_per_second": 88.3
+    }
+  }
 }

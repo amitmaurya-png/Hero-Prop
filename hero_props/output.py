@@ -6,7 +6,7 @@ import json
 from pathlib import Path
 
 from .config import CRITERIA
-from .verify import alias_scenes, final_criteria, verified_appearances
+from .verify import alias_scenes, fast_appearances, final_criteria, verified_appearances
 
 
 def build_hero_prop(prop: dict, appearances: list[dict], scenes: list[dict]) -> dict:
@@ -15,7 +15,7 @@ def build_hero_prop(prop: dict, appearances: list[dict], scenes: list[dict]) -> 
         "name": prop["name"],
         "aliases": prop["aliases"],
         "alias_scenes": alias_scenes(prop["aliases"], scene_numbers, scenes),
-        "description": prop["description"],
+        "description": prop.get("description", prop["reason"]),   # fast mode has no description
         "reason": prop["reason"],
         "criteria": final_criteria(prop, appearances),
         "scene_count": len(appearances),
@@ -34,7 +34,10 @@ def build_output(title: str, scenes: list[dict], answer: dict, model: str,
     props = []
 
     for prop in answer["hero_props"]:
-        appearances = verified_appearances(prop, scenes_by_number, warnings)
+        if "appearances" in prop:          # full mode: the model gave every scene + quote
+            appearances = verified_appearances(prop, scenes_by_number, warnings)
+        else:                              # fast mode: scene numbers only, code finds evidence
+            appearances = fast_appearances(prop, scenes_by_number, warnings)
         if not appearances:
             warnings.append(f"{prop['name']}: no verified scenes, prop dropped")
             continue
