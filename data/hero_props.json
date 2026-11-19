@@ -5,7 +5,8 @@
   "hero_prop_criteria": {
     "center_of_focus": "The story, a shot or a character's attention centres on the object.",
     "high_frequency": "The object is present in more than one scene/act.",
-    "transfer": "The object passes between two characters."
+    "transfer": "The object passes between two characters.",
+    "actively_handled": "A character physically interacts with the object (holds, uses, repairs...)."
   },
   "scenes": [
     {
@@ -89,43 +90,48 @@
       "heading": "EXT. SABA’S COURTYARD — EVENING"
     }
   ],
-  "hero_prop_count": 6,
+  "hero_prop_count": 10,
   "hero_props": [
     {
-      "name": "Yonah's small lunch",
+      "name": "Yonah's lunch bundle of five loaves and two fish",
       "aliases": [
         "small bundle",
-        "bundle",
+        "food",
         "lunch",
         "small lunch",
         "five barley loaves",
         "two fish",
+        "Five barley loaves. Two fish.",
         "five loaves and two fish",
+        "loaves",
         "bread",
         "fish",
         "leftover pieces",
+        "piece of bread",
         "crumb"
       ],
       "alias_scenes": {
         "small bundle": [
           7
         ],
-        "bundle": [
-          5,
+        "food": [
           7,
           8,
-          14
+          9,
+          10
         ],
         "lunch": [
           5,
           8,
           9,
           12,
-          13
+          13,
+          15
         ],
         "small lunch": [
           9,
-          12
+          12,
+          15
         ],
         "five barley loaves": [
           7,
@@ -138,7 +144,17 @@
           12,
           14
         ],
+        "Five barley loaves. Two fish.": [
+          7
+        ],
         "five loaves and two fish": [
+          12,
+          14
+        ],
+        "loaves": [
+          7,
+          8,
+          10,
           12,
           14
         ],
@@ -160,20 +176,23 @@
           11,
           12
         ],
+        "piece of bread": [
+          12
+        ],
         "crumb": [
           8,
           10,
           12,
-          13,
-          16
+          13
         ]
       },
-      "description": "Yonah’s bundle of five barley loaves and two fish. It is offered to Jesus, multiplied into abundant bread and fish for the crowd, and later gathered as leftovers; the changed/multiplied food is treated as the same story prop in transformed form.",
-      "reason": "This is the central miracle prop and thematic mirror for Miri’s cakes: a small, real lunch that becomes enough when given. It is repeatedly shown, discussed, handed over, multiplied, distributed, and gathered.",
+      "description": "Yonah's small lunch bundle: five barley loaves and two fish. It is given to Andrew and Jesus, multiplied into bread and fish for the crowd, and continues as leftover pieces gathered afterward.",
+      "reason": "This is the central miracle prop: it is introduced, debated, offered, received by Jesus, multiplied, distributed, gathered as leftovers, and thematically compared to Miri's cakes.",
       "criteria": {
         "center_of_focus": true,
         "high_frequency": true,
-        "transfer": true
+        "transfer": true,
+        "actively_handled": true
       },
       "scene_count": 10,
       "scenes": [
@@ -186,7 +205,7 @@
         12,
         13,
         14,
-        16
+        15
       ],
       "acts": [
         "ACT ONE",
@@ -194,13 +213,13 @@
         "ACT THREE",
         "ACT FOUR"
       ],
-      "transfer_count": 8,
+      "transfer_count": 5,
       "appearances": [
         {
           "scene_number": 5,
           "act": "ACT ONE",
           "heading": "INT. SCROLL ROOM — CONTINUOUS",
-          "usage": "Saba introduces the story of the boy and his seemingly insufficient lunch.",
+          "usage": "Saba introduces the story of the boy's small lunch before the vision begins.",
           "evidence": "one boy who carried almost nothing.",
           "transfers": []
         },
@@ -208,7 +227,7 @@
           "scene_number": 7,
           "act": "ACT TWO",
           "heading": "EXT. HILLSIDE PATH — CONTINUOUS",
-          "usage": "Yonah carries the bundled lunch and identifies its contents.",
+          "usage": "Yonah carries the bundle and identifies its contents.",
           "evidence": "Five barley loaves. Two fish.",
           "transfers": []
         },
@@ -216,12 +235,12 @@
           "scene_number": 8,
           "act": "ACT TWO",
           "heading": "EXT. EDGE OF CROWD — LATER",
-          "usage": "Yonah unwraps the lunch, considers keeping it, then gives it to Andrew for Jesus.",
+          "usage": "Yonah unwraps, considers, offers, and hands over the lunch to Andrew.",
           "evidence": "Yonah unwraps the lunch.",
           "transfers": [
             {
-              "from": "YONAH",
-              "to": "ANDREW",
+              "from": "Yonah",
+              "to": "Andrew",
               "evidence": "Andrew receives the lunch with great care."
             }
           ]
@@ -230,11 +249,11 @@
           "scene_number": 9,
           "act": "ACT TWO",
           "heading": "EXT. NEAR JESUS — CONTINUOUS",
-          "usage": "Andrew brings the lunch to Jesus; Jesus receives it and begins directing the crowd.",
+          "usage": "Andrew brings the lunch to Jesus, whose hands receive it.",
           "evidence": "Jesus’s hands receive the small lunch from Andrew.",
           "transfers": [
             {
-              "from": "ANDREW",
+              "from": "Andrew",
               "to": "Jesus",
               "evidence": "Jesus’s hands receive the small lunch from Andrew."
             }
@@ -244,14 +263,9 @@
           "scene_number": 10,
           "act": "ACT TWO",
           "heading": "EXT. HILLSIDE — MOMENTS LATER",
-          "usage": "The loaves and fish are blessed, broken, multiplied, and distributed through the crowd.",
+          "usage": "Jesus gives thanks, the loaves and fish multiply, and pieces are distributed through the crowd.",
           "evidence": "Jesus lifts the loaves.",
           "transfers": [
-            {
-              "from": "ANDREW",
-              "to": "Miri",
-              "evidence": "A basket is placed in her hands."
-            },
             {
               "from": "Miri",
               "to": "SMALL GIRL",
@@ -264,7 +278,7 @@
             },
             {
               "from": "CHILD",
-              "to": "NIM",
+              "to": "Nim",
               "evidence": "A child giggles and offers Nim a tiny piece."
             }
           ]
@@ -273,34 +287,23 @@
           "scene_number": 11,
           "act": "ACT THREE",
           "heading": "EXT. HILLSIDE — LATE AFTERNOON",
-          "usage": "The multiplied food now appears as leftovers to be gathered.",
-          "evidence": "carrying a half-filled basket of leftover pieces.",
+          "usage": "The remaining pieces of the multiplied lunch are to be gathered.",
+          "evidence": "Gather the pieces left over, that",
           "transfers": []
         },
         {
           "scene_number": 12,
           "act": "ACT THREE",
           "heading": "EXT. HILLSIDE — CONTINUOUS",
-          "usage": "Miri, Yonah, and Nim gather leftover pieces and discuss how the original lunch became abundance.",
-          "evidence": "Miri, Yonah, and Nim gather leftover pieces of bread.",
-          "transfers": [
-            {
-              "from": "NIM",
-              "to": "basket",
-              "evidence": "Nim drops the piece into the basket"
-            },
-            {
-              "from": "Miri, Yonah, and Nim",
-              "to": "ANDREW",
-              "evidence": "Andrew receives their basket."
-            }
-          ]
+          "usage": "Miri, Yonah, and Nim gather leftover bread pieces into baskets.",
+          "evidence": "gather leftover pieces of bread.",
+          "transfers": []
         },
         {
           "scene_number": 13,
           "act": "ACT THREE",
           "heading": "EXT. HILLSIDE RIDGE — SUNSET",
-          "usage": "Miri reflects on the meaning of Yonah’s lunch and his opened hands.",
+          "usage": "Miri names Yonah's lunch as the lesson that changed her view of generosity.",
           "evidence": "Yonah’s lunch looked too small.",
           "transfers": []
         },
@@ -308,16 +311,16 @@
           "scene_number": 14,
           "act": "ACT FOUR",
           "heading": "INT. SCROLL ROOM — LATE AFTERNOON",
-          "usage": "Back in the Scroll Room, the scroll image and conversation refer to the loaves, fish, and the boy’s gift.",
-          "evidence": "the drawing of five loaves and two fish.",
+          "usage": "The scroll image settles back into the drawing of the lunch.",
+          "evidence": "drawing of five loaves and two fish.",
           "transfers": []
         },
         {
-          "scene_number": 16,
+          "scene_number": 15,
           "act": "ACT FOUR",
-          "heading": "EXT. SABA’S COURTYARD — EVENING",
-          "usage": "Miri refers to the remembered miracle and its baskets as something that stays with her.",
-          "evidence": "The hillside. Yonah. The baskets.",
+          "heading": "EXT. VILLAGE LANE — SUNSET",
+          "usage": "Miri refers to Saba being distracted by the story of the small lunch.",
+          "evidence": "a very small lunch.",
           "transfers": []
         }
       ]
@@ -326,38 +329,41 @@
       "name": "Miri's cloth bundle of honey-date cakes",
       "aliases": [
         "small cloth bundle",
+        "bundle",
         "cloth bundle",
-        "three small HONEY-DATE CAKES",
+        "hidden cakes",
         "honey cakes",
+        "honey-date cakes",
+        "cake",
         "cakes",
-        "one honey-date cake",
-        "cake"
+        "one whole cake and half of another",
+        "last crumbs"
       ],
       "alias_scenes": {
         "small cloth bundle": [
           1
+        ],
+        "bundle": [
+          1,
+          3,
+          5,
+          14
         ],
         "cloth bundle": [
           1,
           3,
           14
         ],
-        "three small HONEY-DATE CAKES": [
-          1
+        "hidden cakes": [
+          2
         ],
         "honey cakes": [
           1,
           10
         ],
-        "cakes": [
+        "honey-date cakes": [
           1,
-          2,
-          3,
-          10,
           14
-        ],
-        "one honey-date cake": [
-          15
         ],
         "cake": [
           1,
@@ -365,16 +371,31 @@
           13,
           14,
           15
+        ],
+        "cakes": [
+          1,
+          2,
+          3,
+          10,
+          14,
+          16
+        ],
+        "one whole cake and half of another": [
+          15
+        ],
+        "last crumbs": [
+          15
         ]
       },
-      "description": "Miri’s wrapped set of three honey-date cakes. The cakes are protected, refused, reflected on, then shared; the set diminishes as Miri gives from it.",
-      "reason": "This prop embodies Miri’s fear of not having enough and her eventual generosity. It is repeatedly handled, guarded, discussed, and finally given away/shared.",
+      "description": "Miri's cloth-wrapped set of three honey-date cakes. The same set is guarded, reconsidered after the loaves-and-fish story, then divided and shared with Tav, Nim, and Miri herself.",
+      "reason": "The cakes are Miri's concrete test of generosity, recur from cold open through ending, are repeatedly handled, and are finally given away.",
       "criteria": {
         "center_of_focus": true,
         "high_frequency": true,
-        "transfer": true
+        "transfer": true,
+        "actively_handled": true
       },
-      "scene_count": 8,
+      "scene_count": 9,
       "scenes": [
         1,
         2,
@@ -383,7 +404,8 @@
         10,
         13,
         14,
-        15
+        15,
+        16
       ],
       "acts": [
         "COLD OPEN",
@@ -398,7 +420,7 @@
           "scene_number": 1,
           "act": "COLD OPEN",
           "heading": "EXT. MIRI’S VILLAGE — MORNING",
-          "usage": "Miri carries and guards the wrapped cakes; Ima instructs her to give one to Tav.",
+          "usage": "Miri carries, opens, and guards the cloth bundle; Ima tells her to give one cake to Tav.",
           "evidence": "Three small HONEY-DATE CAKES gleam in the cloth.",
           "transfers": []
         },
@@ -406,15 +428,15 @@
           "scene_number": 2,
           "act": "COLD OPEN",
           "heading": "EXT. VILLAGE LANE — MOMENTS LATER",
-          "usage": "Miri keeps the cakes hidden and declines Tav’s request for one.",
-          "evidence": "Nim trots beside her, eyes glued to the hidden cakes.",
+          "usage": "The cakes are hidden in Miri's basket while Tav asks for one and Miri refuses.",
+          "evidence": "eyes glued to the hidden cakes.",
           "transfers": []
         },
         {
           "scene_number": 3,
           "act": "ACT ONE",
           "heading": "EXT. SABA ELIOR’S COURTYARD — LATE MORNING",
-          "usage": "The cakes are discovered under the linen and become the subject of Miri’s question to Saba.",
+          "usage": "Saba notices the bundle and discusses Miri's reluctance to give a cake away.",
           "evidence": "SABA notices the cloth bundle tucked beneath the linen.",
           "transfers": []
         },
@@ -422,7 +444,7 @@
           "scene_number": 5,
           "act": "ACT ONE",
           "heading": "INT. SCROLL ROOM — CONTINUOUS",
-          "usage": "The cakes remain with Miri as Nim watches them during Saba’s story setup.",
+          "usage": "The bundle remains with Miri in the scroll room while Nim watches it.",
           "evidence": "still eyeing the honey cake bundle.",
           "transfers": []
         },
@@ -430,15 +452,15 @@
           "scene_number": 10,
           "act": "ACT TWO",
           "heading": "EXT. HILLSIDE — MOMENTS LATER",
-          "usage": "Miri remembers the cakes while witnessing the feeding miracle and her own empty side.",
-          "evidence": "the honey cakes would be.",
+          "usage": "Miri remembers the cakes by feeling the empty place where they would be in the story world.",
+          "evidence": "where, in the home world, the honey cakes would be.",
           "transfers": []
         },
         {
           "scene_number": 13,
           "act": "ACT THREE",
           "heading": "EXT. HILLSIDE RIDGE — SUNSET",
-          "usage": "Miri explicitly connects Yonah’s lunch to the cake she withheld from Tav.",
+          "usage": "Miri explicitly connects the miracle story to the cake she withheld from Tav.",
           "evidence": "I think I should have given Tav the cake.",
           "transfers": []
         },
@@ -446,7 +468,7 @@
           "scene_number": 14,
           "act": "ACT FOUR",
           "heading": "INT. SCROLL ROOM — LATE AFTERNOON",
-          "usage": "Back in the Scroll Room, Miri opens the bundle and sees all three cakes still present.",
+          "usage": "Back in the scroll room, Miri opens the bundle and confirms all three cakes remain.",
           "evidence": "Three honey-date cakes.",
           "transfers": []
         },
@@ -454,163 +476,47 @@
           "scene_number": 15,
           "act": "ACT FOUR",
           "heading": "EXT. VILLAGE LANE — SUNSET",
-          "usage": "Miri shares the cakes with Tav, Nim, and herself.",
-          "evidence": "She takes out one honey-date cake.",
+          "usage": "Miri opens the cloth, gives Tav one and a half cakes, gives Nim a piece, and eats a piece herself.",
+          "evidence": "Miri gives Tav one whole cake and half of another.",
           "transfers": [
             {
               "from": "Miri",
-              "to": "TAV",
+              "to": "Tav",
               "evidence": "Miri gives Tav one whole cake and half of another."
             },
             {
               "from": "Miri",
-              "to": "NIM",
+              "to": "Nim",
               "evidence": "gives one to Nim, and keeps one."
             }
           ]
-        }
-      ]
-    },
-    {
-      "name": "Ima's linen basket",
-      "aliases": [
-        "linen basket",
-        "basket of folded linen",
-        "clean linen",
-        "sleeves",
-        "basket"
-      ],
-      "alias_scenes": {
-        "linen basket": [
-          1,
-          2,
-          3,
-          16
-        ],
-        "basket of folded linen": [
-          1
-        ],
-        "clean linen": [
-          3
-        ],
-        "sleeves": [
-          1,
-          3,
-          15
-        ],
-        "basket": [
-          1,
-          2,
-          3,
-          14,
-          16
-        ]
-      },
-      "description": "The basket of folded linen Ima sends with Miri to Saba; it creates Miri’s errand and carries/obscures the cake bundle.",
-      "reason": "The linen basket motivates Miri’s trip to Saba, is physically handed to her, delivered to Saba, and recurs as Nim’s hiding/resting place.",
-      "criteria": {
-        "center_of_focus": false,
-        "high_frequency": true,
-        "transfer": true
-      },
-      "scene_count": 6,
-      "scenes": [
-        1,
-        2,
-        3,
-        14,
-        15,
-        16
-      ],
-      "acts": [
-        "COLD OPEN",
-        "ACT ONE",
-        "ACT FOUR"
-      ],
-      "transfer_count": 2,
-      "appearances": [
-        {
-          "scene_number": 1,
-          "act": "COLD OPEN",
-          "heading": "EXT. MIRI’S VILLAGE — MORNING",
-          "usage": "Ima gives Miri the linen basket for Saba, starting the errand.",
-          "evidence": "Ima hands Miri the linen basket.",
-          "transfers": [
-            {
-              "from": "IMA",
-              "to": "Miri",
-              "evidence": "Ima hands Miri the linen basket."
-            }
-          ]
-        },
-        {
-          "scene_number": 2,
-          "act": "COLD OPEN",
-          "heading": "EXT. VILLAGE LANE — MOMENTS LATER",
-          "usage": "Miri carries the basket while passing Tav.",
-          "evidence": "Miri walks with the linen basket.",
-          "transfers": []
-        },
-        {
-          "scene_number": 3,
-          "act": "ACT ONE",
-          "heading": "EXT. SABA ELIOR’S COURTYARD — LATE MORNING",
-          "usage": "Miri brings the basket to Saba and delivers the linen/sleeves.",
-          "evidence": "Miri enters with the linen basket.",
-          "transfers": [
-            {
-              "from": "Miri",
-              "to": "SABA",
-              "evidence": "SABA takes the linen and inspects his sleeve"
-            }
-          ]
-        },
-        {
-          "scene_number": 14,
-          "act": "ACT FOUR",
-          "heading": "INT. SCROLL ROOM — LATE AFTERNOON",
-          "usage": "The basket still holds Miri’s cake bundle; Nim tries to inspect it.",
-          "evidence": "Miri looks down at the cloth bundle in her basket.",
-          "transfers": []
-        },
-        {
-          "scene_number": 15,
-          "act": "ACT FOUR",
-          "heading": "EXT. VILLAGE LANE — SUNSET",
-          "usage": "Tav refers back to Miri’s errand with Saba’s sleeves.",
-          "evidence": "Did Saba fix his sleeves?",
-          "transfers": []
         },
         {
           "scene_number": 16,
           "act": "ACT FOUR",
           "heading": "EXT. SABA’S COURTYARD — EVENING",
-          "usage": "Nim curls up in the linen basket while Saba and Miri talk.",
-          "evidence": "Nim climbs into the linen basket",
+          "usage": "Nim refers back to the cakes while joking about future generosity.",
+          "evidence": "we begin with six cakes.",
           "transfers": []
         }
       ]
     },
     {
-      "name": "The miracle baskets",
+      "name": "Miracle distribution and leftover baskets",
       "aliases": [
         "basket holding the bread",
-        "basket",
+        "a basket",
         "baskets",
-        "twelve baskets",
         "empty baskets",
-        "half-filled basket"
+        "twelve baskets",
+        "their basket"
       ],
       "alias_scenes": {
         "basket holding the bread": [
           9
         ],
-        "basket": [
-          9,
-          10,
-          11,
-          12,
-          16
+        "a basket": [
+          10
         ],
         "baskets": [
           10,
@@ -618,22 +524,23 @@
           12,
           16
         ],
-        "twelve baskets": [
-          12
-        ],
         "empty baskets": [
           11
         ],
-        "half-filled basket": [
-          11
+        "twelve baskets": [
+          12
+        ],
+        "their basket": [
+          12
         ]
       },
-      "description": "The baskets used to hold, distribute, and gather the miraculously multiplied bread and fish, culminating in twelve full baskets of leftovers.",
-      "reason": "The baskets visually prove the miracle’s abundance, are handled by disciples and children, pass between characters, and become a repeated symbol of more-than-enough provision.",
+      "description": "The baskets used to hold, pass, distribute, and gather the multiplied bread and fish; this includes the basket placed in Miri's hands and the twelve leftover baskets.",
+      "reason": "The baskets visibly carry the miracle through the crowd, are passed and received, and become proof of abundance when twelve remain full.",
       "criteria": {
         "center_of_focus": true,
         "high_frequency": true,
-        "transfer": true
+        "transfer": true,
+        "actively_handled": true
       },
       "scene_count": 5,
       "scenes": [
@@ -654,7 +561,7 @@
           "scene_number": 9,
           "act": "ACT TWO",
           "heading": "EXT. NEAR JESUS — CONTINUOUS",
-          "usage": "A basket holds the bread near Jesus as He instructs everyone to sit.",
+          "usage": "A basket holds the bread near Jesus as He instructs the disciples to seat everyone.",
           "evidence": "the basket holding the bread.",
           "transfers": []
         },
@@ -662,11 +569,11 @@
           "scene_number": 10,
           "act": "ACT TWO",
           "heading": "EXT. HILLSIDE — MOMENTS LATER",
-          "usage": "Baskets pass through the crowd full of multiplied food; one is placed in Miri’s hands.",
-          "evidence": "Baskets pass from hand to hand.",
+          "usage": "Baskets are filled, passed, and one is placed in Miri's hands for distribution.",
+          "evidence": "Hands pass bread into a basket.",
           "transfers": [
             {
-              "from": "ANDREW",
+              "from": "Andrew",
               "to": "Miri",
               "evidence": "A basket is placed in her hands."
             }
@@ -676,7 +583,7 @@
           "scene_number": 11,
           "act": "ACT THREE",
           "heading": "EXT. HILLSIDE — LATE AFTERNOON",
-          "usage": "Disciples and Yonah carry baskets to collect leftovers.",
+          "usage": "Disciples move through the fed crowd with baskets to collect leftovers.",
           "evidence": "Disciples move through the crowd with empty baskets.",
           "transfers": []
         },
@@ -684,12 +591,12 @@
           "scene_number": 12,
           "act": "ACT THREE",
           "heading": "EXT. HILLSIDE — CONTINUOUS",
-          "usage": "The baskets fill with leftovers; Andrew receives the children’s basket.",
-          "evidence": "there are twelve baskets now",
+          "usage": "The children fill a basket, notice twelve baskets, and give their basket to Andrew.",
+          "evidence": "there are twelve baskets now, each filling with leftovers.",
           "transfers": [
             {
               "from": "Miri, Yonah, and Nim",
-              "to": "ANDREW",
+              "to": "Andrew",
               "evidence": "Andrew receives their basket."
             }
           ]
@@ -698,20 +605,224 @@
           "scene_number": 16,
           "act": "ACT FOUR",
           "heading": "EXT. SABA’S COURTYARD — EVENING",
-          "usage": "Miri names the baskets as part of the story that remains in her heart.",
+          "usage": "Miri asks whether the baskets from the story will still be there tomorrow.",
           "evidence": "The hillside. Yonah. The baskets.",
           "transfers": []
         }
       ]
     },
     {
-      "name": "The small story scroll",
+      "name": "Miri's linen basket",
+      "aliases": [
+        "basket",
+        "linen basket",
+        "her basket",
+        "my clean linen"
+      ],
+      "alias_scenes": {
+        "basket": [
+          1,
+          2,
+          3,
+          14,
+          16
+        ],
+        "linen basket": [
+          1,
+          2,
+          3,
+          16
+        ],
+        "her basket": [
+          14
+        ],
+        "my clean linen": [
+          3
+        ]
+      },
+      "description": "The basket Miri carries from Ima to Saba, also used to conceal the cake bundle and later as Nim's resting place.",
+      "reason": "It is handed to Miri, carried across multiple scenes, searched by Nim, and reused at the end.",
+      "criteria": {
+        "center_of_focus": false,
+        "high_frequency": true,
+        "transfer": true,
+        "actively_handled": true
+      },
+      "scene_count": 5,
+      "scenes": [
+        1,
+        2,
+        3,
+        14,
+        16
+      ],
+      "acts": [
+        "COLD OPEN",
+        "ACT ONE",
+        "ACT FOUR"
+      ],
+      "transfer_count": 1,
+      "appearances": [
+        {
+          "scene_number": 1,
+          "act": "COLD OPEN",
+          "heading": "EXT. MIRI’S VILLAGE — MORNING",
+          "usage": "Ima gives Miri the linen basket to take to Saba.",
+          "evidence": "Ima hands Miri the linen basket.",
+          "transfers": [
+            {
+              "from": "Ima",
+              "to": "Miri",
+              "evidence": "Ima hands Miri the linen basket."
+            }
+          ]
+        },
+        {
+          "scene_number": 2,
+          "act": "COLD OPEN",
+          "heading": "EXT. VILLAGE LANE — MOMENTS LATER",
+          "usage": "Miri carries the basket through the village lane and shields it from Tav.",
+          "evidence": "Miri walks with the linen basket.",
+          "transfers": []
+        },
+        {
+          "scene_number": 3,
+          "act": "ACT ONE",
+          "heading": "EXT. SABA ELIOR’S COURTYARD — LATE MORNING",
+          "usage": "Miri brings the basket to Saba; Nim tries to climb into it.",
+          "evidence": "Miri enters with the linen basket.",
+          "transfers": []
+        },
+        {
+          "scene_number": 14,
+          "act": "ACT FOUR",
+          "heading": "INT. SCROLL ROOM — LATE AFTERNOON",
+          "usage": "Miri's cake bundle is still in the basket; Nim inspects it again.",
+          "evidence": "Miri looks down at the cloth bundle in her basket.",
+          "transfers": []
+        },
+        {
+          "scene_number": 16,
+          "act": "ACT FOUR",
+          "heading": "EXT. SABA’S COURTYARD — EVENING",
+          "usage": "Nim climbs into the basket and curls up inside it.",
+          "evidence": "Nim climbs into the linen basket",
+          "transfers": []
+        }
+      ]
+    },
+    {
+      "name": "Folded linen for Saba's sleeves",
+      "aliases": [
+        "folded linen",
+        "linen",
+        "sleeves",
+        "old sleeves",
+        "patch",
+        "his sleeve"
+      ],
+      "alias_scenes": {
+        "folded linen": [
+          1
+        ],
+        "linen": [
+          1,
+          3,
+          16
+        ],
+        "sleeves": [
+          1,
+          3,
+          15
+        ],
+        "old sleeves": [
+          1
+        ],
+        "patch": [
+          1,
+          16
+        ],
+        "his sleeve": [
+          3,
+          16
+        ]
+      },
+      "description": "The folded linen Ima sends with Miri for Saba's worn sleeves; Saba later uses it as a patch while sewing.",
+      "reason": "It motivates Miri's trip, is delivered from Miri to Saba, is discussed again, and becomes part of Saba's sleeve repair.",
+      "criteria": {
+        "center_of_focus": false,
+        "high_frequency": true,
+        "transfer": true,
+        "actively_handled": true
+      },
+      "scene_count": 4,
+      "scenes": [
+        1,
+        3,
+        15,
+        16
+      ],
+      "acts": [
+        "COLD OPEN",
+        "ACT ONE",
+        "ACT FOUR"
+      ],
+      "transfer_count": 2,
+      "appearances": [
+        {
+          "scene_number": 1,
+          "act": "COLD OPEN",
+          "heading": "EXT. MIRI’S VILLAGE — MORNING",
+          "usage": "Ima prepares folded linen for Miri to take to Saba.",
+          "evidence": "with a basket of folded linen.",
+          "transfers": [
+            {
+              "from": "Ima",
+              "to": "Miri",
+              "evidence": "Ima hands Miri the linen basket."
+            }
+          ]
+        },
+        {
+          "scene_number": 3,
+          "act": "ACT ONE",
+          "heading": "EXT. SABA ELIOR’S COURTYARD — LATE MORNING",
+          "usage": "Miri delivers the linen, and Saba takes it while inspecting his patched sleeve.",
+          "evidence": "SABA takes the linen and inspects his sleeve",
+          "transfers": [
+            {
+              "from": "Miri",
+              "to": "SABA",
+              "evidence": "SABA takes the linen and inspects his sleeve"
+            }
+          ]
+        },
+        {
+          "scene_number": 15,
+          "act": "ACT FOUR",
+          "heading": "EXT. VILLAGE LANE — SUNSET",
+          "usage": "Tav asks whether Saba's sleeves were fixed yet.",
+          "evidence": "Did Saba fix his sleeves?",
+          "transfers": []
+        },
+        {
+          "scene_number": 16,
+          "act": "ACT FOUR",
+          "heading": "EXT. SABA’S COURTYARD — EVENING",
+          "usage": "Saba sews a patch onto his sleeve.",
+          "evidence": "sewing a patch onto his sleeve.",
+          "transfers": []
+        }
+      ]
+    },
+    {
+      "name": "The small loaves-and-fish scroll",
       "aliases": [
         "small scroll",
         "scroll",
-        "parchment",
         "little scroll",
-        "barley-cord scroll"
+        "story",
+        "parchment"
       ],
       "alias_scenes": {
         "small scroll": [
@@ -720,36 +831,36 @@
         ],
         "scroll": [
           5,
-          13,
           14,
           16
-        ],
-        "parchment": [
-          5,
-          13
         ],
         "little scroll": [
           16
         ],
-        "barley-cord scroll": []
+        "story": [
+          5,
+          16
+        ],
+        "parchment": [
+          5
+        ]
       },
-      "description": "Saba’s small scroll tied with a barley-colored cord and sealed with a loaf-and-two-fish mark. It opens the story world of the feeding miracle, then returns to a drawing of the loaves and fish.",
-      "reason": "The scroll is the magical/storytelling object that transports Miri into the biblical event and remains an important physical anchor before and after the vision.",
+      "description": "A small scroll tied with barley-colored cord and sealed with a loaf-and-two-fish mark; when opened, it transports Miri and Nim into the feeding story, then glows on its shelf.",
+      "reason": "It is the gateway prop for the story world, is selected and opened by Saba, and recurs after the vision.",
       "criteria": {
         "center_of_focus": true,
         "high_frequency": true,
-        "transfer": false
+        "transfer": false,
+        "actively_handled": true
       },
-      "scene_count": 4,
+      "scene_count": 3,
       "scenes": [
         5,
-        13,
         14,
         16
       ],
       "acts": [
         "ACT ONE",
-        "ACT THREE",
         "ACT FOUR"
       ],
       "transfer_count": 0,
@@ -758,23 +869,15 @@
           "scene_number": 5,
           "act": "ACT ONE",
           "heading": "INT. SCROLL ROOM — CONTINUOUS",
-          "usage": "Saba selects, unties, and opens the scroll, causing the story world to manifest.",
+          "usage": "Saba selects, unties, and opens the scroll, triggering the story world.",
           "evidence": "draws down a small scroll tied with a cord",
-          "transfers": []
-        },
-        {
-          "scene_number": 13,
-          "act": "ACT THREE",
-          "heading": "EXT. HILLSIDE RIDGE — SUNSET",
-          "usage": "The story world collapses back into scroll/parchment form.",
-          "evidence": "The world rolls gently back into parchment.",
           "transfers": []
         },
         {
           "scene_number": 14,
           "act": "ACT FOUR",
           "heading": "INT. SCROLL ROOM — LATE AFTERNOON",
-          "usage": "The opened scroll lies between Miri, Nim, and Saba after their return.",
+          "usage": "Miri and Nim return to find the scroll open between them with its image settled.",
           "evidence": "The small scroll rests open between them.",
           "transfers": []
         },
@@ -782,52 +885,57 @@
           "scene_number": 16,
           "act": "ACT FOUR",
           "heading": "EXT. SABA’S COURTYARD — EVENING",
-          "usage": "The scroll remains glowing on its shelf as the episode closes.",
+          "usage": "Miri asks about the scroll, and it is seen glowing on its shelf.",
           "evidence": "the little scroll glows softly on its shelf.",
           "transfers": []
         }
       ]
     },
     {
-      "name": "Tav's broken toy cart",
+      "name": "Tav's broken toy cart and repair peg",
       "aliases": [
         "broken toy cart",
-        "toy cart",
-        "cart",
-        "wooden wheel",
+        "little cart",
+        "toy",
         "wheel",
-        "small peg"
+        "wooden wheel",
+        "small peg",
+        "cart"
       ],
       "alias_scenes": {
         "broken toy cart": [
           2,
           15
         ],
-        "toy cart": [
+        "little cart": [
+          2
+        ],
+        "toy": [
           2,
           15
         ],
-        "cart": [
+        "wheel": [
           2,
           15
         ],
         "wooden wheel": [
           2
         ],
-        "wheel": [
-          2,
+        "small peg": [
           15
         ],
-        "small peg": [
+        "cart": [
+          2,
           15
         ]
       },
-      "description": "Tav’s small toy cart with a loose/broken wheel. It appears broken when Miri first withholds a cake, then becomes an object she helps repair after choosing generosity. The peg used in the repair is included as part of this repair prop set.",
-      "reason": "The toy cart marks Tav’s need and gives Miri a practical way to help beyond sharing cake. It recurs in the opening and resolution, with Nim contributing the peg for repair.",
+      "description": "Tav's toy cart with a loose wheel; Miri helps repair it using a small peg that Nim noses toward her.",
+      "reason": "The cart appears before and after Miri's change of heart, and its repair becomes a second act of generosity. The peg is passed to Miri and used to fix the wheel.",
       "criteria": {
-        "center_of_focus": true,
+        "center_of_focus": false,
         "high_frequency": true,
-        "transfer": true
+        "transfer": true,
+        "actively_handled": true
       },
       "scene_count": 2,
       "scenes": [
@@ -844,25 +952,151 @@
           "scene_number": 2,
           "act": "COLD OPEN",
           "heading": "EXT. VILLAGE LANE — MOMENTS LATER",
-          "usage": "Tav sits with the broken cart; its wobbling wheel visually reinforces his need/disappointment.",
-          "evidence": "sits beside a broken toy cart.",
+          "usage": "Tav sits with the broken cart, its wheel popped off, while Miri passes him by.",
+          "evidence": "beside a broken toy cart.",
           "transfers": []
         },
         {
           "scene_number": 15,
           "act": "ACT FOUR",
           "heading": "EXT. VILLAGE LANE — SUNSET",
-          "usage": "Tav asks Miri to help repair the cart; Nim provides a peg and Miri fixes the wheel.",
+          "usage": "Tav asks for help; Nim provides a peg, and Miri uses it to repair the cart wheel.",
           "evidence": "Tav holds up his broken toy cart.",
           "transfers": [
             {
               "from": "NIM",
               "to": "Miri",
-              "evidence": "Nim chews slowly, then noses a small peg toward Miri."
+              "evidence": "noses a small peg toward Miri."
             }
           ]
         }
       ]
+    },
+    {
+      "name": "Saba's pouch with flatbread crumb",
+      "aliases": [
+        "small pouch",
+        "plain crumb of flatbread",
+        "crumb"
+      ],
+      "alias_scenes": {
+        "small pouch": [
+          16
+        ],
+        "plain crumb of flatbread": [
+          16
+        ],
+        "crumb": [
+          16
+        ]
+      },
+      "description": "A small pouch from which Saba produces a plain flatbread crumb and tosses it to Nim as a reward.",
+      "reason": "Saba handles the pouch and transfers the crumb to Nim in a visible action beat.",
+      "criteria": {
+        "center_of_focus": false,
+        "high_frequency": false,
+        "transfer": true,
+        "actively_handled": true
+      },
+      "scene_count": 1,
+      "scenes": [
+        16
+      ],
+      "acts": [
+        "ACT FOUR"
+      ],
+      "transfer_count": 1,
+      "appearances": [
+        {
+          "scene_number": 16,
+          "act": "ACT FOUR",
+          "heading": "EXT. SABA’S COURTYARD — EVENING",
+          "usage": "Saba reaches into the pouch, pulls out a crumb, and tosses it to Nim.",
+          "evidence": "pulls out a plain crumb of flatbread.",
+          "transfers": [
+            {
+              "from": "Saba",
+              "to": "Nim",
+              "evidence": "He tosses it gently to Nim."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Jesus's staff",
+      "aliases": [
+        "staff"
+      ],
+      "alias_scenes": {
+        "staff": [
+          8
+        ]
+      },
+      "description": "The staff beside Jesus, touched by His hand as the disciples discuss the lack of food.",
+      "reason": "Jesus physically rests His hand on it in the miracle setup scene.",
+      "criteria": {
+        "center_of_focus": false,
+        "high_frequency": false,
+        "transfer": false,
+        "actively_handled": true
+      },
+      "scene_count": 1,
+      "scenes": [
+        8
+      ],
+      "acts": [
+        "ACT TWO"
+      ],
+      "transfer_count": 0,
+      "appearances": [
+        {
+          "scene_number": 8,
+          "act": "ACT TWO",
+          "heading": "EXT. EDGE OF CROWD — LATER",
+          "usage": "Jesus's hand rests on the staff as the disciples look to Him.",
+          "evidence": "His hand resting gently on a staff",
+          "transfers": []
+        }
+      ]
+    },
+    {
+      "name": "Saba's sandal",
+      "aliases": [
+        "sandal"
+      ],
+      "alias_scenes": {
+        "sandal": [
+          3
+        ]
+      },
+      "description": "The sandal Saba repairs while telling stories in his courtyard.",
+      "reason": "Saba physically repairs it in the courtyard; this active handling makes it a hero prop under the rules.",
+      "criteria": {
+        "center_of_focus": false,
+        "high_frequency": false,
+        "transfer": false,
+        "actively_handled": true
+      },
+      "scene_count": 1,
+      "scenes": [
+        3
+      ],
+      "acts": [
+        "ACT ONE"
+      ],
+      "transfer_count": 0,
+      "appearances": [
+        {
+          "scene_number": 3,
+          "act": "ACT ONE",
+          "heading": "EXT. SABA ELIOR’S COURTYARD — LATE MORNING",
+          "usage": "Saba repairs the sandal while speaking to the children.",
+          "evidence": "He is repairing a sandal with one hand",
+          "transfers": []
+        }
+      ]
     }
-  ]
+  ],
+  "reasoning_effort": "model default"
 }

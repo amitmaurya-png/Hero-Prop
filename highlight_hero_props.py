@@ -22,7 +22,8 @@ from pathlib import Path
 
 import fitz  # PyMuPDF
 
-from extract_hero_props import SLUGLINE, _norm
+from hero_props.screenplay import SLUGLINE
+from hero_props.verify import normalize
 
 ROOT = Path(__file__).resolve().parent
 
@@ -53,7 +54,7 @@ def head_noun(phrase: list[str]) -> str | None:
 
 
 def token(text: str) -> str:
-    return _norm(text).strip(".,!?;:\"'()[]…")
+    return normalize(text).strip(".,!?;:\"'()[]…")
 
 
 def page_words(doc: fitz.Document) -> list[dict]:
