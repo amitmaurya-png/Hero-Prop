@@ -45,3 +45,23 @@ def ask_model(model: str, screenplay: str, reasoning: str | None = None) -> Mode
     raw = response.choices[0].message.content
     usage = response.usage.model_dump() if response.usage else {}
     return ModelReply(answer=json.loads(raw), raw=raw, seconds=seconds, usage=usage)
+
+
+def token_counts(usage: dict, seconds: float | None = None) -> dict:
+    """Readable token counts from the API's `usage` block.
+
+    output_tokens = reasoning_tokens (hidden thinking) + answer_tokens (the JSON).
+    """
+    output = usage.get("completion_tokens") or 0
+    reasoning = (usage.get("completion_tokens_details") or {}).get("reasoning_tokens") or 0
+    counts = {
+        "input_tokens": usage.get("prompt_tokens") or 0,
+        "cached_input_tokens": (usage.get("prompt_tokens_details") or {}).get("cached_tokens") or 0,
+        "output_tokens": output,
+        "reasoning_tokens": reasoning,
+        "answer_tokens": output - reasoning,
+        "total_tokens": usage.get("total_tokens") or 0,
+    }
+    if seconds:
+        counts["output_tokens_per_second"] = round(output / seconds, 1)
+    return counts

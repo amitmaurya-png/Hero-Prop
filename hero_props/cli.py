@@ -11,7 +11,7 @@ Every run that calls the model writes data/debug/:
     prompt.txt      the instructions sent
     screenplay.txt  the numbered screenplay sent
     answer.json     the model's raw answer (before any checks)
-    run.json        model, reasoning effort, seconds, token usage
+    run.json        model, reasoning effort, seconds, input/output token counts
     warnings.txt    everything the checks dropped, and why
 """
 
@@ -84,13 +84,14 @@ def get_answer(args: argparse.Namespace, screenplay: str) -> tuple[dict, dict]:
     if not os.environ.get("OPENAI_API_KEY"):
         sys.exit("OPENAI_API_KEY is not set (environment or .env).")
 
-    from .llm import ask_model   # imported here so --from-answer works without the API set up
+    from .llm import ask_model, token_counts   # imported here so --from-answer works without the API set up
 
     reasoning = args.reasoning or "model default"
     log(f"Asking {args.model} (reasoning: {reasoning})...")
     reply = ask_model(args.model, screenplay, args.reasoning)
     run_info = {"model": args.model, "reasoning_effort": reasoning,
-                "seconds": round(reply.seconds, 1), "usage": reply.usage}
+                "seconds": round(reply.seconds, 1),
+                "tokens": token_counts(reply.usage, reply.seconds), "usage": reply.usage}
 
     debug = args.debug_dir
     debug.mkdir(parents=True, exist_ok=True)
@@ -110,6 +111,23 @@ def report(output: dict, warnings: list[str], out: Path, run_info: dict) -> None
     timing = f", LLM request {run_info['seconds']}s" if "seconds" in run_info else ""
     log(f"Wrote {output['hero_prop_count']} hero props to {out} "
         f"(reasoning: {run_info.get('reasoning_effort', 'n/a')}{timing})")
+    report_tokens(run_info.get("tokens"))
+
+
+def report_tokens(tokens: dict | None) -> None:
+    """Print the input/output token counts of the model request."""
+    if not tokens:
+        log("Tokens: not available (no API call recorded for this answer)")
+        return
+    log("")
+    log("Tokens processed")
+    log(f"  Input tokens   : {tokens['input_tokens']:>7,}   (cached: {tokens['cached_input_tokens']:,})")
+    log(f"  Output tokens  : {tokens['output_tokens']:>7,}")
+    log(f"    - thinking   : {tokens['reasoning_tokens']:>7,}")
+    log(f"    - answer     : {tokens['answer_tokens']:>7,}")
+    log(f"  Total tokens   : {tokens['total_tokens']:>7,}")
+    if "output_tokens_per_second" in tokens:
+        log(f"  Output speed   : {tokens['output_tokens_per_second']:>7} tokens/s")
 
 
 def main(argv: list[str] | None = None) -> int:
@@ -131,6 +149,7 @@ def main(argv: list[str] | None = None) -> int:
     # Steps 3-4: check the answer and build the JSON
     output, warnings = build_output(title, scenes, answer, run_info["model"], relative(args.pdf))
     output["reasoning_effort"] = run_info.get("reasoning_effort", "model default")
+    output["run"] = {k: run_info[k] for k in ("seconds", "tokens") if k in run_info}
     write_json(output, args.out)
 
     args.debug_dir.mkdir(parents=True, exist_ok=True)
