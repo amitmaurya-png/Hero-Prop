@@ -99,6 +99,7 @@ or abstract idea) that meets AT LEAST ONE of these criteria:
   3. transfer: it is handed, given, offered, taken or passed between two
      characters.
   4. It would also be inferred between two characters as well.
+  5. It should be a physical object that is tangible and handleable, not a character. It should be actively handled by some character in the scene.
 
 Rules:
 - Treat one physical object (or one matched set, e.g. "five barley loaves and two
