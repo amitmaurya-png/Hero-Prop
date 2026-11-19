@@ -291,6 +291,7 @@ def build_output(title: str, scenes: list[dict], answer: dict, model: str) -> tu
         "scenes": [
             {"scene_number": s["number"], "act": s["act"], "heading": s["heading"]} for s in scenes
         ],
+        "hero_prop_count": len(props),
         "hero_props": props,
     }
     return output, warnings
@@ -302,7 +303,7 @@ def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     parser.add_argument("--pdf", type=Path, default=ROOT / "docs" / "TSL.pdf")
     parser.add_argument("--out", type=Path, default=ROOT / "data" / "hero_props.json")
-    parser.add_argument("--model", default=os.environ.get("OPENAI_MODEL", "gpt-5.4-mini"))
+    parser.add_argument("--model", default=os.environ.get("OPENAI_MODEL", "gpt-5.5"))
     args = parser.parse_args()
 
     load_env(ROOT / ".env")
