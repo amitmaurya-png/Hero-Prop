@@ -98,6 +98,7 @@ or abstract idea) that meets AT LEAST ONE of these criteria:
      the same object) in multiple scenes or acts.
   3. transfer: it is handed, given, offered, taken or passed between two
      characters.
+  4. It would also be inferred between two characters as well.
 
 Rules:
 - Treat one physical object (or one matched set, e.g. "five barley loaves and two
@@ -200,6 +201,20 @@ def quote_in_scene(quote: str, scene: dict) -> bool:
     return bool(q) and q in _norm(scene["text"])
 
 
+def alias_scenes(aliases: list[str], prop_scenes: list[int], scenes: list[dict]) -> dict[str, list[int]]:
+    """For each alias, the prop's scenes whose text contains it as whole words.
+
+    Only the prop's own (verified) scenes are searched: elsewhere the same word
+    can mean a different object (e.g. "bread" in the village vs Yonah's lunch).
+    """
+    by_number = {s["number"]: _norm(s["text"]) for s in scenes}
+    result = {}
+    for alias in aliases:
+        pattern = re.compile(r"(?<!\w)" + re.escape(_norm(alias)) + r"(?!\w)")
+        result[alias] = [n for n in prop_scenes if n in by_number and pattern.search(by_number[n])]
+    return result
+
+
 def build_output(title: str, scenes: list[dict], answer: dict, model: str) -> tuple[dict, list[str]]:
     by_number = {s["number"]: s for s in scenes}
     warnings, props = [], []
@@ -244,9 +259,11 @@ def build_output(title: str, scenes: list[dict], answer: dict, model: str) -> tu
         appearances = [kept[n] for n in sorted(kept)]
         acts = list(dict.fromkeys(a["act"] for a in appearances))
         transfer_count = sum(len(a["transfers"]) for a in appearances)
+        scene_numbers = [a["scene_number"] for a in appearances]
         props.append({
             "name": prop["name"],
             "aliases": prop["aliases"],
+            "alias_scenes": alias_scenes(prop["aliases"], scene_numbers, scenes),
             "description": prop["description"],
             "reason": prop["reason"],
             "criteria": {
@@ -255,7 +272,7 @@ def build_output(title: str, scenes: list[dict], answer: dict, model: str) -> tu
                 "transfer": transfer_count > 0,
             },
             "scene_count": len(appearances),
-            "scenes": [a["scene_number"] for a in appearances],
+            "scenes": scene_numbers,
             "acts": acts,
             "transfer_count": transfer_count,
             "appearances": appearances,
