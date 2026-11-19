@@ -16,7 +16,7 @@ Steps:
 
 Usage:
   python extract_hero_props.py [--pdf docs/TSL.pdf] [--out data/hero_props.json]
-                               [--model gpt-5.5]
+                               [--model gpt-5.4-mini]
 Needs OPENAI_API_KEY (read from the environment or ./.env).
 """
 
@@ -302,7 +302,7 @@ def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     parser.add_argument("--pdf", type=Path, default=ROOT / "docs" / "TSL.pdf")
     parser.add_argument("--out", type=Path, default=ROOT / "data" / "hero_props.json")
-    parser.add_argument("--model", default=os.environ.get("OPENAI_MODEL", "gpt-5.5"))
+    parser.add_argument("--model", default=os.environ.get("OPENAI_MODEL", "gpt-5.4-mini"))
     args = parser.parse_args()
 
     load_env(ROOT / ".env")
