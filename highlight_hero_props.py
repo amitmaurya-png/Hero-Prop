@@ -22,7 +22,7 @@ from pathlib import Path
 
 import fitz  # PyMuPDF
 
-from hero_props.screenplay import SLUGLINE
+from hero_props.screenplay import PAGE_NUMBER, SLUGLINE
 from hero_props.verify import normalize
 
 ROOT = Path(__file__).resolve().parent
@@ -65,7 +65,10 @@ def page_words(doc: fitz.Document) -> list[dict]:
         for x0, y0, x1, y1, text, block, line, _ in page.get_text("words", sort=True):
             lines.setdefault((block, line), []).append((fitz.Rect(x0, y0, x1, y1), text))
         for line_words in lines.values():
-            heading = bool(SLUGLINE.match(" ".join(t for _, t in line_words)))
+            line_text = " ".join(t for _, t in line_words)
+            if PAGE_NUMBER.match(line_text):   # "6." etc.: not script text; would break phrases across pages
+                continue
+            heading = bool(SLUGLINE.match(line_text))
             scene += heading
             for rect, text in line_words:
                 words.append({"page": page.number, "rect": rect, "tok": token(text),
